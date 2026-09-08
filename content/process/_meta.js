@@ -7,5 +7,6 @@ export default {
   'qualify-as-an-adviser': 'Qualify',
   'write-the-disclosure-documents': 'Disclosure Documents',
   'write-the-policies': 'Policies',
-  'file-and-get-approved': 'File and Approval'
+  'file-and-get-approved': 'File and Approval',
+  'set-up-custody-and-technology': 'Custody and Tech'
 }
