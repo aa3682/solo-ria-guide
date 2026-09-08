@@ -1,57 +1,114 @@
-# [TOPIC] guide — repo instructions
-
-## Starting a new guide from this template
-Replace every token below, then edit every file in the list. Tokens are bracketed and all caps, so `grep -rn '\[[A-Z ]\+\]' --exclude-dir=node_modules --exclude-dir=.next .` shows what is left.
-
-Tokens:
-- `[TOPIC]` — the subject of the guide as it reads in a sentence ("personal budgeting", "residential wiring").
-- `[PROCESS NAME]` — the name of the step-by-step process the guide is organized around; it is also the title of the process section.
-- `[AREA LABEL]` — the name of one knowledge area; the domains landing page and the figures page repeat it once per area.
-- `[AUTHOR LINE]` — how the author is described on /about, without a personal name, employer, credential, or license.
-- `[DISCLAIMER]` — the standard disclaimer, three or four sentences, that sits in a Callout on each section landing page and as plain prose on /about.
-
-Files to edit:
-- `CLAUDE.md` — the tokens above, the step and area names under Structure, the Go deeper sources, and the Glossary running list as pages are written.
-- `README.md` — the title, the opening description, and the repository URL.
-- `package.json` — `name`.
-- `app/layout.jsx` — the site title, description, and `REPO_URL`.
-- `app/globals.css` — the accent hue, if a different one is wanted.
-- `content/_meta.js`, `content/process/_meta.js`, `content/domains/_meta.js`, `content/tools/_meta.js` — sidebar labels and order.
-- `content/introduction/index.mdx`, `content/process/index.mdx`, `content/domains/index.mdx`, `content/tools/index.mdx` — the landing pages; list every step, area, and tool.
-- `content/about/index.mdx` — `[AUTHOR LINE]`, `[DISCLAIMER]`, the corrections URL, and the license links.
-- `content/glossary/index.mdx` — delete the example term when the first real term is added.
-- `content/process/example-step/index.mdx` — copy it into one folder per real step, then delete the example folder and its `_meta.js` entry.
-- `content/domains/example-area/index.mdx` — copy it into one folder per real area, then delete the example folder and its `_meta.js` entry.
-- `content/tools/this-years-figures/index.mdx` — one H2 per knowledge area; rows are added as figures come up.
-- `LICENSE` — the copyright line.
+# The Independent Path — repo instructions
 
 ## What this is
-An open, public reference site on [TOPIC], built as a Nextra 4 docs site. Visual reference only: https://www.promptingguide.ai/ — match its look using the stock nextra-theme-docs; never copy its content or components.
+An open, public reference site on establishing and running an independent registered investment advisory (RIA) firm in the United States, built as a Nextra 4 docs site. Visual reference only: https://www.promptingguide.ai/ — match its look using the stock nextra-theme-docs; never copy its content or components.
 
-Audience: the general public first, practitioners second. Write for a smart adult with no background in [TOPIC]; add practitioner depth in clearly marked subsections rather than separate pages.
+Audience: primary — someone who already works in the industry, most often at a broker-dealer or a larger advisory firm, and is thinking about going independent. Secondary — anyone broader trying to decide whether the independent model fits them at all, before they take any concrete step. Write for a smart adult with no background in the subject; add practitioner depth in clearly marked subsections rather than separate pages.
+
+## Default scenario
+The guide's default reader is a state-registered adviser: assets under management fall under the threshold that would require SEC registration instead. See [This year's figures](/tools/this-years-figures) for the current AUM threshold, once that page is built. Where the SEC-registered path works differently, the relevant page says so and flags the divergence rather than silently assuming state registration throughout.
+
+## Sourcing
+Public primary sources only:
+- SEC rules and no-action guidance
+- Form ADV instructions
+- State securities regulators and NASAA
+- IARD/CRD fee schedules
+- FINRA exam requirements
+- State entity-formation resources
+- IRS guidance
+- State insurance regulators, for E&O insurance and bonding
+
+Use these for "Go deeper" links on area pages and for any fact that needs support elsewhere. All prose is original writing — no verbatim or lightly paraphrased text from statutes, regulations, courses, or vendor material.
 
 ## Hard rules
-1. Never reference any professional certification body, certification mark, licensing exam, official curriculum, or official topic list — anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. No certification acronyms, no "certified" phrasing. Describe concepts in plain language instead.
-2. All content is original. No verbatim or lightly paraphrased text from textbooks, study guides, courses, or official publications. When a fact needs support, cite a public primary source (statute, regulation, agency publication, standards document, court decision, peer-reviewed paper) with a link.
-3. Content is educational, not individualized advice. The standard disclaimer lives on each section landing page only (introduction, process, domains, tools). Do not repeat it on individual pages.
-4. Do not invent statistics, thresholds, limits, or rates. If a number is year-specific, state the year and cite the source. If unsure, write "[VERIFY]" inline and list it in the report. On knowledge-area pages the figures rule in the area template takes precedence: the number goes on /tools/this-years-figures, not on the page.
+1. No custodian, compliance-software vendor, E&O insurer, or consultant names anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. Vendors are named only on /tools/this-years-figures, once it is built for real; nothing commercial is linked anywhere on the site, and there are no affiliate links. Describe vendor categories generically instead (for example, "a qualified custodian").
+2. All content is original writing. See Sourcing above for where facts come from; cite a public primary source with a link whenever a fact needs support.
+3. Content is educational, not individualized advice. See Disclaimer below for exactly where the disclaimer text appears and where it does not.
+4. Do not invent statistics, thresholds, limits, deadlines, or rates. Any number set by law, regulation, or an agency belongs on /tools/this-years-figures with its year and source, never on the page that refers to it — name the concept in plain language there and link instead. Round hypothetical numbers in worked examples are fine and encouraged. If a source can't be confirmed, write "[VERIFY]" inline and list it in the report.
 5. No personal data, no real client examples. Worked examples use obviously fictional people.
+6. No personal name, employer, or credential anywhere in the repo — not on pages, not in metadata, not in commit messages, not in code comments.
+7. One folder per page: `content/<section>/<slug>/index.mdx`. Slugs are lowercase-kebab-case and match the folder name, no number prefixes.
+8. Stock nextra-theme-docs look. Custom CSS limited to the one accent-color variable in `app/globals.css`. No custom components unless the owner asks.
+
+## Disclaimer
+The standard disclaimer, verbatim:
+
+> This guide is educational material about how independent advisory firms are established and run. It is not legal, compliance, tax, or investment advice, and it does not create an advisory or professional relationship. Registration requirements vary by state and change over time. Verify anything here against the current rules of your regulator, and get your own counsel before acting.
+
+It appears in a Callout on the four section landing pages — introduction, process, domains, tools — and, once that page is built for real, on /tools/this-years-figures. It is never repeated on step, area, glossary, or about pages.
 
 ## Attribution and license
-- The guide is published under a project name, not a personal name. The site names no personal name, employer, credentials, or licenses anywhere, on pages or in metadata. Its author is described only by [AUTHOR LINE].
-- Prose is CC BY 4.0 and code is MIT. This is stated on /about and in README.
-- The About page carries one sentence of the landing-page disclaimer as plain prose, not the full Callout. This is intentional.
+- The guide is published under the project name The Independent Path, not a personal name. No personal name, employer, credential, or license appears anywhere in the repo, on pages or in metadata.
+- Prose in `content/` is licensed under CC BY 4.0; code is licensed under MIT. This is stated in README.md and, once that page is written, on /about.
+- Writing the About page's authorship description is out of scope until a prompt asks for it; when it is written, it describes the author without a personal name, employer, credential, or license.
 
 ## Structure
 Top-level sections, in this sidebar order:
 1. introduction
-2. process — the steps of [PROCESS NAME], one folder per step
-3. domains — the knowledge areas, one folder per area
+2. process — "The Independent Path," 12 chronological steps
+3. domains — "Practice Areas," 9 standing subject areas. The sidebar label and the route deliberately differ (`/domains`, not `/practice-areas`) — do not "fix" this.
 4. tools — calculators, checklists, worksheets
 5. glossary
 6. about
 
-Step and area names are provided by the owner in prompts; do not rename or reorder them. Slugs are lowercase-kebab-case and match the folder name.
+A step is chronological and finishes: it says what must be decided or produced at that point in the sequence, and once it is done you move to the next one. An area is standing subject matter that never finishes: it says how to think about a subject over the life of the firm. Step pages link to the areas that apply at that point rather than restating them.
+
+Slugs are lowercase-kebab-case and match the folder name.
+
+### The 12 steps (content/process/<slug>/index.mdx)
+In order:
+1. Decide If Independence Fits — `decide-if-independence-fits`
+2. Design the Firm — `design-the-firm`
+3. Set Your Advice Approach — `set-your-advice-approach`
+4. Form the Business — `form-the-business`
+5. Choose Your Regulator — `choose-your-regulator`
+6. Qualify as an Adviser — `qualify-as-an-adviser`
+7. Write the Disclosure Documents — `write-the-disclosure-documents`
+8. Write the Policies — `write-the-policies`
+9. File and Get Approved — `file-and-get-approved`
+10. Set Up Custody and Technology — `set-up-custody-and-technology`
+11. Leave and Transition Clients — `leave-and-transition-clients`
+12. Stay Registered and Compliant — `stay-registered-and-compliant`
+
+### The 9 areas (content/domains/<slug>/index.mdx)
+1. Service and Pricing Models — `service-and-pricing-models`
+2. Advice and Planning Process — `advice-and-planning-process`
+3. Technology and Client Experience — `technology-and-client-experience`
+4. Client Education — `client-education`
+5. Marketing and Growth — `marketing-and-growth`
+6. Compliance and Supervision — `compliance-and-supervision`
+7. Records and Documentation — `records-and-documentation`
+8. Firm Economics — `firm-economics`
+9. Risk and Insurance — `risk-and-insurance`
+
+### Sidebar labels
+Sidebar labels are shortened for phone reading and deliberately do not match the page titles above. Because Nextra 4 rejects `_meta.js` keys with no matching page, add a label to `content/process/_meta.js` or `content/domains/_meta.js` only in the same PR that adds its page — not before. Neither file currently exists (an empty `export default {}` breaks the Nextra 4 build with a prerender error): the PR that adds the first real step or area page must create the file fresh with just that page's entry.
+
+Steps, page title → sidebar label:
+- Decide If Independence Fits → Is It For You
+- Design the Firm → Design the Firm
+- Set Your Advice Approach → Advice Approach
+- Form the Business → Form the Business
+- Choose Your Regulator → Choose Regulator
+- Qualify as an Adviser → Qualify
+- Write the Disclosure Documents → Disclosure Documents
+- Write the Policies → Policies
+- File and Get Approved → File and Approval
+- Set Up Custody and Technology → Custody and Tech
+- Leave and Transition Clients → Leave and Transition
+- Stay Registered and Compliant → Stay Compliant
+
+Areas, page title → sidebar label:
+- Service and Pricing Models → Service and Pricing
+- Advice and Planning Process → Advice and Planning
+- Technology and Client Experience → Technology and CX
+- Client Education → Client Education
+- Marketing and Growth → Marketing and Growth
+- Compliance and Supervision → Compliance
+- Records and Documentation → Records
+- Firm Economics → Firm Economics
+- Risk and Insurance → Risk and Insurance
 
 ## Stack
 - Nextra 4, nextra-theme-docs, Next.js App Router, MDX in content/
@@ -66,8 +123,8 @@ Step and area names are provided by the owner in prompts; do not rename or reord
 - Tables for comparisons; bullet lists for steps; prose for explanation.
 
 ## Page templates
-Two fixed skeletons. Every page under process/ uses the step skeleton. Every page under domains/ (the knowledge areas) uses the area skeleton. Write the sections in the order given; do not add, remove, or reorder them.
-Every step page lives at `content/process/<slug>/index.mdx` and every knowledge-area page at `content/domains/<slug>/index.mdx`, one folder per page, matching the existing scaffold. `content/process/example-step/index.mdx` and `content/domains/example-area/index.mdx` show each skeleton with a one-line instruction in place of every sentence.
+Two fixed skeletons. Every page under process/ uses the step skeleton. Every page under domains/ (the practice areas) uses the area skeleton. Write the sections in the order given; do not add, remove, or reorder them.
+Every step page lives at `content/process/<slug>/index.mdx` and every practice-area page at `content/domains/<slug>/index.mdx`, one folder per page.
 
 Step page skeleton:
 1. Frontmatter with `title` and `description`. The description is one sentence, plain language.
@@ -77,7 +134,7 @@ Step page skeleton:
 5. "What actually happens" — 3–5 short H3 subsections describing the concrete work.
 6. "Questions to ask yourself"
 7. "Common mistakes"
-8. "Which knowledge areas apply" — links to 2–4 area pages, one line each on why it applies at this step.
+8. "Which practice areas apply" — links to 2–4 area pages, one line each on why it applies at this step.
 9. "For practitioners" — a Callout, 3–6 sentences: what you are doing with the client at this step and what to document.
 10. "Next step" — one link to the following step page. The last step links back to the first.
 
@@ -89,18 +146,18 @@ Area page skeleton:
 5. "Where it shows up in the process" — links to the relevant step pages.
 6. "Common misconceptions"
 7. "For practitioners" — a Callout, same treatment as above.
-8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources: statutes and regulations, agency publications, standards bodies, and academic papers cited by DOI. Fill in the topic's own sources here, naming the specific agencies and bodies the guide relies on.
+8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
 
 Conventions for both:
 - 700–1,000 words. Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded.
 - Measure with pnpm wordcount <path>.
 - Second person, plain English. No jargon without a one-line explanation.
 - Headings are plain nouns or short questions. H2 for the numbered sections above, H3 within them.
-- No disclaimer on individual pages; it lives on the landing pages only.
+- No disclaimer on individual pages; it lives on the landing pages only (see Disclaimer above).
 - Area pages never print yearly-changing figures — limits, thresholds, rates, deadlines. Where a figure is relevant, name the concept in plain language and link to /tools/this-years-figures (for example: 'up to the yearly limit — see this year's figures'). That page holds every number with its year and primary source and is updated once a year. Every 'Go deeper' link must be fetched and confirmed live before the PR is opened; any link that cannot be confirmed is marked [VERIFY] in the report. The rule covers figures set by law, regulation, or an agency. Round hypothetical numbers in a worked example ('200 units a month for ten years') are fine and encouraged.
 - Links to the U.S. Code use the granuleid form: https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-titleNN-sectionNNNN&num=0&edition=prelim (substitute the title and section). The "title:NN section:NNN" form is not used.
-- Row schema on /tools/this-years-figures: one figure per row, columns Concept | What it governs | Value | Year | Source, grouped under one H2 per knowledge area with a stable id (`## [AREA LABEL] [#slug]`) in the site's order. A figure appears once, under the area it fits best. Every Value comes from a fetched primary source or reads VERIFY; never fill a Value from memory.
-- Figures that vary by state: Value reads "Varies by state", Year is blank, and Source links a federal locator page if one exists or otherwise names the state office in plain text ("Your state's licensing board"). Never build a per-state table.
+- Row schema on /tools/this-years-figures: one figure per row, columns Concept | What it governs | Value | Year | Source, grouped under one H2 per practice area with a stable id (`## Area Name [#slug]`) in the site's order (see The 9 areas above). A figure appears once, under the area it fits best. Every Value comes from a fetched primary source or reads VERIFY; never fill a Value from memory.
+- Figures that vary by state: Value reads "Varies by state", Year is blank, and Source links a federal locator page if one exists or otherwise names the state office in plain text ("Your state's securities regulator"). Never build a per-state table.
 - Figures fixed by statute that do not change yearly still get a row: Year reads "Set by statute" and Source links the statute or the agency page.
 - Internal links use the site's existing slugs. Check the actual paths under content/ before writing a link.
 - The Callout is the stock component from nextra/components, the same one the landing pages use. Import it with exactly this line: `import { Callout } from 'nextra/components'`
@@ -133,3 +190,4 @@ Links to glossary terms from any page use the anchor form /glossary#term-id; a p
 ## Glossary running list
 Every term that any page links to /glossary. Add a term here when a new page links it. Future prompts reference this list instead of restating it.
 
+(none yet)

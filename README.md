@@ -1,10 +1,6 @@
 # The Independent Path
 
-An open guide to establishing and running an independent registered investment advisory firm, built on Nextra 4 — process-first structure, plain-English section names, one reference page for regulated figures, and a CLAUDE.md that drives content through Claude Code.
-
-## What this is
-
-A topic-neutral copy of a working guide site with the subject matter removed. It keeps the six-section layout (introduction, process, knowledge areas, tools, glossary, about), one example step page and one example area page as skeletons, an empty yearly-figures page, and the conventions in `CLAUDE.md` that shape every page. Anything specific to a topic is a bracketed all-caps token.
+An open, public guide to establishing and running an independent registered investment advisory (RIA) firm in the United States. It walks through the twelve chronological steps of going independent — from deciding whether the model fits through staying registered once the firm is running — alongside nine standing practice areas that apply throughout, such as compliance, technology, and firm economics.
 
 ## Stack
 
@@ -14,33 +10,16 @@ A topic-neutral copy of a working guide site with the subject matter removed. It
 - [Pagefind](https://pagefind.app) search index generated at build time
 - pnpm as the only package manager
 
-## Starting a new guide
+## Content organization
 
-Replace every token, then edit every file in the list. A grep for `\[[A-Z ]\+\]` (excluding `node_modules` and `.next`) shows what is left.
+- `content/introduction/` — what the guide covers, who it is for, and how to use it.
+- `content/process/` — The Independent Path: one folder per step, in chronological order.
+- `content/domains/` — Practice Areas: one folder per standing subject area.
+- `content/tools/` — calculators, checklists, and worksheets, including `this-years-figures`, the single page that holds every limit, rate, threshold, and deadline set by law, regulation, or an agency.
+- `content/glossary/` — one alphabetical glossary page.
+- `content/about/` — what this project is and how it is licensed.
 
-Tokens:
-
-- `[TOPIC]` — the subject of the guide as it reads in a sentence.
-- `[PROCESS NAME]` — the name of the step-by-step process the guide is organized around; also the title of the process section.
-- `[AREA LABEL]` — the name of one knowledge area; repeated once per area on the domains landing page and the figures page.
-- `[AUTHOR LINE]` — how the author is described on the About page, without a personal name, employer, credential, or license.
-- `[DISCLAIMER]` — the standard disclaimer that sits in a Callout on each section landing page and as plain prose on the About page.
-
-Files to edit:
-
-- `CLAUDE.md` — the tokens, the step and area names under Structure, the Go deeper sources, and the Glossary running list as pages are written.
-- `README.md` — the title, the opening description, and the repository URL.
-- `package.json` — `name`.
-- `app/layout.jsx` — the site title, description, and `REPO_URL`.
-- `app/globals.css` — the accent hue, if a different one is wanted.
-- `content/_meta.js`, `content/process/_meta.js`, `content/domains/_meta.js`, `content/tools/_meta.js` — sidebar labels and order.
-- `content/introduction/index.mdx`, `content/process/index.mdx`, `content/domains/index.mdx`, `content/tools/index.mdx` — the landing pages; list every step, area, and tool.
-- `content/about/index.mdx` — `[AUTHOR LINE]`, `[DISCLAIMER]`, the corrections URL, and the license links.
-- `content/glossary/index.mdx` — delete the example term when the first real term is added.
-- `content/process/example-step/index.mdx` — copy it into one folder per real step, then delete the example folder and its `_meta.js` entry.
-- `content/domains/example-area/index.mdx` — copy it into one folder per real area, then delete the example folder and its `_meta.js` entry.
-- `content/tools/this-years-figures/index.mdx` — one H2 per knowledge area; rows are added as figures come up.
-- `LICENSE` — the copyright line.
+Each content page is its own folder with an `index.mdx` file. `CLAUDE.md` has the full set of conventions — page templates, writing style, sourcing, and hard rules — that every page follows.
 
 ## Run locally
 
