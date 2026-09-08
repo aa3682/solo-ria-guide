@@ -119,7 +119,7 @@ Areas, page title → sidebar label:
 ## Writing style
 - Plain English, short paragraphs, active voice. Define a term the first time it appears and link it to the glossary.
 - Landing pages and any page outside content/process/ and content/domains/: one H1, a two-sentence summary under it, then H2 sections. End with a "Related" list linking to 2–4 other pages. Pages under those two folders follow the Page templates section instead: the opening paragraph replaces the summary, and the cross-link sections replace the Related list.
-- Use Nextra callouts sparingly: one "Note" or "Warning" per page at most.
+- Use Nextra callouts sparingly: one "Note" or "Warning" per page at most, except SEC-path callouts, which are exempt from that cap. The SEC-path callout's own rule — used only where the paths actually diverge — is what limits how many a page carries.
 - Tables for comparisons; bullet lists for steps; prose for explanation.
 
 ## Page templates
@@ -184,6 +184,15 @@ Step-page rules:
 - Second person, plain English, educational rather than advisory.
 - Steps link to the practice areas that apply rather than restating them.
 - Steps link forward to later steps rather than explaining their subject matter in place.
+
+### SEC-path callout
+A reusable callout for the places where the SEC-registered path diverges from the guide's default state-registered scenario.
+- Component: `<Callout type="warning">`.
+- First words, identical every time: "If you are on the SEC path:"
+- One to three sentences stating only how the SEC path differs at that point. It does not explain the SEC path in full.
+- Placed inline at the point in the page where the divergence occurs, not collected at the end.
+- Used only where the paths actually diverge. A page with no divergence has no SEC-path callout.
+- Distinct from the practitioner `<Callout type="info">` at the end of every step page, which stays as it is.
 
 ## How to work
 - Do exactly what the prompt asks. Do not add sections, pages, or features that were not requested.
