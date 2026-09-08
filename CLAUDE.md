@@ -23,13 +23,14 @@ Use these for "Go deeper" links on area pages and for any fact that needs suppor
 
 ## Hard rules
 1. No custodian, compliance-software vendor, E&O insurer, or consultant names anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. Vendors are named only on /tools/this-years-figures, once it is built for real; nothing commercial is linked anywhere on the site, and there are no affiliate links. Describe vendor categories generically instead (for example, "a qualified custodian").
-2. All content is original writing. See Sourcing above for where facts come from; cite a public primary source with a link whenever a fact needs support.
-3. Content is educational, not individualized advice. See Disclaimer below for exactly where the disclaimer text appears and where it does not.
-4. Do not invent statistics, thresholds, limits, deadlines, or rates. Any number set by law, regulation, or an agency belongs on /tools/this-years-figures with its year and source, never on the page that refers to it — name the concept in plain language there and link instead. Round hypothetical numbers in worked examples are fine and encouraged. If a source can't be confirmed, write "[VERIFY]" inline and list it in the report.
-5. No personal data, no real client examples. Worked examples use obviously fictional people.
-6. No personal name, employer, or credential anywhere in the repo — not on pages, not in metadata, not in commit messages, not in code comments.
-7. One folder per page: `content/<section>/<slug>/index.mdx`. Slugs are lowercase-kebab-case and match the folder name, no number prefixes.
-8. Stock nextra-theme-docs look. Custom CSS limited to the one accent-color variable in `app/globals.css`. No custom components unless the owner asks.
+2. Statutes, agencies, and uniform regulatory forms (Form ADV, Form U4) are primary-source vocabulary and may be named; the vendor-name rule covers commercial parties only. Exam identifiers and designation names remain regulated figures and belong on /tools/this-years-figures.
+3. All content is original writing. See Sourcing above for where facts come from; cite a public primary source with a link whenever a fact needs support.
+4. Content is educational, not individualized advice. See Disclaimer below for exactly where the disclaimer text appears and where it does not.
+5. Do not invent statistics, thresholds, limits, deadlines, or rates. Any number set by law, regulation, or an agency belongs on /tools/this-years-figures with its year and source, never on the page that refers to it — name the concept in plain language there and link instead. Round hypothetical numbers in worked examples are fine and encouraged. If a source can't be confirmed, write "[VERIFY]" inline and list it in the report.
+6. No personal data, no real client examples. Worked examples use obviously fictional people.
+7. No personal name, employer, or credential anywhere in the repo — not on pages, not in metadata, not in commit messages, not in code comments.
+8. One folder per page: `content/<section>/<slug>/index.mdx`. Slugs are lowercase-kebab-case and match the folder name, no number prefixes.
+9. Stock nextra-theme-docs look. Custom CSS limited to the one accent-color variable in `app/globals.css`. No custom components unless the owner asks.
 
 ## Disclaimer
 The standard disclaimer, verbatim:
@@ -47,10 +48,10 @@ It appears in a Callout on the four section landing pages — introduction, proc
 Top-level sections, in this sidebar order:
 1. introduction
 2. process — "The Independent Path," 12 chronological steps
-3. domains — "Practice Areas," 9 standing subject areas. The sidebar label and the route deliberately differ (`/domains`, not `/practice-areas`) — do not "fix" this.
-4. tools — calculators, checklists, worksheets
-5. glossary
-6. about
+4. domains — "Practice Areas," 9 standing subject areas. The sidebar label and the route deliberately differ (`/domains`, not `/practice-areas`) — do not "fix" this.
+5. tools — calculators, checklists, worksheets
+6. glossary
+7. about
 
 A step is chronological and finishes: it says what must be decided or produced at that point in the sequence, and once it is done you move to the next one. An area is standing subject matter that never finishes: it says how to think about a subject over the life of the firm. Step pages link to the areas that apply at that point rather than restating them.
 
@@ -60,12 +61,12 @@ Slugs are lowercase-kebab-case and match the folder name.
 In order:
 1. Decide If Independence Fits — `decide-if-independence-fits`
 2. Design the Firm — `design-the-firm`
-3. Set Your Advice Approach — `set-your-advice-approach`
-4. Form the Business — `form-the-business`
-5. Choose Your Regulator — `choose-your-regulator`
-6. Qualify as an Adviser — `qualify-as-an-adviser`
-7. Write the Disclosure Documents — `write-the-disclosure-documents`
-8. Write the Policies — `write-the-policies`
+4. Set Your Advice Approach — `set-your-advice-approach`
+5. Form the Business — `form-the-business`
+6. Choose Your Regulator — `choose-your-regulator`
+7. Qualify as an Adviser — `qualify-as-an-adviser`
+8. Write the Disclosure Documents — `write-the-disclosure-documents`
+9. Write the Policies — `write-the-policies`
 9. File and Get Approved — `file-and-get-approved`
 10. Set Up Custody and Technology — `set-up-custody-and-technology`
 11. Leave and Transition Clients — `leave-and-transition-clients`
@@ -74,12 +75,12 @@ In order:
 ### The 9 areas (content/domains/<slug>/index.mdx)
 1. Service and Pricing Models — `service-and-pricing-models`
 2. Advice and Planning Process — `advice-and-planning-process`
-3. Technology and Client Experience — `technology-and-client-experience`
-4. Client Education — `client-education`
-5. Marketing and Growth — `marketing-and-growth`
-6. Compliance and Supervision — `compliance-and-supervision`
-7. Records and Documentation — `records-and-documentation`
-8. Firm Economics — `firm-economics`
+4. Technology and Client Experience — `technology-and-client-experience`
+5. Client Education — `client-education`
+6. Marketing and Growth — `marketing-and-growth`
+7. Compliance and Supervision — `compliance-and-supervision`
+8. Records and Documentation — `records-and-documentation`
+9. Firm Economics — `firm-economics`
 9. Risk and Insurance — `risk-and-insurance`
 
 ### Sidebar labels
@@ -129,12 +130,12 @@ Every practice-area page lives at `content/domains/<slug>/index.mdx`, one folder
 Area page skeleton:
 1. Frontmatter with `title` and `description`.
 2. H1 matching the frontmatter title.
-3. Opening paragraph, no heading.
-4. "Key ideas" — 4–7 H3 subsections, one concept each.
-5. "Where it shows up in the process" — links to the relevant step pages.
-6. "Common misconceptions"
-7. "For practitioners" — a Callout, same treatment as above.
-8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
+4. Opening paragraph, no heading.
+5. "Key ideas" — 4–7 H3 subsections, one concept each.
+6. "Where it shows up in the process" — links to the relevant step pages.
+7. "Common misconceptions"
+8. "For practitioners" — a Callout, same treatment as above.
+9. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
 
 Conventions for area and worksheet pages:
 - 700–1,000 words. Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded.
@@ -169,12 +170,12 @@ Every page under `content/process/<slug>/index.mdx` follows this exact skeleton,
 
 1. Frontmatter with `title` (the full step name) and `description` (one sentence, plain language).
 2. H1 matching the frontmatter title.
-3. Opening paragraph, no heading: what this step is, in plain words.
-4. H2 "Why it matters"
-5. H2 "What actually happens" — three to five H3 substeps. The final H3 states what the reader leaves the step holding.
-6. H2 "Questions to ask yourself" — four to six questions.
-7. H2 "Common mistakes" — a bulleted list, one mistake per bullet, each one or two sentences.
-8. H2 "Which practice areas apply" — a list linking the relevant `/domains/` routes, one sentence each on why it applies at this step.
+4. Opening paragraph, no heading: what this step is, in plain words.
+5. H2 "Why it matters"
+6. H2 "What actually happens" — three to five H3 substeps. The final H3 states what the reader leaves the step holding.
+7. H2 "Questions to ask yourself" — four to six questions.
+8. H2 "Common mistakes" — a bulleted list, one mistake per bullet, each one or two sentences.
+9. H2 "Which practice areas apply" — a list linking the relevant `/domains/` routes, one sentence each on why it applies at this step.
 9. A `<Callout type="info">` for practitioners, placed after the practice areas list, with no heading of its own.
 10. H2 "Next step" — a single sentence linking the next `/process/` route. The last step's Next step links to the Practice Areas index at `/domains` instead, since the practice areas are standing material that never finishes.
 

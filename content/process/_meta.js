@@ -4,5 +4,6 @@ export default {
   'set-your-advice-approach': 'Advice Approach',
   'form-the-business': 'Form the Business',
   'choose-your-regulator': 'Choose Regulator',
-  'qualify-as-an-adviser': 'Qualify'
+  'qualify-as-an-adviser': 'Qualify',
+  'write-the-disclosure-documents': 'Disclosure Documents'
 }
