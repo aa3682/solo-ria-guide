@@ -210,3 +210,6 @@ Links to glossary terms from any page use the anchor form /glossary#term-id; a p
 Every term that any page links to /glossary. Add a term here when a new page links it. Future prompts reference this list instead of restating it.
 
 (none yet)
+
+## Working notes on editing this file
+When editing a numbered list in this file, scope the edit to the list block itself, never to a line range or "every line after line N". A line-scoped renumbering in the step 7 branch silently incremented the first numbered line in five unrelated lists (Structure, the 12 steps, the 9 areas, the area page skeleton, and the step page template) before it was caught and reverted.
