@@ -176,6 +176,27 @@ Worksheet page (tools):
 - No disclaimer.
 - Example values in tables and worked examples are round hypothetical numbers.
 
+## Step page template
+Every page under `content/process/<slug>/index.mdx` follows this exact skeleton, derived from step 1 ([Decide If Independence Fits](/process/decide-if-independence-fits)), so later steps don't have to re-derive it from scratch:
+
+1. Frontmatter with `title` (the full step name) and `description` (one sentence, plain language).
+2. H1 matching the frontmatter title.
+3. Opening paragraph, no heading: what this step is, in plain words.
+4. H2 "Why it matters"
+5. H2 "What actually happens" — three to five H3 substeps. The final H3 states what the reader leaves the step holding.
+6. H2 "Questions to ask yourself" — four to six questions.
+7. H2 "Common mistakes" — a bulleted list, one mistake per bullet, each one or two sentences.
+8. H2 "Which practice areas apply" — a list linking the relevant `/domains/` routes, one sentence each on why it applies at this step.
+9. A `<Callout type="info">` for practitioners, placed after the practice areas list, with no heading of its own.
+10. H2 "Next step" — a single sentence linking the next `/process/` route. The last step links back to the first.
+
+Step-page rules:
+- 900–1,300 words of body prose (headings, tables, and link titles excluded). Measure with `pnpm wordcount <path>`.
+- No paragraph longer than four sentences.
+- Second person, plain English, educational rather than advisory.
+- Steps link to the practice areas that apply rather than restating them.
+- Steps link forward to later steps rather than explaining their subject matter in place.
+
 ## How to work
 - Do exactly what the prompt asks. Do not add sections, pages, or features that were not requested.
 - Commit after each completed prompt with a one-line message describing the change. Never push unless the prompt says to push.
