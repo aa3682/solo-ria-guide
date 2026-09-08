@@ -1,6 +1,6 @@
-# guide-template
+# The Independent Path
 
-Reusable starter for an open, public knowledge site built on Nextra 4 — process-first structure, plain-English section names, one reference page for regulated figures, and a CLAUDE.md that drives content through Claude Code.
+An open guide to establishing and running an independent registered investment advisory firm, built on Nextra 4 — process-first structure, plain-English section names, one reference page for regulated figures, and a CLAUDE.md that drives content through Claude Code.
 
 ## What this is
 

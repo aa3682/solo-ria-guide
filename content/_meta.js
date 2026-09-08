@@ -1,7 +1,7 @@
 export default {
   introduction: 'Introduction',
-  process: '[PROCESS NAME]',
-  domains: 'Knowledge areas',
+  process: 'The Independent Path',
+  domains: 'Practice Areas',
   tools: 'Tools',
   glossary: 'Glossary',
   about: 'About'
