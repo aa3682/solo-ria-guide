@@ -23,13 +23,14 @@ Use these for "Go deeper" links on area pages and for any fact that needs suppor
 
 ## Hard rules
 1. No custodian, compliance-software vendor, E&O insurer, or consultant names anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. Vendors are named only on /tools/this-years-figures, once it is built for real; nothing commercial is linked anywhere on the site, and there are no affiliate links. Describe vendor categories generically instead (for example, "a qualified custodian").
-2. All content is original writing. See Sourcing above for where facts come from; cite a public primary source with a link whenever a fact needs support.
-3. Content is educational, not individualized advice. See Disclaimer below for exactly where the disclaimer text appears and where it does not.
-4. Do not invent statistics, thresholds, limits, deadlines, or rates. Any number set by law, regulation, or an agency belongs on /tools/this-years-figures with its year and source, never on the page that refers to it — name the concept in plain language there and link instead. Round hypothetical numbers in worked examples are fine and encouraged. If a source can't be confirmed, write "[VERIFY]" inline and list it in the report.
-5. No personal data, no real client examples. Worked examples use obviously fictional people.
-6. No personal name, employer, or credential anywhere in the repo — not on pages, not in metadata, not in commit messages, not in code comments.
-7. One folder per page: `content/<section>/<slug>/index.mdx`. Slugs are lowercase-kebab-case and match the folder name, no number prefixes.
-8. Stock nextra-theme-docs look. Custom CSS limited to the one accent-color variable in `app/globals.css`. No custom components unless the owner asks.
+2. Statutes, agencies, and uniform regulatory forms (Form ADV, Form U4) are primary-source vocabulary and may be named; the vendor-name rule covers commercial parties only. Exam identifiers and designation names remain regulated figures and belong on /tools/this-years-figures.
+3. All content is original writing. See Sourcing above for where facts come from; cite a public primary source with a link whenever a fact needs support.
+4. Content is educational, not individualized advice. See Disclaimer below for exactly where the disclaimer text appears and where it does not.
+5. Do not invent statistics, thresholds, limits, deadlines, or rates. Any number set by law, regulation, or an agency belongs on /tools/this-years-figures with its year and source, never on the page that refers to it — name the concept in plain language there and link instead. Round hypothetical numbers in worked examples are fine and encouraged. If a source can't be confirmed, write "[VERIFY]" inline and list it in the report.
+6. No personal data, no real client examples. Worked examples use obviously fictional people.
+7. No personal name, employer, or credential anywhere in the repo — not on pages, not in metadata, not in commit messages, not in code comments.
+8. One folder per page: `content/<section>/<slug>/index.mdx`. Slugs are lowercase-kebab-case and match the folder name, no number prefixes.
+9. Stock nextra-theme-docs look. Custom CSS limited to the one accent-color variable in `app/globals.css`. No custom components unless the owner asks.
 
 ## Disclaimer
 The standard disclaimer, verbatim:
