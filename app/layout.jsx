@@ -4,14 +4,14 @@ import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import './globals.css'
 
-const REPO_URL = 'https://github.com/aa3682/guide-template'
+const REPO_URL = 'https://github.com/aa3682/solo-ria-guide'
 
 export const metadata = {
   title: {
-    default: 'Guide Template',
-    template: '%s – Guide Template'
+    default: 'The Independent Path',
+    template: '%s – The Independent Path'
   },
-  description: 'Guide Template'
+  description: 'An open guide to establishing and running an independent registered investment advisory firm.'
 }
 
 export default async function RootLayout({ children }) {
@@ -21,8 +21,8 @@ export default async function RootLayout({ children }) {
       <Head />
       <body>
         <Layout
-          navbar={<Navbar logo={<b>Guide Template</b>} projectLink={REPO_URL} />}
-          footer={<Footer>{new Date().getFullYear()} © Guide Template</Footer>}
+          navbar={<Navbar logo={<b>The Independent Path</b>} projectLink={REPO_URL} />}
+          footer={<Footer>{new Date().getFullYear()} © The Independent Path</Footer>}
           docsRepositoryBase={`${REPO_URL}/blob/main`}
           pageMap={pageMap}
         >
