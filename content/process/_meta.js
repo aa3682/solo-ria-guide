@@ -5,5 +5,6 @@ export default {
   'form-the-business': 'Form the Business',
   'choose-your-regulator': 'Choose Regulator',
   'qualify-as-an-adviser': 'Qualify',
-  'write-the-disclosure-documents': 'Disclosure Documents'
+  'write-the-disclosure-documents': 'Disclosure Documents',
+  'write-the-policies': 'Policies'
 }
