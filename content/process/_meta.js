@@ -6,5 +6,6 @@ export default {
   'choose-your-regulator': 'Choose Regulator',
   'qualify-as-an-adviser': 'Qualify',
   'write-the-disclosure-documents': 'Disclosure Documents',
-  'write-the-policies': 'Policies'
+  'write-the-policies': 'Policies',
+  'file-and-get-approved': 'File and Approval'
 }
