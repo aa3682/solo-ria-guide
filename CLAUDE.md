@@ -119,7 +119,7 @@ Areas, page title → sidebar label:
 ## Writing style
 - Plain English, short paragraphs, active voice. Define a term the first time it appears and link it to the glossary.
 - Landing pages and any page outside content/process/ and content/domains/: one H1, a two-sentence summary under it, then H2 sections. End with a "Related" list linking to 2–4 other pages. Pages under those two folders follow the Page templates section instead: the opening paragraph replaces the summary, and the cross-link sections replace the Related list.
-- Use Nextra callouts sparingly: one "Note" or "Warning" per page at most.
+- Use Nextra callouts sparingly: one "Note" or "Warning" per page at most, except SEC-path callouts, which are exempt from that cap. The SEC-path callout's own rule — used only where the paths actually diverge — is what limits how many a page carries.
 - Tables for comparisons; bullet lists for steps; prose for explanation.
 
 ## Page templates
