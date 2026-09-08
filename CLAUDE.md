@@ -123,20 +123,8 @@ Areas, page title → sidebar label:
 - Tables for comparisons; bullet lists for steps; prose for explanation.
 
 ## Page templates
-Two fixed skeletons. Every page under process/ uses the step skeleton. Every page under domains/ (the practice areas) uses the area skeleton. Write the sections in the order given; do not add, remove, or reorder them.
-Every step page lives at `content/process/<slug>/index.mdx` and every practice-area page at `content/domains/<slug>/index.mdx`, one folder per page.
-
-Step page skeleton:
-1. Frontmatter with `title` and `description`. The description is one sentence, plain language.
-2. H1 matching the frontmatter title.
-3. Opening paragraph, no heading: what this step is, in plain words.
-4. "Why it matters"
-5. "What actually happens" — 3–5 short H3 subsections describing the concrete work.
-6. "Questions to ask yourself"
-7. "Common mistakes"
-8. "Which practice areas apply" — links to 2–4 area pages, one line each on why it applies at this step.
-9. "For practitioners" — a Callout, 3–6 sentences: what you are doing with the client at this step and what to document.
-10. "Next step" — one link to the following step page. The last step links back to the first.
+One fixed skeleton. Every page under domains/ (the practice areas) uses the area skeleton below. Write the sections in the order given; do not add, remove, or reorder them.
+Every practice-area page lives at `content/domains/<slug>/index.mdx`, one folder per page. The step-page skeleton is not here — it is documented on its own, in full, in "## Step page template" below.
 
 Area page skeleton:
 1. Frontmatter with `title` and `description`.
@@ -148,7 +136,7 @@ Area page skeleton:
 7. "For practitioners" — a Callout, same treatment as above.
 8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
 
-Conventions for both:
+Conventions for area and worksheet pages:
 - 700–1,000 words. Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded.
 - Measure with pnpm wordcount <path>.
 - Second person, plain English. No jargon without a one-line explanation.
@@ -188,7 +176,7 @@ Every page under `content/process/<slug>/index.mdx` follows this exact skeleton,
 7. H2 "Common mistakes" — a bulleted list, one mistake per bullet, each one or two sentences.
 8. H2 "Which practice areas apply" — a list linking the relevant `/domains/` routes, one sentence each on why it applies at this step.
 9. A `<Callout type="info">` for practitioners, placed after the practice areas list, with no heading of its own.
-10. H2 "Next step" — a single sentence linking the next `/process/` route. The last step links back to the first.
+10. H2 "Next step" — a single sentence linking the next `/process/` route. The last step's Next step links to the Practice Areas index at `/domains` instead, since the practice areas are standing material that never finishes.
 
 Step-page rules:
 - 900–1,300 words of body prose (headings, tables, and link titles excluded). Measure with `pnpm wordcount <path>`.
