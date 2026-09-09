@@ -144,7 +144,7 @@ Area page skeleton:
 8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
 
 Conventions for area and worksheet pages:
-- Area pages: 900–1,300 words. Worksheet pages: 700–1,000 words (see Worksheet page below). Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded.
+- Area pages: 700–1,300 words. Worksheet pages: 700–1,000 words (see Worksheet page below). Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded. The floor is a floor, not a target. An area page that has said everything it has to say ends there. Do not add a section in order to clear it, and do not cite the range as the reason for including anything.
 - Measure with pnpm wordcount <path>.
 - Second person, plain English. No jargon without a one-line explanation.
 - Headings are plain nouns or short questions. H2 for the numbered sections above, H3 within them.

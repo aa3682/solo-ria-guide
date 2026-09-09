@@ -88,3 +88,34 @@ citation rather than treating the expired clearance date as silent.
 This one applies even to pages that were already source-currency-aware, since the link
 was reused from an earlier PR without re-checking the document's own clearance date, not
 copied blind onto a page built before the rule existed.
+
+## 6. Client Education's fifth Key idea was added to clear a word floor that no longer exists
+
+The fifth Key idea on the Client Education page
+([content/domains/client-education/index.mdx](content/domains/client-education/index.mdx)),
+"Format shapes whether an explanation actually lands," was added during PR #20 explicitly
+to clear the then-900-word area-page floor. That floor has since been lowered to 700, so
+the reason the section was written no longer applies.
+
+**What it needs:** re-evaluate the section on its own merits during the consistency pass —
+keep it or cut it based on whether it earns its place on the page, not on what it does to
+the word count.
+
+**Belongs to:** build order item 5.
+
+## 7. NASAA amended four model rules on May 4, 2026 — pre-amendment PDFs are still hosted
+
+As part of its investment adviser advertising modernization, NASAA amended four model
+rules on May 4, 2026: Unethical Business Practices 102(a)(4)-1, Prohibited Conduct
+(USA 2002) 502(b), Recordkeeping Requirements 203(a)-2, and Recordkeeping Requirements
+(USA 2002) 411(c)-1. Pre-amendment PDFs of these remain hosted on nasaa.org and resolve
+normally, so a liveness check will not catch a citation pointing at a superseded version.
+
+This is core source material for the Marketing and Growth area page, which is not yet
+written.
+
+**What it needs:** whoever writes Marketing and Growth must confirm every NASAA citation
+on the page is the post-May-2026 version, and the source-currency sweep must check the
+same for any of these four model rules already cited elsewhere in the repo.
+
+**Belongs to:** the Marketing and Growth build, and the source-currency sweep (item 3).
