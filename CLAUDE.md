@@ -152,6 +152,17 @@ Conventions for area and worksheet pages:
 - The Callout is the stock component from nextra/components, the same one the landing pages use. Import it with exactly this line: `import { Callout } from 'nextra/components'`
 - The hard rules and writing style above apply in full to page bodies, headings, and frontmatter, including titles, descriptions, and slugs.
 
+## Area page conventions
+
+Four rules specific to area pages, on top of the area skeleton and conventions above. They were established building the first area page, [Service and Pricing Models](/domains/service-and-pricing-models), the format benchmark for the other eight the way step 1 was the benchmark for the 12 steps.
+
+1. An area page says how to think about a subject over time. It is standing subject matter that never finishes. It does not walk a sequence, and it does not restate what a step page already covers — link to the step instead of re-explaining it.
+2. The page assumes the firm exists but does NOT assume the reader has worked through the 12 steps. It must be readable cold by someone who arrived from search. Never write "as you decided in Step 3" or any phrasing that depends on the reader having read the sequence.
+3. Near the top, right after the opening paragraph, add one short fixed section headed "Where this starts in the process" that links the two or three steps whose decisions this area then governs. This section replaces item 5 of the area skeleton above ("Where it shows up in the process") — do not include both, and do not also add a related-steps list at the bottom of the page. Inline links to steps are still allowed on first mention elsewhere in the page.
+4. The recurring unnamed hypothetical ("the adviser") appears here too, but in present-tense standing situations rather than at a point in the sequence. Write "the adviser reprices annually and finds..." not "by this stage the adviser has...". No new named examples.
+
+With rule 3 applied, an area page's running order is: frontmatter, H1, opening paragraph, "Where this starts in the process," "Key ideas," "Common misconceptions," "For practitioners," "Go deeper."
+
 Worksheet page (tools):
 - Path: `content/tools/<slug>/index.mdx`, one folder per page.
 - 700–1,000 words of body prose, tables excluded. Measure with pnpm wordcount <path>.
