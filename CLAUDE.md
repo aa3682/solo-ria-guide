@@ -145,6 +145,15 @@ Area page skeleton:
 
 Conventions for area and worksheet pages:
 - Area pages: 700–1,300 words. Worksheet pages: 700–1,000 words (see Worksheet page below). Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded. The floor is a floor, not a target. An area page that has said everything it has to say ends there. Do not add a section in order to clear it, and do not cite the range as the reason for including anything.
+- The 1,300-word ceiling is a review trigger, not a hard limit. An area page may exceed it, but the build report must then state the cause, and only one cause is valid.
+
+  Density: the subject has strands that genuinely do not collapse into each other, and the page stays entirely inside its own boundaries. Valid. Ship it long.
+
+  Scope: the page ran long because it wandered into a neighboring area or restated step content. Not valid. Cut back to the boundary rather than compressing prose to fit the number.
+
+  Compress for redundancy, never for the count. Removing a restatement or a scene-setting opener improves a page; squeezing clauses together to hit a number makes it worse to read on a phone, which is the opposite of what the ceiling is for.
+
+  This soft ceiling applies to area pages only. Step pages keep the hard 900–1,300 range in "Step page template" below, and worksheet pages keep 700–1,000.
 - Measure with pnpm wordcount <path>.
 - Second person, plain English. No jargon without a one-line explanation.
 - Headings are plain nouns or short questions. H2 for the numbered sections above, H3 within them.

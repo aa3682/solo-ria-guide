@@ -171,3 +171,24 @@ Left alone deliberately — reordering existing entries was outside the scope of
 that noticed it.
 
 **Belongs to:** best done in one pass once all nine area pages exist, alongside item 1.
+
+## 11. "Go deeper" links on Advice and Planning Process and Firm Economics were not fetched — session egress blocked again
+
+Same failure mode as item 8, in a later session and on a different set of links. The session that
+built [content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx)
+and [content/domains/firm-economics/index.mdx](content/domains/firm-economics/index.mdx) had every
+outbound domain blocked by its network egress proxy — nasaa.org, sec.gov, irs.gov, iard.com, and
+everything else tested. The six citations were corroborated through web search (title, authority,
+issuing body, and for dated documents the adoption or issue date confirmed against search results),
+but none was fetched, so none has been confirmed live or checked against the document's own printed
+date and any clearance stamp.
+
+The six are listed, with what search confirmed about each, in the PR description for the branch that
+added the two pages. The NASAA citation is deliberately the post-May-2026 amended version required by
+item 7, and the superseded 2022 PDF of the same model rule is still hosted and still resolves.
+
+**What it needs:** fetch all six from a session with egress to those domains, confirm each resolves and
+is the current version, and clear or replace any that fail.
+
+**Belongs to:** build order item 5 (source-currency sweep) — or sooner, if a session with network
+access to those domains comes up first. Best done in one pass together with item 8.
