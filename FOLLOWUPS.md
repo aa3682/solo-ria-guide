@@ -119,3 +119,55 @@ on the page is the post-May-2026 version, and the source-currency sweep must che
 same for any of these four model rules already cited elsewhere in the repo.
 
 **Belongs to:** the Marketing and Growth build, and the source-currency sweep (item 3).
+
+## 8. "Go deeper" links on the two newest area pages were not fetched — session egress blocked
+
+The Technology and Client Experience and Risk and Insurance pages were built in a session
+whose network egress proxy blocked every domain their citations point at: ecfr.gov,
+uscode.house.gov, nasaa.org, and content.naic.org (also sec.gov and investor.gov, which
+neither page ends up citing). The six links were corroborated through web search — title,
+authority, and rule number confirmed against search results — but none was fetched, so
+none has been confirmed live or checked against the document's own date and clearance
+stamp, as the area-page conventions require.
+
+**What it needs:** fetch all six links from a session with egress to those domains, confirm
+each resolves and is the current version, and clear or replace any that fail. The six are
+listed in the PR description for the branch that added the two pages.
+
+**Belongs to:** build order item 5 (source-currency sweep) — or sooner, if a session with
+network access to those domains comes up first.
+
+## 9. Two superseded NASAA model rules are still hosted on nasaa.org and resolve normally
+
+NASAA's 2020 Model Rule for Investment Adviser Written Policies and Procedures consolidated
+and superseded two earlier model rules: Business Continuity and Succession Planning
+(April 13, 2015) and the Investment Adviser Information Security and Privacy Rule
+(May 19, 2019). Standalone PDFs of both superseded rules remain hosted on nasaa.org and
+resolve normally, so a liveness check will not catch a citation pointing at either one.
+
+This is the same failure mode as item 7, on a different set of rules. The repo currently
+cites the consolidated 2020 rule in both places it needs one
+([content/process/write-the-policies/index.mdx](content/process/write-the-policies/index.mdx)
+and [content/domains/technology-and-client-experience/index.mdx](content/domains/technology-and-client-experience/index.mdx)),
+so nothing is wrong today.
+
+**What it needs:** the source-currency sweep should confirm no citation anywhere in the repo
+points at either superseded PDF, and future pages touching cybersecurity, privacy, business
+continuity, or succession should cite the 2020 consolidated rule.
+
+**Belongs to:** the source-currency sweep (item 3).
+
+## 10. content/domains/_meta.js is ordered by build order, not by the canonical area order
+
+The sidebar order for the practice areas comes from `content/domains/_meta.js`, which has
+been appended to as each page merged. The result is build order (Service and Pricing,
+Compliance, Records, Client Education, Technology and CX, Risk and Insurance), not the
+canonical order of the nine areas given in CLAUDE.md and used by the
+[/domains](content/domains/index.mdx) index page. The sidebar and the index page therefore
+list the same areas in different orders.
+
+**What it needs:** reorder `content/domains/_meta.js` to match the canonical nine-area order.
+Left alone deliberately — reordering existing entries was outside the scope of the prompt
+that noticed it.
+
+**Belongs to:** best done in one pass once all nine area pages exist, alongside item 1.
