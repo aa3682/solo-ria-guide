@@ -528,3 +528,20 @@ to a page near the line.
 
 **Belongs to:** build order item 5 (the consistency pass), or sooner if the owner wants the step
 pages back in range before the figures page is built.
+
+## 16. Whether the clearing corporation has republished the account transfer windows since the shortened settlement cycle
+
+The Step 11 row for the standardized account transfer window on
+[content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx) carries the
+one-business-day validation window and the three-business-day completion window as the rule states
+them. The rule also provides, in both paragraphs, that those time frames change as determined from
+time to time in publications relating to the transfer facility by the clearing corporation. The rule
+text alone therefore cannot confirm the windows currently in force — a publication by the clearing
+corporation can move them without the rule changing, and the move to a shortened settlement cycle is
+exactly the kind of event that would prompt one.
+
+**What it needs:** check the clearing corporation's own publications relating to the transfer facility
+for any change to the one-business-day and three-business-day windows since the shortened settlement
+cycle took effect, and update the row's Value if one has been published. Not answered here.
+
+**Belongs to:** the yearly figures-page update — this is an annual check, not a one-time fix.
