@@ -119,8 +119,20 @@ on the page is the post-May-2026 version, and the source-currency sweep must che
 same for any of these four model rules already cited elsewhere in the repo.
 
 **Status: half done.** The Marketing and Growth build cited all four rules in their 5-4-2026
-versions, at `/wp-content/uploads/2026/05/` paths, and no other page in the repo cites any of the
-four. The sweep half is still open — it should confirm that remains true as pages are added.
+versions, at `/wp-content/uploads/2026/05/` paths.
+
+The repo-wide half was also checked during that build, by grep across `content/` for each rule
+number. Two other pages already cite one of the four each, and **both are already the current
+5-4-2026 versions** — no repointing was needed:
+
+- [content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx)
+  cites 102(a)(4)-1 at the `/uploads/2026/05/` path.
+- [content/domains/records-and-documentation/index.mdx](content/domains/records-and-documentation/index.mdx)
+  cites 203(a)-2 at the `/uploads/2026/05/` path.
+
+Neither 502(b) nor 411(c)-1 is cited anywhere outside Marketing and Growth. The sweep half stays open
+only to confirm this remains true as further pages are added, and because the two citations above are
+themselves among the links never fetched (items 11 and 3).
 
 **Belongs to:** the Marketing and Growth build (done), and the source-currency sweep (item 3).
 
