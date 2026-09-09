@@ -394,7 +394,9 @@ from.
 
 **What it needs:** the result is recorded above. At the consistency pass, decide (a) whether the
 Marketing and Growth page should be cut and to what, (b) whether the 1,300 ceiling survives at all
-for area pages, and (c) ratchet versus depth, now with nine finished pages. Separately, at the consistency pass, re-read the closing sections of
+for area pages, and (c) ratchet versus depth, now with nine finished pages.
+
+Separately, at the consistency pass, re-read the closing sections of
 [content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx)
 and [content/domains/firm-economics/index.mdx](content/domains/firm-economics/index.mdx) and judge
 whether either reads slightly clipped at the end.
