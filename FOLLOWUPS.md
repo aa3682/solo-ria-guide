@@ -118,7 +118,23 @@ written.
 on the page is the post-May-2026 version, and the source-currency sweep must check the
 same for any of these four model rules already cited elsewhere in the repo.
 
-**Belongs to:** the Marketing and Growth build, and the source-currency sweep (item 3).
+**Status: half done.** The Marketing and Growth build cited all four rules in their 5-4-2026
+versions, at `/wp-content/uploads/2026/05/` paths.
+
+The repo-wide half was also checked during that build, by grep across `content/` for each rule
+number. Two other pages already cite one of the four each, and **both are already the current
+5-4-2026 versions** — no repointing was needed:
+
+- [content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx)
+  cites 102(a)(4)-1 at the `/uploads/2026/05/` path.
+- [content/domains/records-and-documentation/index.mdx](content/domains/records-and-documentation/index.mdx)
+  cites 203(a)-2 at the `/uploads/2026/05/` path.
+
+Neither 502(b) nor 411(c)-1 is cited anywhere outside Marketing and Growth. The sweep half stays open
+only to confirm this remains true as further pages are added, and because the two citations above are
+themselves among the links never fetched (items 11 and 3).
+
+**Belongs to:** the Marketing and Growth build (done), and the source-currency sweep (item 3).
 
 ## 8. "Go deeper" links on the two newest area pages were not fetched — session egress blocked
 
@@ -221,7 +237,15 @@ each resolves and is the current version, and clear or replace any that fail.
 **Belongs to:** build order item 5 (source-currency sweep) — or sooner, if a session with network
 access to those domains comes up first. Best done in one pass together with item 8.
 
-## 12. Step 1's practitioner Callout ends mid-clause — fix in the Marketing and Growth build
+## 12. Step 1's practitioner Callout ends mid-clause — DONE
+
+**Status: done.** Fixed in the Marketing and Growth build, in the wording proposed below and
+confirmed by the owner in that prompt. The Callout on
+[content/process/decide-if-independence-fits/index.mdx](content/process/decide-if-independence-fits/index.mdx)
+now ends: "...and your written go or no-go decision, since later steps will ask you to revisit each
+of them." Nothing else in that file was touched. The original entry is kept below for the record.
+
+### Original entry
 
 The practitioner Callout on [content/process/decide-if-independence-fits/index.mdx](content/process/decide-if-independence-fits/index.mdx)
 ends: "Document the numbers you used for your runway estimate, the assumptions behind them, and
@@ -340,11 +364,69 @@ Both are visible in the table above and neither involves a stated number.
 Distinguishing these two is out of scope for the Marketing and Growth build and probably needs the
 finished set of nine.
 
-**What it needs:** run the test as designed on the Marketing and Growth build and record the count
-against this entry. Separately, at the consistency pass, re-read the closing sections of
+### Result: 1,823 words
+
+The test ran as designed on the Marketing and Growth build and the page came back at **1,823 words**
+— 528 above the previous high (Firm Economics, 1,295) and 523 above the soft ceiling. That is not
+either outcome the entry anticipated.
+
+What this rules out. The two stated numbers were the remaining removable anchors, and removing them
+did not produce a shorter page; it produced by a wide margin the longest one. So the stated range was
+not holding the pages *up* to 1,290 — it was holding them *down* to it. Every page in the table above
+was writing against a ceiling, and the ceiling was the binding constraint, not the floor and not the
+benchmarks. The "comes back well under — 900, 1,000" branch is dead, and so is the reading that the
+range was doing no work.
+
+What it does not rule out. The build-order ratchet and the genuine-subject-depth hypotheses both
+survive, and 1,823 does not separate them. The drafting agent reported that it did not estimate
+length while writing and did not consult the count until the page was finished, which is consistent
+with depth; but the page also has six Key ideas each running two to three paragraphs, which is a
+denser treatment than any earlier area page, and a ratchet would predict exactly that. One page
+cannot distinguish them.
+
+**The open judgment this creates.** Nobody has yet decided whether 1,823 words is a page that should
+be cut or a page that shows the ceiling is wrong. The prompt forbade adjusting the page toward any
+range after measuring, deliberately, so it shipped at 1,823 unedited. The build's own boundary check
+found no scope leakage — the length is density, not wandering — but "not scope creep" is not the same
+finding as "the right length for a phone." That judgment is deferred, unmade, to the consistency
+pass, together with the ratchet-versus-depth question, which now has a much larger data point to work
+from.
+
+**What it needs:** the result is recorded above. At the consistency pass, decide (a) whether the
+Marketing and Growth page should be cut and to what, (b) whether the 1,300 ceiling survives at all
+for area pages, and (c) ratchet versus depth, now with nine finished pages.
+
+Separately, at the consistency pass, re-read the closing sections of
 [content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx)
 and [content/domains/firm-economics/index.mdx](content/domains/firm-economics/index.mdx) and judge
 whether either reads slightly clipped at the end.
 
 **Belongs to:** the Marketing and Growth build (the test), and build order item 5 (the re-read and
 the ratchet-versus-depth question).
+
+## 14. "Go deeper" links on Marketing and Growth were not fetched — session egress blocked a third time
+
+Same failure mode as items 8 and 11, in a third consecutive session and on a fresh set of links. The
+session that built [content/domains/marketing-and-growth/index.mdx](content/domains/marketing-and-growth/index.mdx)
+had nasaa.org, ecfr.gov, sec.gov, and uscode.house.gov all answered 403 at CONNECT by the egress
+proxy — a policy denial, not a transient failure, so it was not retried. The `WebFetch` tool was
+blocked on the same domains. `WebSearch` worked, so all five citations were corroborated through
+search: exact URL, issuing body, rule number, and for each NASAA document the adoption-and-amendment
+line, confirmed against search results. None was fetched.
+
+Two of the five need no re-check. The owner cleared them in the build prompt: the NASAA 102(a)(4)-1
+5-4-2026 PDF, and NASAA 203(a)-2 5-4-2026. **Three remain unconfirmed:** NASAA 502(b) 5-4-2026,
+NASAA 411(c)-1 5-4-2026, and the eCFR codification of 17 CFR 275.206(4)-1. The two NASAA pair-rules
+are low risk — same upload directory, same amendment date, same package as the two already cleared —
+but low risk is not confirmed. All five are listed with their corroboration in the PR description for
+the branch that added the page.
+
+That this has now happened three sessions running is itself the finding. Every area page built since
+item 8 has shipped with unfetched citations, and the backlog is growing rather than clearing.
+
+**What it needs:** fetch the three remaining links from a session with egress to nasaa.org and
+ecfr.gov, confirm each resolves and is the current version, and clear or replace any that fail. Best
+done in one pass with items 8 and 11 — thirteen links across six pages now.
+
+**Belongs to:** build order item 5 (source-currency sweep), or sooner if a session with egress to
+those domains comes up.
