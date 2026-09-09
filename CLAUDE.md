@@ -240,7 +240,65 @@ Links to glossary terms from any page use the anchor form /glossary#term-id; a p
 ## Glossary running list
 Every term that any page links to /glossary. Add a term here when a new page links it. Future prompts reference this list instead of restating it.
 
-(none yet)
+- Advertisement — `advertisement`
+- Advisers Act — `advisers-act`
+- Annual updating amendment — `annual-updating-amendment`
+- Brochure supplement — `brochure-supplement`
+- Broker-dealer — `broker-dealer`
+- Buffer on either side of the SEC line — `buffer-on-either-side-of-the-sec-line`
+- Business continuity and succession plan — `business-continuity-and-succession-plan`
+- Chief compliance officer — `chief-compliance-officer`
+- Claims-made policy — `claims-made-policy`
+- Code of ethics — `code-of-ethics`
+- Compliance program review — `compliance-program-review`
+- CRD — `crd`
+- Custody — `custody`
+- Deficiency letter — `deficiency-letter`
+- Discretionary authority — `discretionary-authority`
+- Disqualified person — `disqualified-person`
+- Endorsement — `endorsement`
+- Entitlement — `entitlement`
+- Errors and omissions coverage — `errors-and-omissions-coverage`
+- Examination — `examination`
+- Fiduciary duty — `fiduciary-duty`
+- FINRA — `finra`
+- Firm brochure — `firm-brochure`
+- Form ADV — `form-adv`
+- Form ADV Part 1B — `form-adv-part-1b`
+- Form CRS — `form-crs`
+- Form U4 — `form-u4`
+- Form U5 — `form-u5`
+- Hypothetical performance — `hypothetical-performance`
+- IARD — `iard`
+- Independent verification — `independent-verification`
+- Investment adviser representative — `investment-adviser-representative`
+- Mid-sized adviser band — `mid-sized-adviser-band`
+- Minimum net worth — `minimum-net-worth`
+- Model rule — `model-rule`
+- Multi-state exception — `multi-state-exception`
+- NASAA — `nasaa`
+- Notice filing — `notice-filing`
+- Other-than-annual amendment — `other-than-annual-amendment`
+- Plain English — `plain-english`
+- Professional designation — `professional-designation`
+- Qualified custodian — `qualified-custodian`
+- Qualifying examination — `qualifying-examination`
+- Recordkeeping scheme — `recordkeeping`
+- Recruiting protocol — `recruiting-protocol`
+- Registered investment adviser — `registered-investment-adviser`
+- Regulatory assets under management — `regulatory-assets-under-management`
+- Renewal window — `renewal-window`
+- Restrictive covenant — `restrictive-covenant`
+- Retention period — `retention-period`
+- Retroactive date — `retroactive-date`
+- SEC-registered adviser — `sec-registered-adviser`
+- Securities and Exchange Commission — `securities-and-exchange-commission`
+- Standardized account transfer — `standardized-account-transfer`
+- State-registered adviser — `state-registered-adviser`
+- Supervision — `supervision`
+- Surety bond — `surety-bond`
+- Testimonial — `testimonial`
+- Uniform Securities Act — `uniform-securities-act`
 
 ## Working notes on editing this file
 When editing a numbered list in this file, scope the edit to the list block itself, never to a line range or "every line after line N". A line-scoped renumbering in the step 7 branch silently incremented the first numbered line in five unrelated lists (Structure, the 12 steps, the 9 areas, the area page skeleton, and the step page template) before it was caught and reverted.
