@@ -230,6 +230,8 @@ A reusable callout for the places where the SEC-registered path diverges from th
 - Never delete or rewrite existing content pages unless the prompt names the file.
 - End every task with a "Report" section: what was created or changed (file paths), anything marked [VERIFY], anything you were unsure about, and the exact command to view the result.
 - Do only what the current prompt asks. Do not act on your own follow-up suggestions, and do not edit files outside the scope of the prompt, even to fix something you notice. List anything you would have done under a "Suggested follow-ups" heading at the end of your report and in the PR description, and leave it there.
+- Never wrap a URL in backticks in a PR description — not in a URL list, not inside link parentheses, not in prose. Inline code is for file paths and commands only. Backticks around a URL have silently corrupted hrefs in these descriptions.
+- After writing a PR description, read it back and confirm that no backtick sits adjacent to "http" anywhere in it.
 
 ## Glossary
 One page at /glossary, alphabetical. Every term is an H3 with an explicit id: `### Term [#term-id]`. The id is the term in lowercase, spaces and slashes replaced with hyphens, all other punctuation dropped, no leading or trailing hyphens. Definitions are 1 to 3 sentences with no regulated figures; where a term turns on one, link the matching section of /tools/this-years-figures by anchor. Same-page cross-references (`[other term](#other-term-id)`) are allowed sparingly.
