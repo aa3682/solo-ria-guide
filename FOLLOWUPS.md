@@ -6,7 +6,25 @@ later pass. This file is maintained going forward as part of every build session
 append new deferrals here as they come up instead of leaving them stranded in a PR
 description.
 
-## 1. Convert "Which practice areas apply" bullets from bold text to links
+## 1. Convert "Which practice areas apply" bullets from bold text to links — DONE
+
+**Status: done.** Fixed in PR #24, once the ninth area page had merged. Five step pages still
+carried bold practice-area references at that point —
+[file-and-get-approved](content/process/file-and-get-approved/index.mdx),
+[leave-and-transition-clients](content/process/leave-and-transition-clients/index.mdx),
+[set-up-custody-and-technology](content/process/set-up-custody-and-technology/index.mdx),
+[stay-registered-and-compliant](content/process/stay-registered-and-compliant/index.mdx), and
+[write-the-policies](content/process/write-the-policies/index.mdx) — and all five were converted in
+one pass. No step page carries a bold practice-area reference now. GitHub issue #18 is closed — the
+owner had already closed it before this pass, and it was confirmed closed here rather than reopened.
+
+**Correction to the original entry below.** It states that all 12 step pages used bold text. That
+was never true. Seven of the twelve were already fully linked when PR #24 ran, and only five carried
+bold references: 18 bullets, not 36. The "all 12" framing overstated the size of the job by more than
+half, and a future reader should not inherit it. The rest of the original entry — in particular the
+instruction never to convert piecemeal — was followed as written.
+
+### Original entry
 
 On all 12 step pages, the bullets under "Which practice areas apply" that reference a
 practice area without an existing page use bold text (`**Area Name**`) instead of a
@@ -186,7 +204,15 @@ business continuity, or succession should cite the 2020 consolidated rule.
 
 **Belongs to:** the source-currency sweep (item 3).
 
-## 10. content/domains/_meta.js is ordered by build order, not by the canonical area order
+## 10. content/domains/_meta.js is ordered by build order, not by the canonical area order — DONE
+
+**Status: done.** Fixed in PR #24, in the same pass as item 1 and for the same reason: all nine area
+pages had merged, so the whole file could be reordered at once rather than piecemeal.
+`content/domains/_meta.js` now lists the nine areas in the canonical order given in CLAUDE.md, so the
+sidebar and the [/domains](content/domains/index.mdx) index page agree. The original entry is kept
+below for the record.
+
+### Original entry
 
 The sidebar order for the practice areas comes from `content/domains/_meta.js`, which has
 been appended to as each page merged. The result is build order (Service and Pricing,
@@ -430,3 +456,75 @@ done in one pass with items 8 and 11 — thirteen links across six pages now.
 
 **Belongs to:** build order item 5 (source-currency sweep), or sooner if a session with egress to
 those domains comes up.
+
+## 15. PR #25 findings 6(a) through 6(e): regulated figures described without deferring — DONE
+
+**Status: done.** All five were repaired in the figures-page repair pass, together with the unlinked
+deferral in PR #25's finding 4(c). Recorded here in full so the findings survive their PR
+description, and because two of them left a loose end that is not closed (below).
+
+The five, and what each became:
+
+- **6(a) — [file-and-get-approved](content/process/file-and-get-approved/index.mdx), SEC-path
+  callout.** Two statutory day counts were printed in the body: the period the statute gives the
+  Commission after filing, and how long instituted proceedings may run. This was the only place in
+  `content/` where a regulated figure appeared as an actual number, and so the only unambiguous Hard
+  rule 5 violation. Both are now named in plain language and deferred.
+- **6(b) — notice filing fees, and the level of business that triggers a notice filing.** Described
+  on [file-and-get-approved](content/process/file-and-get-approved/index.mdx),
+  [stay-registered-and-compliant](content/process/stay-registered-and-compliant/index.mdx), and
+  [firm-economics](content/domains/firm-economics/index.mdx) with no deferral on any of the three.
+  All three sentences sit in SEC-path callouts, which is the likely reason the deferral habit skipped
+  them — a pattern worth watching, since SEC-path content gets less traffic through every convention.
+  Each now defers, in wording fitted to its own sentence rather than made uniform across the three.
+- **6(c) — [stay-registered-and-compliant](content/process/stay-registered-and-compliant/index.mdx),
+  the renewal window.** Named with no deferral. It now defers, and the renewal fee named in the same
+  passage rides on the same link — see the note below.
+- **6(d) — [risk-and-insurance](content/domains/risk-and-insurance/index.mdx), the net worth
+  reporting deadline.** Named only as "a short deadline," and not covered by the deferral in the
+  sentence before it. It now defers.
+- **6(e) — [compliance-and-supervision](content/domains/compliance-and-supervision/index.mdx), the
+  compliance review frequency.** Named with no deferral. It now defers. The federal interval was also
+  spelled out in one of that page's "Go deeper" link descriptions; the description now reads "a
+  periodic review of its adequacy and effectiveness," with the URL untouched. This page had no
+  figures at all before, so it gains its own section in FIGURES-INVENTORY.md.
+
+**On the renewal fee in 6(c).** The fee was already inventoried as a figure deferred from
+`firm-economics`, so it was not itself a rule 5 gap. It was covered anyway: the fee is named in plain
+language on `stay-registered-and-compliant` with no route from that page to the figures page, and the
+window's new link sits in the same passage, so one sentence carries both. Recorded because it was a
+judgment call rather than something the prompt required.
+
+### Left open: two step pages now exceed the hard 900–1,300 word range
+
+The repairs add words and remove none, and four of the six pages were already within a few words of
+1,300 before this pass:
+
+| Page | Before | After | Ceiling |
+| --- | --- | --- | --- |
+| `content/process/stay-registered-and-compliant/index.mdx` | 1,299 | 1,325 | 1,300, hard |
+| `content/process/file-and-get-approved/index.mdx` | 1,290 | 1,316 | 1,300, hard |
+| `content/domains/firm-economics/index.mdx` | 1,295 | 1,312 | 1,300, soft |
+| `content/domains/risk-and-insurance/index.mdx` | 1,298 | 1,307 | 1,300, soft |
+| `content/domains/compliance-and-supervision/index.mdx` | 1,139 | 1,150 | 1,300, soft |
+| `content/process/write-the-disclosure-documents/index.mdx` | 1,297 | 1,297 | 1,300, hard |
+
+Nothing was cut to get any of them back under. The repair prompt forbade rewriting beyond the
+sentence each fix sits in, and CLAUDE.md's own area-page rule says to compress for redundancy and
+never for the count. Both point the same way: shipping two step pages over a hard limit is the
+smaller error, and it is visible here rather than silent.
+
+The two area pages need only the soft-ceiling statement, and the cause is neither of the two the rule
+contemplates: it is not density and it is not scope leakage, it is a required deferral added to a
+page that was already at the line. That is a third cause the ceiling rule does not have a slot for.
+
+**What it needs:** a decision on the two step pages — accept the overrun, or authorise a trim pass
+with permission to edit sentences the repair prompt put out of bounds. Both step pages carry
+redundancy that the new deferrals make more visible: `file-and-get-approved` now defers the same
+class of fee twice within ten lines, once under "Pay what is owed" and once in the callout below it.
+A trim would have somewhere obvious to start. Also worth deciding whether the soft-ceiling rule
+should name a third valid cause, since this one will recur every time a repair pass adds a deferral
+to a page near the line.
+
+**Belongs to:** build order item 5 (the consistency pass), or sooner if the owner wants the step
+pages back in range before the figures page is built.
