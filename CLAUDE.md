@@ -138,7 +138,7 @@ Area page skeleton:
 8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
 
 Conventions for area and worksheet pages:
-- 700–1,000 words. Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded.
+- Area pages: 900–1,300 words. Worksheet pages: 700–1,000 words (see Worksheet page below). Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded.
 - Measure with pnpm wordcount <path>.
 - Second person, plain English. No jargon without a one-line explanation.
 - Headings are plain nouns or short questions. H2 for the numbered sections above, H3 within them.
@@ -158,7 +158,7 @@ Four rules specific to area pages, on top of the area skeleton and conventions a
 
 1. An area page says how to think about a subject over time. It is standing subject matter that never finishes. It does not walk a sequence, and it does not restate what a step page already covers — link to the step instead of re-explaining it.
 2. The page assumes the firm exists but does NOT assume the reader has worked through the 12 steps. It must be readable cold by someone who arrived from search. Never write "as you decided in Step 3" or any phrasing that depends on the reader having read the sequence.
-3. Near the top, right after the opening paragraph, add one short fixed section headed "Where this starts in the process" that links the two or three steps whose decisions this area then governs. Do not also add a related-steps list at the bottom of the page. Inline links to steps are still allowed on first mention elsewhere in the page.
+3. Near the top, right after the opening paragraph, add one short fixed section headed "Where this starts in the process" that links the two or three steps whose decisions this area then governs. These are the originating steps — the ones that produce a decision or artifact this area then carries forward — not every step that links to this area; a step that only consumes or formalizes what the area governs is downstream and does not belong here. Cap the section at three links; fewer is fine. Do not also add a related-steps list at the bottom of the page. Inline links to steps are still allowed on first mention elsewhere in the page.
 4. The recurring unnamed hypothetical ("the adviser") appears here too, but in present-tense standing situations rather than at a point in the sequence. Write "the adviser reprices annually and finds..." not "by this stage the adviser has...". No new named examples.
 
 With rule 3 applied, an area page's running order is: frontmatter, H1, opening paragraph, "Where this starts in the process," "Key ideas," "Common misconceptions," "For practitioners," "Go deeper."
