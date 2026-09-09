@@ -131,8 +131,8 @@ Area page skeleton:
 1. Frontmatter with `title` and `description`.
 2. H1 matching the frontmatter title.
 3. Opening paragraph, no heading.
-4. "Key ideas" — 4–7 H3 subsections, one concept each.
-5. "Where it shows up in the process" — links to the relevant step pages.
+4. "Where this starts in the process" — a short fixed section, right after the opening, linking the two or three steps whose decisions this area then governs. See the Area page conventions section below for the full rule.
+5. "Key ideas" — 4–7 H3 subsections, one concept each.
 6. "Common misconceptions"
 7. "For practitioners" — a Callout, same treatment as above.
 8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
@@ -158,7 +158,7 @@ Four rules specific to area pages, on top of the area skeleton and conventions a
 
 1. An area page says how to think about a subject over time. It is standing subject matter that never finishes. It does not walk a sequence, and it does not restate what a step page already covers — link to the step instead of re-explaining it.
 2. The page assumes the firm exists but does NOT assume the reader has worked through the 12 steps. It must be readable cold by someone who arrived from search. Never write "as you decided in Step 3" or any phrasing that depends on the reader having read the sequence.
-3. Near the top, right after the opening paragraph, add one short fixed section headed "Where this starts in the process" that links the two or three steps whose decisions this area then governs. This section replaces item 5 of the area skeleton above ("Where it shows up in the process") — do not include both, and do not also add a related-steps list at the bottom of the page. Inline links to steps are still allowed on first mention elsewhere in the page.
+3. Near the top, right after the opening paragraph, add one short fixed section headed "Where this starts in the process" that links the two or three steps whose decisions this area then governs. Do not also add a related-steps list at the bottom of the page. Inline links to steps are still allowed on first mention elsewhere in the page.
 4. The recurring unnamed hypothetical ("the adviser") appears here too, but in present-tense standing situations rather than at a point in the sequence. Write "the adviser reprices annually and finds..." not "by this stage the adviser has...". No new named examples.
 
 With rule 3 applied, an area page's running order is: frontmatter, H1, opening paragraph, "Where this starts in the process," "Key ideas," "Common misconceptions," "For practitioners," "Go deeper."
