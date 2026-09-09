@@ -4,7 +4,7 @@ What `/tools/this-years-figures` has to hold, derived by reading every place in 
 that defers a figure to it. This is a list of requirements, not a draft of the page: it
 carries no values, no years, and no URLs.
 
-**Counts:** 34 distinct figures, 29 deferral sites, 16 pages that defer at least once.
+**Counts:** 41 distinct figures, 37 deferral sites, 17 pages that defer at least once.
 There are more figures than deferral sites because several sentences defer two or three
 figures at once.
 
@@ -63,7 +63,7 @@ as one figure here, but it will need three or four rows on the page.
 | The delivery deadlines for the client relationship summary (Form CRS) | SEC rule — stated inside the page's SEC-path callout | Federal | `content/process/write-the-disclosure-documents/index.mdx` |
 | How far ahead of signing the advisory agreement the brochure and supplement must reach a prospective client | State rule — the page says state rules set it | State | `content/process/write-the-disclosure-documents/index.mdx` |
 | The window in which a client may terminate without penalty, where a state allows delivery at signing instead | State rule — the page attributes it to the same state rules | State | `content/process/write-the-disclosure-documents/index.mdx` |
-| The yearly deadline for delivering the current brochure, or a summary of material changes with an offer of the full document, to existing clients | Rule — the page says "set by rule" without naming which | Both | `content/process/write-the-disclosure-documents/index.mdx` (prose reference, no link — see report item 4) |
+| The yearly deadline for delivering the current brochure, or a summary of material changes with an offer of the full document, to existing clients | Rule — the page says "set by rule" without naming which | Both | `content/process/write-the-disclosure-documents/index.mdx` |
 | The deadline for the annual updating amendment, running from the firm's fiscal year end | Rule — the page ties the deadline to the registration form's annual cycle | Both | `content/process/write-the-disclosure-documents/index.mdx`, `content/process/stay-registered-and-compliant/index.mdx` |
 
 ## Step 8 — Write the Policies
@@ -79,6 +79,10 @@ as one figure here, but it will need three or four rows on the page.
 | --- | --- | --- | --- |
 | The system fee charged for the filing itself by the electronic system advisers file through | The system operator — the page names FINRA as operating it on the regulators' behalf | Both | `content/process/file-and-get-approved/index.mdx`, `content/domains/firm-economics/index.mdx` |
 | The registration fee the regulator charges for the firm's initial registration | The regulator — the page says amounts are set by the system operator and by regulators | State | `content/process/file-and-get-approved/index.mdx`, `content/domains/firm-economics/index.mdx` |
+| The period the statute gives the Commission, from filing, to grant the registration by order or institute proceedings to deny it | Statute — the page points at Advisers Act section 203(c) | Federal | `content/process/file-and-get-approved/index.mdx` |
+| The period instituted proceedings may run before they must be resolved, which can be extended | Statute — same citation, same SEC-path callout | Federal | `content/process/file-and-get-approved/index.mdx` |
+| The notice filing fee a state charges an adviser the SEC registers | Each state — reached only on the SEC path, and all three deferring sentences are SEC-path callouts | Federal | `content/process/file-and-get-approved/index.mdx`, `content/process/stay-registered-and-compliant/index.mdx`, `content/domains/firm-economics/index.mdx` |
+| The level of business in a state that makes a notice filing required there | State rule — the pages say only that it takes "enough business" or business "large enough to require one" | Federal | `content/process/file-and-get-approved/index.mdx`, `content/process/stay-registered-and-compliant/index.mdx`, `content/domains/firm-economics/index.mdx` |
 
 ## Step 10 — Set Up Custody and Technology
 
@@ -95,6 +99,13 @@ as one figure here, but it will need three or four rows on the page.
 | How long the prior firm has to file the form documenting a representative's departure | Not attributed on the page beyond it being a required filing | Both | `content/process/leave-and-transition-clients/index.mdx` |
 | The window in which a standardized account transfer must complete once both institutions confirm the request | Not attributed on the page beyond "must complete within a set window" | Both | `content/process/leave-and-transition-clients/index.mdx` |
 
+## Step 12 — Stay Registered and Compliant
+
+| Figure | What sets it | Path | Pages that defer to it |
+| --- | --- | --- | --- |
+| The window in which the yearly registration renewal has to be completed | The regulator — the page says the renewal notice comes once a year through the electronic filing system | State | `content/process/stay-registered-and-compliant/index.mdx` |
+| The yearly registration renewal fee owed to the regulator | The regulator — Firm Economics says the recurring amounts are set by the system operator and by regulators | State | `content/process/stay-registered-and-compliant/index.mdx`, `content/domains/firm-economics/index.mdx` |
+
 ## Practice area — Technology and Client Experience
 
 | Figure | What sets it | Path | Pages that defer to it |
@@ -110,11 +121,11 @@ as one figure here, but it will need three or four rows on the page.
 | The periods of performance that must be shown when a firm advertises results | Rule — the page says "set by rule" | Both | `content/domains/marketing-and-growth/index.mdx` |
 | The treatment required for hypothetical performance figures | Rule, same sentence | Both | `content/domains/marketing-and-growth/index.mdx` |
 
-## Practice area — Firm Economics
+## Practice area — Compliance and Supervision
 
 | Figure | What sets it | Path | Pages that defer to it |
 | --- | --- | --- | --- |
-| The yearly registration renewal fee owed to the regulator | The regulator — the page says the recurring amounts are set by the system operator and by regulators | State | `content/domains/firm-economics/index.mdx` |
+| How often the firm has to review whether its compliance program is working | Rule — the page names SEC Rule 206(4)-7 as the federal source, says a state-registered adviser's equivalent comes from state rule instead, and says the required frequency can differ | Both | `content/domains/compliance-and-supervision/index.mdx` |
 
 ## Practice area — Risk and Insurance
 
@@ -123,13 +134,17 @@ as one figure here, but it will need three or four rows on the page.
 | The minimum net worth a state-registered adviser must maintain | State — the page says the amounts are set state by state | State | `content/domains/risk-and-insurance/index.mdx` |
 | The amount of the surety bond a state requires | State, same sentence | State | `content/domains/risk-and-insurance/index.mdx` |
 | The triggers that make a net worth minimum or a bond apply at all — custody of client assets, discretionary authority, or fees paid substantially in advance | State, same sentence | State | `content/domains/risk-and-insurance/index.mdx` |
+| The deadline for reporting that the firm has fallen below a required net worth | State — the page calls it a short deadline and names NASAA's minimum financial requirements model rule as what states draw on for the notice | State | `content/domains/risk-and-insurance/index.mdx` |
 
 ---
 
 ## Sections with no figures
 
 No page under these defers a figure to `/tools/this-years-figures`: Step 2 (Design the Firm),
-Step 3 (Set Your Advice Approach), Step 12 (Stay Registered and Compliant — it defers only
-figures already filed under Steps 7 and 8), and the practice areas Service and Pricing Models,
-Advice and Planning Process, Client Education, Compliance and Supervision, and Records and
-Documentation (which defers only the retention periods filed under Step 8).
+Step 3 (Set Your Advice Approach), and the practice areas Service and Pricing Models, Advice and
+Planning Process, and Client Education.
+
+Two further sections are omitted above because every figure they defer is filed earlier: Records
+and Documentation (the retention periods, filed under Step 8) and Firm Economics (the filing-system
+fee, the firm registration fee, the notice filing fee, and the notice filing threshold, all filed
+under Step 9; and the yearly renewal fee, filed under Step 12).
