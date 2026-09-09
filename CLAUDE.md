@@ -6,7 +6,7 @@ An open, public reference site on establishing and running an independent regist
 Audience: primary — someone who already works in the industry, most often at a broker-dealer or a larger advisory firm, and is thinking about going independent. Secondary — anyone broader trying to decide whether the independent model fits them at all, before they take any concrete step. Write for a smart adult with no background in the subject; add practitioner depth in clearly marked subsections rather than separate pages.
 
 ## Default scenario
-The guide's default reader is a state-registered adviser: assets under management fall under the threshold that would require SEC registration instead. See [This year's figures](/tools/this-years-figures) for the current AUM threshold, once that page is built. Where the SEC-registered path works differently, the relevant page says so and flags the divergence rather than silently assuming state registration throughout.
+The guide's default reader is a state-registered adviser: assets under management fall under the threshold that would require SEC registration instead. See [This year's figures](/tools/this-years-figures) for the current AUM threshold. Where the SEC-registered path works differently, the relevant page says so and flags the divergence rather than silently assuming state registration throughout.
 
 ## Sourcing
 Public primary sources only:
@@ -28,7 +28,7 @@ A link that loads is not necessarily a link that is current. Liveness checks cat
 - For any dated document cited, the build report must state which version is current, and must flag any cited document that has a known successor even where the URL still resolves.
 
 ## Hard rules
-1. No custodian, compliance-software vendor, E&O insurer, or consultant names anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. Vendors are named only on /tools/this-years-figures, once it is built for real; nothing commercial is linked anywhere on the site, and there are no affiliate links. Describe vendor categories generically instead (for example, "a qualified custodian").
+1. No custodian, compliance-software vendor, E&O insurer, or consultant names anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. Vendors are named only on /tools/this-years-figures, which as built names none; nothing commercial is linked anywhere on the site, and there are no affiliate links. Describe vendor categories generically instead (for example, "a qualified custodian").
 2. Statutes, agencies, and uniform regulatory forms (Form ADV, Form U4) are primary-source vocabulary and may be named; the vendor-name rule covers commercial parties only. Exam identifiers and designation names remain regulated figures and belong on /tools/this-years-figures.
 3. All content is original writing. See Sourcing above for where facts come from; cite a public primary source with a link whenever a fact needs support.
 4. Content is educational, not individualized advice. See Disclaimer below for exactly where the disclaimer text appears and where it does not.
@@ -43,7 +43,7 @@ The standard disclaimer, verbatim:
 
 > This guide is educational material about how independent advisory firms are established and run. It is not legal, compliance, tax, or investment advice, and it does not create an advisory or professional relationship. Registration requirements vary by state and change over time. Verify anything here against the current rules of your regulator, and get your own counsel before acting.
 
-It appears in a Callout on the four section landing pages — introduction, process, domains, tools — and, once that page is built for real, on /tools/this-years-figures. It is never repeated on step, area, glossary, or about pages.
+It appears in a Callout on the four section landing pages — introduction, process, domains, tools — and on /tools/this-years-figures. It is never repeated on step, area, glossary, or about pages.
 
 ## Attribution and license
 - The guide is published under the project name The Independent Path, not a personal name. No personal name, employer, credential, or license appears anywhere in the repo, on pages or in metadata.
@@ -90,7 +90,7 @@ In order:
 9. Risk and Insurance — `risk-and-insurance`
 
 ### Sidebar labels
-Sidebar labels are shortened for phone reading and deliberately do not match the page titles above. Because Nextra 4 rejects `_meta.js` keys with no matching page, add a label to `content/process/_meta.js` or `content/domains/_meta.js` only in the same PR that adds its page — not before. Neither file currently exists (an empty `export default {}` breaks the Nextra 4 build with a prerender error): the PR that adds the first real step or area page must create the file fresh with just that page's entry.
+Sidebar labels are shortened for phone reading and deliberately do not match the page titles above. Because Nextra 4 rejects `_meta.js` keys with no matching page, add a label to `content/process/_meta.js` or `content/domains/_meta.js` only in the same PR that adds its page — not before. Both files exist and carry all twelve steps and all nine areas. A PR that adds a page adds that page's entry to the existing file. Never leave either file with an empty `export default {}` — Nextra 4 fails the build with a prerender error.
 
 Steps, page title → sidebar label:
 - Decide If Independence Fits → Is It For You
@@ -214,15 +214,16 @@ Step-page rules:
 - Second person, plain English, educational rather than advisory.
 - Steps link to the practice areas that apply rather than restating them.
 - Steps link forward to later steps rather than explaining their subject matter in place.
+- Mirroring runs both ways. Where an area page's "Where this starts in the process" names a step as originating, that step's "Which practice areas apply" lists that area. Area convention 3 governs the reverse direction, where a step may link an area that does not name the step back.
 
-### SEC-path callout
-A reusable callout for the places where the SEC-registered path diverges from the guide's default state-registered scenario.
+## SEC-path callout
+A reusable callout for the places where the SEC-registered path diverges from the guide's default state-registered scenario. It applies to step pages and area pages alike; it is not part of either skeleton, because it goes wherever the divergence falls.
 - Component: `<Callout type="warning">`.
 - First words, identical every time: "If you are on the SEC path:"
 - One to three sentences stating only how the SEC path differs at that point. It does not explain the SEC path in full.
 - Placed inline at the point in the page where the divergence occurs, not collected at the end.
 - Used only where the paths actually diverge. A page with no divergence has no SEC-path callout.
-- Distinct from the practitioner `<Callout type="info">` at the end of every step page, which stays as it is.
+- Distinct from the practitioner `<Callout type="info">` at the end of every step page and every area page, which stays as it is.
 
 ## How to work
 - Do exactly what the prompt asks. Do not add sections, pages, or features that were not requested.
@@ -234,7 +235,7 @@ A reusable callout for the places where the SEC-registered path diverges from th
 - After posting a PR description, fetch the stored body back from GitHub and compare it against the text that was sent. Proofreading the outgoing text does not catch this — the corruption happens after the text is handed over, so only the stored copy shows it.
 
 ## Glossary
-One page at /glossary, alphabetical. Every term is an H3 with an explicit id: `### Term [#term-id]`. The id is the term in lowercase, spaces and slashes replaced with hyphens, all other punctuation dropped, no leading or trailing hyphens. Definitions are 1 to 3 sentences with no regulated figures; where a term turns on one, link the matching section of /tools/this-years-figures by anchor. Same-page cross-references (`[other term](#other-term-id)`) are allowed sparingly.
+One page at /glossary, alphabetical. Every term is an H3 with an explicit id: `### Term [#term-id]`. The id is the term in lowercase, spaces and slashes replaced with hyphens, all other punctuation dropped, no leading or trailing hyphens. Definitions are 2 to 4 sentences with no regulated figures; where a term turns on one, link the matching section of /tools/this-years-figures by anchor. Same-page cross-references (`[other term](#other-term-id)`) are allowed sparingly.
 Links to glossary terms from any page use the anchor form /glossary#term-id; a plural link text maps to the singular term's id.
 
 ## Glossary running list
