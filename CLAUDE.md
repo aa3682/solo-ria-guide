@@ -21,6 +21,12 @@ Public primary sources only:
 
 Use these for "Go deeper" links on area pages and for any fact that needs support elsewhere. All prose is original writing — no verbatim or lightly paraphrased text from statutes, regulations, courses, or vendor material.
 
+## Source currency
+A link that loads is not necessarily a link that is current. Liveness checks catch dead URLs, not superseded rules.
+- Where the same authority publishes both a continuously updated codification and a dated snapshot, cite the codification: eCFR over a dated CFR PDF, a regulator's current consolidated rule over a superseded predecessor still hosted beside it.
+- This preference applies only between versions of the same governing authority. Never change which authority a claim rests on in order to get a better source type. Many claims in this guide rest on state securities regulators, NASAA model rules, IARD/CRD fee schedules, and state entity-formation and insurance resources, none of which publish continuously updated codifications. Where the governing authority publishes only dated snapshots, a dated snapshot is the correct citation.
+- For any dated document cited, the build report must state which version is current, and must flag any cited document that has a known successor even where the URL still resolves.
+
 ## Hard rules
 1. No custodian, compliance-software vendor, E&O insurer, or consultant names anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. Vendors are named only on /tools/this-years-figures, once it is built for real; nothing commercial is linked anywhere on the site, and there are no affiliate links. Describe vendor categories generically instead (for example, "a qualified custodian").
 2. Statutes, agencies, and uniform regulatory forms (Form ADV, Form U4) are primary-source vocabulary and may be named; the vendor-name rule covers commercial parties only. Exam identifiers and designation names remain regulated figures and belong on /tools/this-years-figures.
