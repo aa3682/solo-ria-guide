@@ -9,5 +9,6 @@ export default {
   'write-the-policies': 'Policies',
   'file-and-get-approved': 'File and Approval',
   'set-up-custody-and-technology': 'Custody and Tech',
-  'leave-and-transition-clients': 'Leave and Transition'
+  'leave-and-transition-clients': 'Leave and Transition',
+  'stay-registered-and-compliant': 'Stay Compliant'
 }
