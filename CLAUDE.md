@@ -251,6 +251,7 @@ Every term that any page links to /glossary. Add a term here when a new page lin
 - Claims-made policy — `claims-made-policy`
 - Code of ethics — `code-of-ethics`
 - Compliance program review — `compliance-program-review`
+- Conflict of interest — `conflict-of-interest`
 - CRD — `crd`
 - Custody — `custody`
 - Deficiency letter — `deficiency-letter`
