@@ -129,6 +129,52 @@ Areas, page title → sidebar label:
 - Use Nextra callouts sparingly: one "Note" or "Warning" per page at most, except SEC-path callouts, which are exempt from that cap. The SEC-path callout's own rule — used only where the paths actually diverge — is what limits how many a page carries.
 - Tables for comparisons; bullet lists for steps; prose for explanation.
 
+## Word count basis
+The governing statement of what the word count counts. The area and step templates below set the numbers; this section sets the basis they are measured on. Measure with `pnpm wordcount <path>`, which implements this section exactly.
+
+### What the count counts
+The ceiling counts only what the writer chose to write at length. Content mandated by another rule in this file does not count against it.
+
+Excluded:
+- YAML frontmatter, import statements, JSX/component tags and their attributes, HTML comments
+- Markdown link URLs. Visible link text counts wherever the surrounding text counts
+- All heading text, at every level
+- All table content
+- The "Related" lists and the area-page "Go deeper" lists, including their headings
+- SEC-path callouts — the fixed-pattern callout opening "If you are on the SEC path:"
+- The standard educational-content disclaimer
+- The one-sentence line under the fixed "## Next step" heading at the end of a step page
+
+Counted:
+- Body prose
+- Cross-link bullets that sit in body prose rather than under a "Related" or "Go deeper" heading, such as the "Which practice areas apply" list on a step page
+- Worked examples
+- Every callout that is not an SEC-path callout or the standard disclaimer, including the "For practitioners" callout
+
+The "Next step" exclusion is bounded: it applies only to a single sentence under that exact heading at the end of the page. Anything longer there is authored prose and counts.
+
+### The ceilings
+- Step pages: hard range 900–1,300 words.
+- Area pages: soft ceiling 1,300 words. No floor.
+- Worksheet pages: 700–1,000 words.
+
+### Routing comes before length
+A mandated cross-link belongs in the "Related" or "Go deeper" list unless the pointer must sit inside a sentence to make sense. Check routing first, before reaching for any length remedy, and recount the page after routing. A page that is over only because a pointer sits in prose that could have been a list entry is a routing problem, not a length problem.
+
+### When a page is outside its bounds
+A page outside its bounds records, in the PR description: the measured count, which bound it misses, the result of the routing check, what was attempted and rejected, and the disposition. The record must name what was tried, not only why the page is long. Then:
+
+- An area page over the soft ceiling may merge on that record.
+- A step page outside the hard range, over or under, may not merge on the record alone. It merges after a trim or a routing fix, or after an explicit ruling from the owner, which is recorded the same way.
+- Padding to clear the 900 floor is not a remedy. A step page still short after the routing check is a candidate for a ruling, not for filler.
+
+Compress for redundancy, never for the count. Removing a restatement or a scene-setting opener improves a page; squeezing clauses together to hit a number makes it worse to read on a phone, which is the opposite of what the ceiling is for.
+
+The record lives in the PR description. There is no running decisions file, and none should be created.
+
+### Recorded exceptions
+- **Marketing and Growth** (`content/domains/marketing-and-growth/index.mdx`) stands at approximately 1,758 words on this basis, over the soft ceiling, and is accepted rather than trimmed or split. Marketing carries more regulated surface than any other practice area; the overage is subject breadth, not density or scope leakage. Six H3 subsections is the modal count for an area page, so the page is not structurally two pages sharing a file. The phone read-through found it sound. Do not trim or split this page to the ceiling without a fresh ruling.
+
 ## Page templates
 One fixed skeleton. Every page under domains/ (the practice areas) uses the area skeleton below. Write the sections in the order given; do not add, remove, or reorder them.
 Every practice-area page lives at `content/domains/<slug>/index.mdx`, one folder per page. The step-page skeleton is not here — it is documented on its own, in full, in "## Step page template" below.
@@ -144,17 +190,10 @@ Area page skeleton:
 8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
 
 Conventions for area and worksheet pages:
-- Area pages: 700–1,300 words. Worksheet pages: 700–1,000 words (see Worksheet page below). Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded. The floor is a floor, not a target. An area page that has said everything it has to say ends there. Do not add a section in order to clear it, and do not cite the range as the reason for including anything.
-- The 1,300-word ceiling is a review trigger, not a hard limit. An area page may exceed it, but the build report must then state the cause, and only one cause is valid.
-
-  Density: the subject has strands that genuinely do not collapse into each other, and the page stays entirely inside its own boundaries. Valid. Ship it long.
-
-  Scope: the page ran long because it wandered into a neighboring area or restated step content. Not valid. Cut back to the boundary rather than compressing prose to fit the number.
-
-  Compress for redundancy, never for the count. Removing a restatement or a scene-setting opener improves a page; squeezing clauses together to hit a number makes it worse to read on a phone, which is the opposite of what the ceiling is for.
+- Area pages: soft ceiling of 1,300 words, no floor. Worksheet pages: 700–1,000 words (see Worksheet page below). What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`. An area page that has said everything it has to say ends there. Do not add a section in order to clear a number, and do not cite the ceiling as the reason for including anything.
+- The 1,300-word ceiling is a review trigger, not a hard limit. An area page may exceed it. Run the routing check first, then record the overage as "When a page is outside its bounds" above requires — the measured count, the routing result, what was attempted and rejected, and the disposition. There is no closed list of acceptable causes; state the actual one.
 
   This soft ceiling applies to area pages only. Step pages keep the hard 900–1,300 range in "Step page template" below, and worksheet pages keep 700–1,000.
-- Measure with pnpm wordcount <path>.
 - Second person, plain English. No jargon without a one-line explanation.
 - Headings are plain nouns or short questions. H2 for the numbered sections above, H3 within them.
 - No disclaimer on individual pages; it lives on the landing pages only (see Disclaimer above).
@@ -183,7 +222,7 @@ With rule 3 applied, an area page's running order is: frontmatter, H1, opening p
 
 Worksheet page (tools):
 - Path: `content/tools/<slug>/index.mdx`, one folder per page.
-- 700–1,000 words of body prose, tables excluded. Measure with pnpm wordcount <path>.
+- 700–1,000 words. What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`.
 - Second person, plain English.
 - H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "For practitioners" (Callout), then Related.
 - Input section names are worksheet-specific: name each for the two things the worksheet gathers.
@@ -209,7 +248,7 @@ Every page under `content/process/<slug>/index.mdx` follows this exact skeleton,
 10. H2 "Next step" — a single sentence linking the next `/process/` route. The last step's Next step links to the Practice Areas index at `/domains` instead, since the practice areas are standing material that never finishes.
 
 Step-page rules:
-- 900–1,300 words of body prose (headings, tables, and link titles excluded). Measure with `pnpm wordcount <path>`.
+- 900–1,300 words, a hard range. What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`. A step page outside the range runs the routing check and follows "When a page is outside its bounds" — unlike an area page, it does not merge on the record alone.
 - No paragraph longer than four sentences.
 - Second person, plain English, educational rather than advisory.
 - Steps link to the practice areas that apply rather than restating them.
