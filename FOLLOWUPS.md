@@ -545,3 +545,29 @@ for any change to the one-business-day and three-business-day windows since the 
 cycle took effect, and update the row's Value if one has been published. Not answered here.
 
 **Belongs to:** the yearly figures-page update — this is an annual check, not a one-time fix.
+
+## 17. The figures page preamble names three Source forms for "Varies by state" rows; CLAUDE.md permits four
+
+The "How to read this page" preamble on
+[content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx) tells the
+reader that where a row's Value reads "Varies by state," the Source column instead points at what you
+consult to find your own state's figure, "which is usually your state securities regulator, the model
+rule the states drew on, or the state office that charges the fee." Those are three of the four forms
+CLAUDE.md's row conventions permit for such a row. The fourth is missing: the varies-by-state rule
+says the Source links a federal locator page where one exists, and only otherwise names the state
+office in plain text, so the locator page is the first-choice form rather than an edge case.
+
+Nothing on the page is currently misdescribed by the omission. All 26 "Varies by state" rows take one
+of the three forms the preamble names, and eight of them say in the Source cell itself that no
+federal locator page exists for that figure. The preamble's "usually" also leaves room. What the
+omission does mean is that the preamble and CLAUDE.md no longer describe the same set of forms, and
+the first row that does cite a federal locator page would read as a contradiction of the sentence
+that introduces it.
+
+**What it needs:** a decision on which of the two documents moves — add the fourth form to the
+preamble, or reconsider whether CLAUDE.md should keep a first-choice form that no row has ever used —
+and then the edit to whichever one it is. Not answered here. Neither the preamble nor CLAUDE.md was
+touched in this pass.
+
+**Belongs to:** the consistency pass (build order item 5), or the next figures-page pass if one comes
+first.
