@@ -1,0 +1,72 @@
+---
+title: Technology and Client Experience
+description: How a firm chooses, connects, and eventually replaces the systems it runs on, and what a client actually sees and does when dealing with it.
+---
+
+import { Callout } from 'nextra/components'
+
+# Technology and Client Experience
+
+Technology and Client Experience covers two things that turn out to be one thing: the systems the firm runs on, and what a client experiences when they deal with the firm. A client never sees your portfolio accounting or your document storage, but they feel both — in how fast you answer a question, how a report reads, and whether signing something takes two minutes or two weeks. This page is about choosing, connecting, and eventually replacing that machinery over the life of the firm, and about keeping the client's side of it worth using.
+
+## Where this starts in the process
+
+If you are working through the guide in order, this area picks up three earlier pieces of work. [Design the Firm](/process/design-the-firm) settles who the firm serves and what it offers them, which is what the client-facing side has to deliver. [Write the Policies](/process/write-the-policies) produces the firm's privacy policy and its written security and continuity procedures, describing how client data is handled before any of it is running. [Set Up Custody and Technology](/process/set-up-custody-and-technology) stands up the first working version of the stack: the custodial relationship, a data feed, a reconciliation process, and the baseline systems underneath. This area is what happens to all of it afterward.
+
+## Key ideas
+
+### Buy jobs, not products
+
+A firm's technology is easier to think about as a list of jobs than as a list of purchases. Someone has to hold client assets, which is a qualified custodian's job. Something has to track positions and produce reporting on them. Something has to hold client information and the history of your dealings with each person. Something has to calculate fees and get them collected. Something has to store documents and collect signatures. Something has to hold the evidence that your compliance work actually happened.
+
+Write that list of jobs before you look at anything you might buy. The list is stable; the market is not. Every category has several plausible options, each changing its pricing, features, and terms on its own schedule, and a firm that starts from the jobs can replace one option with another without rethinking what it was trying to do in the first place.
+
+### The connections are what you are actually buying
+
+Each system is easy to evaluate on its own and easy to misjudge that way, because the cost you will actually feel is the cost of moving data between them. A firm whose portfolio accounting does not reach its billing re-keys fee calculations by hand every cycle, which is both a standing time cost and a standing source of error. A relationship system that cannot see account balances leaves you switching between two screens to answer a question a client asked in passing.
+
+So evaluate anything by what it connects to, whether the connection is supported by the provider or something you would maintain yourself, and what breaks when one side changes. A less capable system that connects cleanly usually beats a stronger one that stands alone.
+
+### Your data has to be able to leave
+
+Everything you use holds something you will need later, and often need on someone else's timetable. Before committing to a provider, find out what an export actually produces: which fields come out, in what format, and whether you can run one yourself without asking anyone. Ask the same about what happens if you stop paying — whether access ends at once, whether an archive stays reachable, and for how long.
+
+[Records and Documentation](/domains/records-and-documentation) covers what the firm has to keep and for how long. The question this area owns is narrower and easy to skip: whether the systems holding those records will hand them back on demand, in a form you can still read.
+
+### Security is standing work, not a purchase
+
+Client data is the most sensitive thing a small firm holds, and the practical version of protecting it is unglamorous and mostly habit: unique credentials with a second factor on anything that touches client data, encrypted devices, a backup you have actually restored from at least once, prompt removal of access that is no longer needed, and a short written plan for what you do in the first day after discovering a problem. The adviser reviews that list on the same schedule as everything else in the firm, and treats each new system added to the stack as one more place client data now lives.
+
+<Callout type="warning">
+If you are on the SEC path: the SEC's own privacy and safeguarding rules apply to your firm directly, including a requirement to notify affected people after certain unauthorized access to their information, within a deadline the rule sets — see [This year's figures](/tools/this-years-figures). A state-registered adviser's obligations come from state rule and from federal privacy law administered by a different agency, so confirm which regime governs your firm rather than assuming the SEC's rules describe it.
+</Callout>
+
+### What the client actually touches
+
+Most of the stack is invisible to clients. A small part of it is, as far as a client is concerned, the entire firm: how a meeting gets scheduled, where documents arrive, what a quarterly report looks like, and how a signature is collected. Judge those pieces by whether a client can finish the task without your help, not by whether the feature exists.
+
+A portal a client logs into once and never opens again is not client experience; it is a place you have put things. If most of your clients keep asking you to email a document they could download themselves, that is information about the portal, not about the clients.
+
+### Replacing a system is a project, not a purchase
+
+Every firm eventually replaces something, and the replacement is where the real cost sits. Plan it around the data first: what has to come across, whether it arrives in a form you can still read and search, and what you will keep from the old system after it is switched off. Run both in parallel long enough to find what did not transfer, and pick a quiet stretch of the year rather than the weeks around a filing deadline or a heavy client cycle.
+
+The expensive version of this is the unplanned one, where a provider discontinues something or changes its terms in a way you cannot accept, and you migrate on their calendar instead of your own. Knowing in advance how you would get your data out is what turns that from an emergency into an inconvenience.
+
+## Common misconceptions
+
+- That more software makes a small firm more capable. Every system added is another connection to maintain, another place client data lives, and another renewal nobody is reviewing.
+- That a client portal is the client experience. What clients actually judge is how quickly they get an answer and how clearly documents reach them.
+- That choosing providers is a launch-time task. Pricing, features, and terms all keep moving under a firm that never revisits them.
+- That security is whatever the provider handles. A provider secures its own systems; the credentials, devices, and habits at your end are yours alone.
+
+## For practitioners
+
+<Callout type="info">
+Keep a one-page inventory of the stack: each system, the job it does, what it connects to, what client data it holds, what it costs, when it renews, and how you would get the data out. In a solo firm this is the document that turns a vague sense of "too many subscriptions" into a decision, and it is also the only thing that makes a continuity plan usable by whoever has to step in — a plan naming systems nobody else can find or reach is not a plan. Review it on the same schedule you use for the rest of the firm's standing work.
+</Callout>
+
+## Go deeper
+
+- [NASAA: Model Rule for Investment Adviser Written Policies and Procedures](https://www.nasaa.org/wp-content/uploads/2020/07/NASAA-IA-PandP-Model-Rule-and-Sample-Compliance-Grid.pdf) — the model rule most states draw on for physical security, cybersecurity, privacy, and business continuity policies, with a sample compliance grid.
+- [eCFR: 17 CFR Part 248](https://www.ecfr.gov/current/title-17/chapter-II/part-248) — the SEC's privacy, safeguarding, and identity-theft rules, which reach investment advisers the SEC registers.
