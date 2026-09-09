@@ -137,7 +137,7 @@ listed in the PR description for the branch that added the two pages.
 **Belongs to:** build order item 5 (source-currency sweep) — or sooner, if a session with
 network access to those domains comes up first.
 
-## 9. Two superseded NASAA model rules are still hosted on nasaa.org and resolve normally
+## 9. Superseded NASAA model rules are still hosted on nasaa.org and resolve normally
 
 NASAA's 2020 Model Rule for Investment Adviser Written Policies and Procedures consolidated
 and superseded two earlier model rules: Business Continuity and Succession Planning
@@ -151,9 +151,22 @@ cites the consolidated 2020 rule in both places it needs one
 and [content/domains/technology-and-client-experience/index.mdx](content/domains/technology-and-client-experience/index.mdx)),
 so nothing is wrong today.
 
+**A third superseded PDF, found while reviewing PR #22.** Unethical Business Practices
+102(a)(4)-1 — an item 7 rule — has *two* superseded texts still hosted, not one. Besides the
+pre-amendment 2022 PDF at `/uploads/2022/07/1956-Act-Rule-102-a-4-1-Unethical-Business-Practices-20220516.pdf`,
+the 2005 text sits at `/uploads/2023/02/model-rule-investment-adviser-unethical-practices20050911.pdf`.
+That one is the worse trap: a 2005 rule under a 2023 upload path, so the date in the URL looks
+recent and a reviewer skimming paths rather than opening the file will read it as current. The
+only current version is the 5-4-2026 PDF cited on
+[content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx).
+
+The general lesson, which the sweep should apply to every nasaa.org citation in the repo: the
+date in a NASAA upload path is the date the file was uploaded, not the date the rule was adopted
+or amended. Never infer currency from the path.
+
 **What it needs:** the source-currency sweep should confirm no citation anywhere in the repo
-points at either superseded PDF, and future pages touching cybersecurity, privacy, business
-continuity, or succession should cite the 2020 consolidated rule.
+points at any of these three superseded PDFs, and future pages touching cybersecurity, privacy,
+business continuity, or succession should cite the 2020 consolidated rule.
 
 **Belongs to:** the source-currency sweep (item 3).
 
@@ -185,10 +198,69 @@ date and any clearance stamp.
 
 The six are listed, with what search confirmed about each, in the PR description for the branch that
 added the two pages. The NASAA citation is deliberately the post-May-2026 amended version required by
-item 7, and the superseded 2022 PDF of the same model rule is still hosted and still resolves.
+item 7; superseded PDFs of that same model rule are still hosted and still resolve (see item 9).
 
-**What it needs:** fetch all six from a session with egress to those domains, confirm each resolves and
-is the current version, and clear or replace any that fail.
+**Two of the six were cleared by the owner during PR #22 review — do not re-check these:**
+
+- **NASAA 102(a)(4)-1 (5-4-2026 PDF)** — VERIFIED. File exists at the cited path; amendment history
+  confirmed (adopted 4-27-1997; amended 4-18-2004, 9-11-2005, 11-6-2017, 5-19-2019, 5-4-2026). It is
+  the post-May-2026 version item 7 requires.
+- **SEC Staff Bulletin, Care Obligations** — VERIFIED live and canonical, not withdrawn or reissued.
+  **Correction:** the bulletin is dated **April 30, 2023**, not April 20. The April 20 date appears
+  only in the PR #22 description, which has been corrected; it was never in the page, which carries
+  no date for this citation.
+
+**Four remain unconfirmed and still need fetching:** SEC IA-5248 (`sec.gov/files/rules/interp/2019/ia-5248.pdf`),
+IARD Fees and Accounting (`iard.com/fees-accounting`), and the two IRS pages (Self-Employed Individuals
+Tax Center, Estimated Taxes). The IRS pair is low risk — same domain and page type as the already-verified
+IRS Recordkeeping hub — but low risk is not confirmed.
+
+**What it needs:** fetch the four remaining links from a session with egress to those domains, confirm
+each resolves and is the current version, and clear or replace any that fail.
 
 **Belongs to:** build order item 5 (source-currency sweep) — or sooner, if a session with network
 access to those domains comes up first. Best done in one pass together with item 8.
+
+## 12. Step 1's practitioner Callout ends mid-clause — fix in the Marketing and Growth build
+
+The practitioner Callout on [content/process/decide-if-independence-fits/index.mdx](content/process/decide-if-independence-fits/index.mdx)
+ends: "Document the numbers you used for your runway estimate, the assumptions behind them, and
+your written go or no-go decision, since later steps." The sentence stops mid-clause. This is the
+first step page of the site and it is live now, so it is visible to every reader who starts at the
+beginning.
+
+Deliberately **not** deferred to the source-currency sweep or to a general step-page pass. Either
+would ship it broken through at least two more PRs, and a sentence that stops mid-word costs a
+reader's trust in the surrounding page more than a stale citation does.
+
+**What it needs:** one line. Nothing about it requires a decision beyond how the sentence should
+end. Proposed ending, matching what the same page already says under "Write down where you land"
+("somewhere you will actually look at again once the next steps ask you to resolve them"):
+
+> ...and your written go or no-go decision, since later steps will ask you to revisit each of them.
+
+The owner should confirm the wording; the fix itself is uncontroversial.
+
+**Belongs to:** the Marketing and Growth build, as a one-line correction folded into that prompt.
+Do not wait for the all-step-pages pass in item 1.
+
+## 13. Both PR #22 pages landed within nine words of the ceiling — watch whether the count is still steering
+
+Item added at the owner's direction during PR #22 review. The soft ceiling from Part 1 of that PR
+was written to stop the 1,300 number from shaping an area page. In the first build under the new
+rule, both pages drafted at 1,309 and 1,310 and both landed at 1,291 and 1,295 — five and nine
+words short of the line, independently.
+
+The trims themselves were sound: each removed a genuine restatement, and neither claimed density
+for a nine-word overage, which is the bad-faith use the rule exists to prevent. The concern is not
+those edits. It is that two pages stopping just under the line suggests the count is still pulling
+on the edit even with the ceiling soft.
+
+**What it needs:** two things, neither now. First, watch it on the Marketing and Growth build — if
+that page also lands in the high 1,200s, the pull is real and the rule's wording may need to say
+more than it does. Second, at the consistency pass, re-read the closing sections of
+[content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx)
+and [content/domains/firm-economics/index.mdx](content/domains/firm-economics/index.mdx) and judge
+whether either reads slightly clipped at the end.
+
+**Belongs to:** the Marketing and Growth build (the watch), and build order item 5 (the re-read).
