@@ -68,3 +68,23 @@ if they were never reviewed. They were reviewed, and the reasoning for leaving t
 above.
 
 **Belongs to:** no further action — reference only.
+
+## 5. SEC Form ADV Part 2 General Instructions PDF is past its stated OMB expiration
+
+The cited PDF ([content/domains/client-education/index.mdx](content/domains/client-education/index.mdx),
+also cited on [content/domains/service-and-pricing-models/index.mdx](content/domains/service-and-pricing-models/index.mdx)
+and [content/process/write-the-disclosure-documents/index.mdx](content/process/write-the-disclosure-documents/index.mdx))
+resolves and is not a superseded rule, but it is stamped SEC 1707 (08-22) with an OMB
+clearance line reading "Expires: October 31, 2024" — a date already past. That's a
+source-currency flag distinct from a dead link or a superseded version: the document
+itself carries a lapsed clearance date.
+
+**What it needs:** confirm whether the SEC has reissued Form ADV Part 2's general
+instructions under a current OMB clearance at a stable URL, and if so, repoint all three
+citations to it. If no reissued version exists yet, note that explicitly next to the
+citation rather than treating the expired clearance date as silent.
+
+**Belongs to:** build order item 5 (repo-wide source-currency sweep) — see also item 3.
+This one applies even to pages that were already source-currency-aware, since the link
+was reused from an earlier PR without re-checking the document's own clearance date, not
+copied blind onto a page built before the rule existed.
