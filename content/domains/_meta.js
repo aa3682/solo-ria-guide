@@ -6,5 +6,6 @@ export default {
   'technology-and-client-experience': 'Technology and CX',
   'risk-and-insurance': 'Risk and Insurance',
   'advice-and-planning-process': 'Advice and Planning',
-  'firm-economics': 'Firm Economics'
+  'firm-economics': 'Firm Economics',
+  'marketing-and-growth': 'Marketing and Growth'
 }
