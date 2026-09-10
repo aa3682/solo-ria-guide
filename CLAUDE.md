@@ -255,6 +255,18 @@ Step-page rules:
 - Steps link forward to later steps rather than explaining their subject matter in place.
 - Mirroring runs both ways. Where an area page's "Where this starts in the process" names a step as originating, that step's "Which practice areas apply" lists that area. Area convention 3 governs the reverse direction, where a step may link an area that does not name the step back.
 
+### The recurring adviser
+Step pages follow one recurring hypothetical, introduced on step 1 ([Decide If Independence Fits](/process/decide-if-independence-fits)) and referred to only as "the adviser" — never named, and never given a pronoun.
+
+Fixed on step 1, and never contradicted afterwards:
+- A hypothetical investment adviser representative currently working at a broker-dealer.
+- A book of about 80 clients and roughly $300,000 in annual revenue — illustrative round numbers, not a target or a benchmark.
+- Assets under management below the threshold that would require SEC registration, so the adviser is state-registered, the guide's default scenario.
+
+Everything else the adviser accumulates is established on the step page that produces it and lives only there. Do not copy that accumulated set into this file: a second record drifts from the pages the first time one is revised. A later passage stays consistent with what earlier pages established and adds only facts its own step produces.
+
+Placement is fixed. The passage is the last thing in the final H3 of "What actually happens" — the H3 that states what the reader leaves the step holding — and opens with the words "For illustration, the adviser". It runs to roughly the headroom the page has under the 900–1,300 range rather than to a set length. SEC divergences are never carried by the adviser; they use the SEC-path callout below.
+
 ## SEC-path callout
 A reusable callout for the places where the SEC-registered path diverges from the guide's default state-registered scenario. It applies to step pages and area pages alike; it is not part of either skeleton, because it goes wherever the divergence falls.
 - Component: `<Callout type="warning">`.
