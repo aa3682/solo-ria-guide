@@ -265,6 +265,8 @@ Fixed on step 1, and never contradicted afterwards:
 
 Everything else the adviser accumulates is established on the step page that produces it and lives only there. Do not copy that accumulated set into this file: a second record drifts from the pages the first time one is revised. A later passage stays consistent with what earlier pages established and adds only facts its own step produces.
 
+Each passage instantiates the single item on its page that the adviser's established facts make hardest — not the most important item and not a proportional tour of the page — and compresses the rest of the step to context.
+
 Placement is fixed. The passage is the last thing in the final H3 of "What actually happens" — the H3 that states what the reader leaves the step holding — and opens with the words "For illustration, the adviser". It runs to roughly the headroom the page has under the 900–1,300 range rather than to a set length. SEC divergences are never carried by the adviser; they use the SEC-path callout below.
 
 ## SEC-path callout
