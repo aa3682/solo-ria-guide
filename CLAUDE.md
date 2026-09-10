@@ -155,7 +155,7 @@ The "Next step" exclusion is bounded: it applies only to a single sentence under
 
 ### The ceilings
 - Step pages: hard range 900–1,300 words.
-- Area pages: soft ceiling 1,300 words. No floor.
+- Area pages: soft range 700–1,300 words, soft at both ends.
 - Worksheet pages: 700–1,000 words.
 
 ### Routing comes before length
@@ -164,9 +164,9 @@ A mandated cross-link belongs in the "Related" or "Go deeper" list unless the po
 ### When a page is outside its bounds
 A page outside its bounds records, in the PR description: the measured count, which bound it misses, the result of the routing check, what was attempted and rejected, and the disposition. The record must name what was tried, not only why the page is long. Then:
 
-- An area page over the soft ceiling may merge on that record.
+- An area page outside the soft range, over or under, may merge on that record.
 - A step page outside the hard range, over or under, may not merge on the record alone. It merges after a trim or a routing fix, or after an explicit ruling from the owner, which is recorded the same way.
-- Padding to clear the 900 floor is not a remedy. A step page still short after the routing check is a candidate for a ruling, not for filler.
+- Padding to clear a floor is not a remedy, at either the 900-word step floor or the 700-word area floor. A page still short after the routing check is a candidate for a ruling, not for filler.
 
 Compress for redundancy, never for the count. Removing a restatement or a scene-setting opener improves a page; squeezing clauses together to hit a number makes it worse to read on a phone, which is the opposite of what the ceiling is for.
 
@@ -190,10 +190,10 @@ Area page skeleton:
 8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
 
 Conventions for area and worksheet pages:
-- Area pages: soft ceiling of 1,300 words, no floor. Worksheet pages: 700–1,000 words (see Worksheet page below). What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`. An area page that has said everything it has to say ends there. Do not add a section in order to clear a number, and do not cite the ceiling as the reason for including anything.
-- The 1,300-word ceiling is a review trigger, not a hard limit. An area page may exceed it. Run the routing check first, then record the overage as "When a page is outside its bounds" above requires — the measured count, the routing result, what was attempted and rejected, and the disposition. There is no closed list of acceptable causes; state the actual one.
+- Area pages: 700–1,300 words, a soft range at both ends. Worksheet pages: 700–1,000 words (see Worksheet page below). What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`. An area page that has said everything it has to say ends there. Do not add a section in order to clear a number, and do not cite the range as the reason for including anything.
+- The range is a review trigger, not a hard limit. An area page may fall outside it at either end. Run the routing check first, then record the miss as "When a page is outside its bounds" above requires — the measured count, which bound it misses, the routing result, what was attempted and rejected, and the disposition. There is no closed list of acceptable causes; state the actual one. Padding a short page to reach 700 is not a remedy.
 
-  This soft ceiling applies to area pages only. Step pages keep the hard 900–1,300 range in "Step page template" below, and worksheet pages keep 700–1,000.
+  This soft range applies to area pages only. Step pages keep the hard 900–1,300 range in "Step page template" below, and worksheet pages keep 700–1,000.
 - Second person, plain English. No jargon without a one-line explanation.
 - Headings are plain nouns or short questions. H2 for the numbered sections above, H3 within them.
 - No disclaimer on individual pages; it lives on the landing pages only (see Disclaimer above).
