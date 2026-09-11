@@ -265,7 +265,7 @@ Fixed on step 1, and never contradicted afterwards:
 
 Everything else the adviser accumulates is established on the step page that produces it and lives only there. Do not copy that accumulated set into this file: a second record drifts from the pages the first time one is revised. A later passage stays consistent with what earlier pages established and adds only facts its own step produces.
 
-Each passage instantiates the single item on its page that the adviser's established facts make hardest — not the most important item and not a proportional tour of the page — and compresses the rest of the step to context.
+Each passage instantiates the single item on its page that the adviser's established facts make hardest — not the most important item and not a proportional tour of the page — and compresses the rest of the step to context. Where a page offers more than one candidate, pick the item that the most of the adviser's established facts bear on at once. Not all of them have to bear on it: on some pages one fact is simply dominant and the others do no work, and an item picked because three facts could be made to apply is weaker than one picked because two genuinely do.
 
 Placement is fixed. The passage is the last thing in the final H3 of "What actually happens" — the H3 that states what the reader leaves the step holding — and opens with the words "For illustration, the adviser". It runs to roughly the headroom the page has under the 900–1,300 range rather than to a set length. SEC divergences are never carried by the adviser; they use the SEC-path callout below.
 
@@ -280,7 +280,7 @@ A reusable callout for the places where the SEC-registered path diverges from th
 
 ## How to work
 - Do exactly what the prompt asks. Do not add sections, pages, or features that were not requested.
-- Commit after each completed prompt with a one-line message describing the change. Never push unless the prompt says to push.
+- Commit after each completed prompt with a one-line message describing the change. Never push to `main`; open a pull request instead. Pushing a working branch is fine and is what the repo's stop hook expects, so a multi-step task can push its branch as it goes without waiting for the prompt to say so.
 - Never delete or rewrite existing content pages unless the prompt names the file.
 - End every task with a "Report" section: what was created or changed (file paths), anything marked [VERIFY], anything you were unsure about, and the exact command to view the result.
 - Do only what the current prompt asks. Do not act on your own follow-up suggestions, and do not edit files outside the scope of the prompt, even to fix something you notice. List anything you would have done under a "Suggested follow-ups" heading at the end of your report and in the PR description, and leave it there.
