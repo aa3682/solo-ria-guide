@@ -157,7 +157,7 @@ The "Next step" exclusion is bounded: it applies only to a single sentence under
 ### The ceilings
 - Step pages: hard range 900–1,300 words.
 - Area pages: soft range 700–1,300 words, soft at both ends.
-- Worksheet pages: 700–1,000 words.
+- Worksheet pages: soft ceiling of 1,000 words, no floor.
 
 ### Routing comes before length
 A mandated cross-link belongs in the "Related" or "Go deeper" list unless the pointer must sit inside a sentence to make sense. Check routing first, before reaching for any length remedy, and recount the page after routing. A page that is over only because a pointer sits in prose that could have been a list entry is a routing problem, not a length problem.
@@ -168,6 +168,7 @@ Check "### Recorded exceptions" below first: a page listed there has already bee
 A page outside its bounds records, in the PR description: the measured count, which bound it misses, the result of the routing check, what was attempted and rejected, and the disposition. The record must name what was tried, not only why the page is long. Then:
 
 - An area page outside the soft range, over or under, may merge on that record.
+- A tools page over the soft ceiling may merge on that record, in the same terms as an area page.
 - A step page outside the hard range, over or under, may not merge on the record alone. It merges after a trim or a routing fix, or after an explicit ruling from the owner, which is recorded the same way.
 - Padding to clear a floor is not a remedy, at either the 900-word step floor or the 700-word area floor. A page still short after the routing check is a candidate for a ruling, not for filler.
 
@@ -195,10 +196,10 @@ Area page skeleton:
 8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources from the Sourcing list above, naming the specific agency or body.
 
 Conventions for area and worksheet pages:
-- Area pages: 700–1,300 words, a soft range at both ends. Worksheet pages: 700–1,000 words (see Worksheet page below). What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`. An area page that has said everything it has to say ends there. Do not add a section in order to clear a number, and do not cite the range as the reason for including anything.
+- Area pages: 700–1,300 words, a soft range at both ends. Worksheet pages: a soft ceiling of 1,000 words and no floor (see Worksheet page below). What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`. An area page that has said everything it has to say ends there. Do not add a section in order to clear a number, and do not cite the range as the reason for including anything.
 - The range is a review trigger, not a hard limit. An area page may fall outside it at either end. Run the routing check first, then record the miss as "When a page is outside its bounds" above requires — the measured count, which bound it misses, the routing result, what was attempted and rejected, and the disposition. There is no closed list of acceptable causes; state the actual one. Padding a short page to reach 700 is not a remedy.
 
-  This soft range applies to area pages only. Step pages keep the hard 900–1,300 range in "Step page template" below, and worksheet pages keep 700–1,000.
+  This soft range applies to area pages only. Step pages keep the hard 900–1,300 range in "Step page template" below, and worksheet pages keep the soft 1,000-word ceiling with no floor.
 - Second person, plain English. No jargon without a one-line explanation.
 - Headings are plain nouns or short questions. H2 for the numbered sections above, H3 within them.
 - No disclaimer on individual pages; it lives on the landing pages only (see Disclaimer above).
@@ -227,7 +228,7 @@ With rule 3 applied, an area page's running order is: frontmatter, H1, opening p
 
 Worksheet page (tools):
 - Path: `content/tools/<slug>/index.mdx`, one folder per page.
-- 700–1,000 words. What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`.
+- A soft ceiling of 1,000 words, and no floor. A worksheet that has said what it has to say ends there; nothing is added to reach a length. A page over the ceiling runs the routing check and then follows "When a page is outside its bounds" above. Padding to clear a floor is still not a remedy anywhere in this file; a worksheet page simply has no floor to clear. What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`.
 - Second person, plain English.
 - H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "For practitioners" (Callout), then Related.
 - Input section names are worksheet-specific: name each for the two things the worksheet gathers.
