@@ -639,3 +639,24 @@ the edit. Not answered here.
 
 **Belongs to:** the consistency pass (build order item 5), or the first worksheet PR if one comes
 first, since that is the PR that creates the inconsistency.
+
+## 21. Two Form ADV General Instructions figures the RAUM worksheet needs have no row on the figures page
+
+[content/tools/calculating-your-regulatory-assets-under-management/index.mdx](content/tools/calculating-your-regulatory-assets-under-management/index.mdx)
+names two figures in plain language and sends the reader to the Form ADV General Instructions for
+each, because neither has a row on `/tools/this-years-figures` to link by anchor:
+
+- **The share of an account's value that must be securities** for the account to be a securities
+  portfolio, and the treatment of cash and cash equivalents for that test.
+- **How recent the valuation date must be** relative to the date of filing.
+
+Both are set by the same instructions, both belong under the Step 1 section where the other
+regulator-determination figures already sit, and neither was printed on the worksheet or given an
+invented anchor. The sections exist; it is the rows that are missing.
+
+**What it needs:** both rows added under `#decide-if-independence-fits`, with the Value taken from a
+fetched copy of the Form ADV General Instructions rather than from memory, and the worksheet's two
+plain-language sentences then repointed at the anchor. Not done here — every figure-page Value has to
+come from a fetched primary source, which makes this a figures-page pass rather than a content edit.
+
+**Belongs to:** the next figures-page pass, with items 2, 16 and 17.

@@ -91,7 +91,7 @@ In order:
 9. Risk and Insurance — `risk-and-insurance`
 
 ### Sidebar labels
-Sidebar labels are shortened for phone reading and deliberately do not match the page titles above. Because Nextra 4 rejects `_meta.js` keys with no matching page, add a label to `content/process/_meta.js` or `content/domains/_meta.js` only in the same PR that adds its page — not before. Both files exist and carry all twelve steps and all nine areas. A PR that adds a page adds that page's entry to the existing file. Never leave either file with an empty `export default {}` — Nextra 4 fails the build with a prerender error.
+Sidebar labels are shortened for phone reading and deliberately do not match the page titles above. Because Nextra 4 rejects `_meta.js` keys with no matching page, add a label to `content/process/_meta.js`, `content/domains/_meta.js`, or `content/tools/_meta.js` only in the same PR that adds its page — not before. The process and domains files exist and carry all twelve steps and all nine areas. A PR that adds a page adds that page's entry to the existing file. Never leave any of the three with an empty `export default {}` — Nextra 4 fails the build with a prerender error.
 
 Steps, page title → sidebar label:
 - Decide If Independence Fits → Is It For You
@@ -117,6 +117,11 @@ Areas, page title → sidebar label:
 - Records and Documentation → Records
 - Firm Economics → Firm Economics
 - Risk and Insurance → Risk and Insurance
+
+Tools, page title → sidebar label:
+- This year's figures → Yearly Figures
+- Calculating Your Regulatory Assets Under Management → Regulatory AUM
+- Building Your Running Calendar → Running Calendar
 
 ## Stack
 - Nextra 4, nextra-theme-docs, Next.js App Router, MDX in content/
