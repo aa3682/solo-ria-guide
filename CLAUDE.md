@@ -119,7 +119,7 @@ Areas, page title → sidebar label:
 - Risk and Insurance → Risk and Insurance
 
 Tools, page title → sidebar label:
-- This year's figures → Yearly Figures
+- This year's figures → This year's figures
 - Calculating Your Regulatory Assets Under Management → Regulatory AUM
 - Building Your Running Calendar → Running Calendar
 
