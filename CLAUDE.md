@@ -162,6 +162,8 @@ The "Next step" exclusion is bounded: it applies only to a single sentence under
 A mandated cross-link belongs in the "Related" or "Go deeper" list unless the pointer must sit inside a sentence to make sense. Check routing first, before reaching for any length remedy, and recount the page after routing. A page that is over only because a pointer sits in prose that could have been a list entry is a routing problem, not a length problem.
 
 ### When a page is outside its bounds
+Check "### Recorded exceptions" below first: a page listed there has already been ruled on, and it is not reopened by a routing check or a trim.
+
 A page outside its bounds records, in the PR description: the measured count, which bound it misses, the result of the routing check, what was attempted and rejected, and the disposition. The record must name what was tried, not only why the page is long. Then:
 
 - An area page outside the soft range, over or under, may merge on that record.
@@ -242,7 +244,7 @@ Every page under `content/process/<slug>/index.mdx` follows this exact skeleton,
 2. H1 matching the frontmatter title.
 3. Opening paragraph, no heading: what this step is, in plain words.
 4. H2 "Why it matters"
-5. H2 "What actually happens" — three to five H3 substeps. The final H3 states what the reader leaves the step holding.
+5. H2 "What actually happens" — three to six H3 substeps. The final H3 states what the reader leaves the step holding.
 6. H2 "Questions to ask yourself" — four to six questions.
 7. H2 "Common mistakes" — a bulleted list, one mistake per bullet, each one or two sentences.
 8. H2 "Which practice areas apply" — a list linking the relevant `/domains/` routes, one sentence each on why it applies at this step.
@@ -251,6 +253,7 @@ Every page under `content/process/<slug>/index.mdx` follows this exact skeleton,
 
 Step-page rules:
 - 900–1,300 words, a hard range. What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`. A step page outside the range runs the routing check and follows "When a page is outside its bounds" — unlike an area page, it does not merge on the record alone.
+- A small number of pages are recorded exceptions to that range, listed under "### Recorded exceptions" in "## Word count basis" above; check that list before treating a step page's count as something to fix.
 - No paragraph longer than four sentences.
 - Second person, plain English, educational rather than advisory.
 - Steps link to the practice areas that apply rather than restating them.
