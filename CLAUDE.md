@@ -56,7 +56,7 @@ Top-level sections, in this sidebar order:
 1. introduction
 2. process — "The Independent Path," 12 chronological steps
 3. domains — "Practice Areas," 9 standing subject areas. The sidebar label and the route deliberately differ (`/domains`, not `/practice-areas`) — do not "fix" this.
-4. tools — calculators, checklists, worksheets
+4. tools — the figures table and the worksheets
 5. glossary
 6. about
 

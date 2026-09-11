@@ -15,7 +15,7 @@ An open, public guide to establishing and running an independent registered inve
 - `content/introduction/` — what the guide covers, who it is for, and how to use it.
 - `content/process/` — The Independent Path: one folder per step, in chronological order.
 - `content/domains/` — Practice Areas: one folder per standing subject area.
-- `content/tools/` — calculators, checklists, and worksheets, including `this-years-figures`, the single page that holds every limit, rate, threshold, and deadline set by law, regulation, or an agency.
+- `content/tools/` — the worksheets, and `this-years-figures`, the single page that holds every limit, rate, threshold, and deadline set by law, regulation, or an agency.
 - `content/glossary/` — one alphabetical glossary page.
 - `content/about/` — what this project is and how it is licensed.
 
