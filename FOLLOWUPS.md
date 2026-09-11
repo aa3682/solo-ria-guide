@@ -571,3 +571,47 @@ touched in this pass.
 
 **Belongs to:** the consistency pass (build order item 5), or the next figures-page pass if one comes
 first.
+
+## 18. "Confirm with your home state and write it down" is the final H3 on two step pages
+
+The last H3 under "What actually happens" is the same sentence, word for word, on
+[content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx)
+and [content/process/qualify-as-an-adviser/index.mdx](content/process/qualify-as-an-adviser/index.mdx).
+The H3 survey run for the substep ruling counted every H3 heading across the twelve step pages and
+found no other heading text that repeats anywhere among them. The full survey is in the description
+of PR #44, which was opened read-only and closed without merging.
+
+Neither page is wrong on its own terms. Both steps genuinely end by confirming a determination with
+the home state and writing the answer down, so the heading is accurate in both places. What the
+repetition costs is navigational: a reader moving between step 5 and step 6 sees the same line close
+both pages and cannot tell from the heading alone what distinguishes the two steps' closing work.
+
+**What it needs:** a decision on whether one of the two is reworded and which, then the edit. The
+step 6 side is the likelier candidate, since step 5's whole subject is the regulator determination
+and the heading sits closer to that page's purpose. Not answered here, and neither heading was
+touched in the merge pass that produced this entry.
+
+**Belongs to:** a step-page voice pass across the twelve, not a single-page fix — the value is in
+seeing all twelve closing headings together before moving one.
+
+## 19. qualify-as-an-adviser's final H3 opens directly on the adviser illustration
+
+On [content/process/qualify-as-an-adviser/index.mdx](content/process/qualify-as-an-adviser/index.mdx),
+the final H3 begins on the words "For illustration, the adviser" with no lead-in prose of its own.
+The H3 survey found it is the only one of the twelve final H3s built that way. On the other eleven
+pages the final H3 states something substantive first and the recurring-adviser passage is appended
+to it, which is the arrangement step 1 established and the rest of the guide follows.
+
+CLAUDE.md's "The recurring adviser" section fixes the passage's placement — last thing in the final
+H3, opening with those words — and that rule is satisfied here. What is missing is the subsection's
+own content before it. As built, step 6's last heading carries the illustration and the "You leave
+this step holding" paragraph and nothing else, so the heading names work the section never describes
+in its own voice.
+
+**What it needs:** a sentence or two of the subsection's own before the illustration begins, matching
+how the other eleven final H3s open. Not written here. Step 6 was outside the scope of PR #42, which
+is where the adviser passages for the later steps were added and where this arrangement would
+otherwise have been caught.
+
+**Belongs to:** the same step-page voice pass as item 18 — both are step 6 closing-section items and
+should be read together.
