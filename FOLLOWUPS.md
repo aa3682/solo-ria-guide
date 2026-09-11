@@ -615,3 +615,27 @@ otherwise have been caught.
 
 **Belongs to:** the same step-page voice pass as item 18 — both are step 6 closing-section items and
 should be read together.
+
+## 20. Most links to the figures page are bare where an anchored link exists, and the worksheet template requires anchors
+
+Forty-two of the sixty-nine links to `/tools/this-years-figures` in `content/` point at the page with
+no anchor, even where the figures page carries a section whose id matches the linking page exactly.
+All twenty-four anchored links in the repo come from [content/glossary/index.mdx](content/glossary/index.mdx);
+no step page and no area page uses one. The inventory in PR #48 has the full breakdown.
+
+The worksheet page template in CLAUDE.md tells a worksheet to "name the concept and link the matching
+section of /tools/this-years-figures" — an anchored link. So the first worksheet shipped will be the
+first non-glossary page linking by anchor, and non-glossary content will be inconsistent with itself:
+worksheets anchored, the step and area pages they sit beside not.
+
+Not every bare link has an anchor to convert to. The figures page has no section for steps 2 and 3,
+because neither step produces a regulated figure, and a page can legitimately refer to the figures
+page as a whole rather than to one section. A sweep has to check each link against the section list,
+not rewrite all forty-two.
+
+**What it needs:** a decision on which way the inconsistency resolves — convert the bare links that
+have a matching section, or relax the worksheet template's anchor requirement — and then the sweep or
+the edit. Not answered here.
+
+**Belongs to:** the consistency pass (build order item 5), or the first worksheet PR if one comes
+first, since that is the PR that creates the inconsistency.
