@@ -572,52 +572,6 @@ touched in this pass.
 **Belongs to:** the consistency pass (build order item 5), or the next figures-page pass if one comes
 first.
 
-### Added by the phone read-through: three more figures-page findings
-
-Filed here rather than as items of their own, so the figures-page sweep stays one piece of work with
-items 2, 16 and 21. None of the three is about a Source form, so they do not belong to the question
-above; they belong to the same pass.
-
-**The page is the only five-column table on the site, and the most linked-to page in the guide.**
-Eighty-nine links in `content/` point at
-[content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx), and every
-one of them arrives at a Concept | What it governs | Value | Year | Source table whose middle and
-right cells routinely run to forty words or more. The three worksheet pages all hold to three
-columns, because CLAUDE.md's worksheet template caps them there so they "render on a phone without
-horizontal scrolling" — the figures page is not covered by that rule and does not meet it. Reading
-one row on a narrow screen means scrolling sideways past two long prose cells to reach the Value, and
-Year and Source are off-screen from the start. The Risk and Insurance rows are the worst case: the
-"Amount of a required surety bond" row's What-it-governs cell is four sentences and 93 words.
-
-**Two rows read `NEEDS-VALUE`, and the pages that send readers to them promise an answer.** The
-filing system fee under `#file-and-get-approved` and the yearly registration renewal window under
-`#stay-registered-and-compliant` are both unestablished. The preamble explains what `NEEDS-VALUE`
-means, so the page is honest about it — but
-[content/process/file-and-get-approved/index.mdx](content/process/file-and-get-approved/index.mdx)
-says "This year's figures holds each one with its source" and
-[content/process/stay-registered-and-compliant/index.mdx](content/process/stay-registered-and-compliant/index.mdx)
-says "Both the window and the fee are on This year's figures," which is a flat promise of a number the
-reader does not get. Both values are on operator-published pages (`iard.com/fee_schedule` and
-`iard.com/renewal-program`) that a fetch could settle.
-
-**Two link-destination mismatches.** First, the four figures that decide the regulator — small adviser
-ceiling, large adviser threshold, mid-sized band, buffer — all sit under `#decide-if-independence-fits`
-(Step 1), while the Step 5 section holds only the multi-state exception count. A reader following
-step 5's "each appears by name on This year's figures" lands at the top of a long page and has to
-find rows filed under a different step than the one they came from; the RAUM worksheet gets this right
-by linking `#decide-if-independence-fits` explicitly, step 5 does not. Second,
-[content/process/set-up-custody-and-technology/index.mdx](content/process/set-up-custody-and-technology/index.mdx)
-promises "see This year's figures for the model most states built on **and where to check your own
-regulator's adaptation of it**" — the Step 10 rows name the NASAA model and say each state adapts it,
-but unlike most other "Varies by state" rows they carry no pointer to a state securities regulator, so
-the second half of the promise is not delivered.
-
-**What all three need:** the two Values fetched from the operator's pages; a decision on the table
-shape (fewer columns, a split of "What it governs" out of the table, or an accepted exception recorded
-against the worksheet rule); step 5's bare figures links anchored to `#decide-if-independence-fits`,
-which overlaps item 20; and either a regulator pointer added to the Step 10 rows or step 10's sentence
-narrowed to what the rows actually say. Nothing was changed on the page.
-
 ## 18. "Confirm with your home state and write it down" is the final H3 on two step pages
 
 The last H3 under "What actually happens" is the same sentence, word for word, on
@@ -707,7 +661,18 @@ come from a fetched primary source, which makes this a figures-page pass rather 
 
 **Belongs to:** the next figures-page pass, with items 2, 16 and 17.
 
-## 22. The three worksheets are barely reachable from the steps they support
+## 22. The three worksheets are barely reachable from the steps they support — PARTLY DONE
+
+**Status: the orphan is fixed, the thin links are not.** On the owner's ruling that an orphaned page
+is a defect and a thin link is a judgement call,
+[content/process/stay-registered-and-compliant/index.mdx](content/process/stay-registered-and-compliant/index.mdx)
+now links the running calendar worksheet from its closing line, by linking words already on the page:
+"What you leave holding instead is [a running calendar](/tools/building-your-running-calendar) of
+amendments, renewals, deliveries, and retained records." Linking existing text rather than adding a
+sentence keeps the page at 1,311 counted words, so its recorded exception under "Word count basis" is
+undisturbed. Steps 1 and 5 were deliberately not touched; the rest of this entry stands as written.
+
+### Original entry
 
 A reader working the sidebar in order meets `/tools` after the twelve steps and the nine areas have
 already gone by, so the only way a worksheet reaches them at the moment it is useful is a link from
@@ -873,7 +838,22 @@ the callout at all. Not attempted here.
 
 **Belongs to:** a step-page voice pass, with items 18, 19, 25 and 26.
 
-## 28. The running calendar worksheet opens on a claim the practice areas contradict, and keeps a heading about "the number" on a page with no number
+## 28. The running calendar worksheet's "the number" heading asks a question the page has refused — PARTLY DONE
+
+**Status: the false sentence is fixed, the heading is not.** The opening line of
+[content/tools/building-your-running-calendar/index.mdx](content/tools/building-your-running-calendar/index.mdx)
+now reads "The other worksheets in this section produce an answer you write down," replacing "Every
+page in this guide before this one produces something that finishes," which the nine practice-area
+pages directly contradicted. The replacement is true of both other worksheets, makes no claim about
+pages outside `/tools`, and is the same length, so the page stays at 778 counted words.
+
+The heading was deliberately left alone. It is not a page defect: it is the cost of the owner's
+standing ruling that a worksheet keeps the template's headings verbatim rather than renaming them per
+page. Reversing that inside a correction PR would have been a silent reversal of a deliberate
+decision, so it is recorded here as a request to revisit the ruling rather than as a fix to apply.
+Read the second half of the original entry below as that request.
+
+### Original entry
 
 Two things on
 [content/tools/building-your-running-calendar/index.mdx](content/tools/building-your-running-calendar/index.mdx),
@@ -920,3 +900,84 @@ authoring rather than mechanical, and the Related list's targets are a small jud
 lead with it. Not written here.
 
 **Belongs to:** the consistency pass (build order item 5).
+
+## 30. Figures-page sweep additions from the phone read-through: two unestablished Values, and a table only the figures page is exempt from
+
+Three findings from the cold read that belong to the figures-page pass with items 2, 16, 17 and 21.
+They were first filed as a subsection of item 17 and moved here, because none of them is about the
+Source-form question item 17 asks. The anchor finding that came out of the same read is **not** here —
+it is item 31, because it is a constraint on item 20 rather than work on this page.
+
+**Two rows read `NEEDS-VALUE` where the pages sending readers to them promise a number.** The filing
+system fee under `#file-and-get-approved` and the yearly registration renewal window under
+`#stay-registered-and-compliant` are both unestablished. The page's preamble explains what
+`NEEDS-VALUE` means, so the page is honest — but
+[content/process/file-and-get-approved/index.mdx](content/process/file-and-get-approved/index.mdx)
+says "This year's figures holds each one with its source" and
+[content/process/stay-registered-and-compliant/index.mdx](content/process/stay-registered-and-compliant/index.mdx)
+says "Both the window and the fee are on This year's figures." Both are flat promises of a number the
+reader does not get. Both values sit on operator-published pages that a fetch could settle
+(`iard.com/fee_schedule` and `iard.com/renewal-program`), which is why this is the defect of the three
+rather than a judgement call.
+
+**The page is the only five-column table on the site, and the most linked-to page in the guide.**
+Eighty-nine links in `content/` arrive at a Concept | What it governs | Value | Year | Source table
+whose middle and right cells routinely run past forty words; the "Amount of a required surety bond"
+row's What-it-governs cell is four sentences and 93 words. The three worksheet pages all hold to three
+columns because CLAUDE.md's worksheet template caps them there so they "render on a phone without
+horizontal scrolling." The figures page is not covered by that rule and does not meet it. Reading one
+row on a narrow screen means scrolling sideways past two long prose cells to reach the Value, with
+Year and Source off-screen from the start.
+
+**Step 10 promises a pointer the Step 10 rows do not carry.**
+[content/process/set-up-custody-and-technology/index.mdx](content/process/set-up-custody-and-technology/index.mdx)
+says "see This year's figures for the model most states built on **and where to check your own
+regulator's adaptation of it**." The three Step 10 rows name the NASAA custody model rule and say each
+state adapts it, but unlike most other "Varies by state" rows they carry no pointer to a state
+securities regulator, so the second half of that promise is not delivered. This one overlaps item 17
+directly: it is a question about what a "Varies by state" Source cell has to carry.
+
+**What it needs:** the two Values fetched from the operator's pages, per the rule that no Value is
+ever filled from memory; a decision on the table shape — fewer columns, "What it governs" moved out of
+the table, or an accepted exception recorded against the worksheet three-column rule; and either a
+regulator pointer added to the Step 10 rows or step 10's sentence narrowed to what the rows say.
+Nothing on the page was changed.
+
+**Belongs to:** the next figures-page pass, with items 2, 16, 17 and 21.
+
+## 31. Three pages defer to figures filed under a different step's anchor, which will mislead item 20's sweep
+
+This was reported in the read-through as the figures page misfiling four rows. That was wrong, and the
+correction matters for how it gets fixed. The four assets-under-management lines — small adviser
+ceiling, large adviser threshold, mid-sized band, and the buffer — are filed under
+`#decide-if-independence-fits` on [content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx)
+because [FIGURES-INVENTORY.md](FIGURES-INVENTORY.md) groups them under Step 1, and CLAUDE.md requires
+the page's sections to follow the inventory's grouping. The page is correct. The inventory row even
+records the consequence in its own note: "Introduction and Step 1 defer only 'the threshold'; Step 5
+defers the full set."
+
+The problem is on the linking side. Three pages defer to those figures —
+[content/introduction/index.mdx](content/introduction/index.mdx),
+[content/process/decide-if-independence-fits/index.mdx](content/process/decide-if-independence-fits/index.mdx),
+and [content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx)
+— and all three link the figures page bare. Two of the three are not Step 1. Step 5 is the trap: the
+figures page has a section called `#choose-your-regulator`, it is the obvious anchor for a link from
+step 5, and it holds only the multi-state exception count. A reader sent there for the lines that
+decide their regulator would land on a section that does not contain them.
+
+Item 20 proposes converting the 42 bare figures-page links that have a matching section into anchored
+links. Run as a mechanical sweep, it converts step 5's links to `#choose-your-regulator` and bakes the
+error into the guide's most-travelled path. The correct anchor for step 5 and for the introduction is
+`#decide-if-independence-fits`, which is what
+[content/tools/calculating-your-regulatory-assets-under-management/index.mdx](content/tools/calculating-your-regulatory-assets-under-management/index.mdx)
+already uses: "All four are on [This year's figures](/tools/this-years-figures#decide-if-independence-fits)."
+
+**What it needs:** item 20's sweep has to check each bare link against the figure it actually defers
+to, using FIGURES-INVENTORY.md's grouping rather than the name of the page the link sits on. The
+inventory's "Pages that defer to it" column already holds the mapping for every figure, so the check
+is available rather than something to reconstruct. The three links above are the known case; the sweep
+should assume there are others rather than assume there are not.
+
+**Belongs to:** item 20, as a precondition. This does not need its own pass — it needs to be read
+before item 20's sweep is written, and it is filed separately so it cannot be deferred with the
+formatting work in item 30.
