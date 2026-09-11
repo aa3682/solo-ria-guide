@@ -173,6 +173,8 @@ Compress for redundancy, never for the count. Removing a restatement or a scene-
 The record lives in the PR description. There is no running decisions file, and none should be created.
 
 ### Recorded exceptions
+- **Leave and Transition Clients** (`content/process/leave-and-transition-clients/index.mdx`) stands at approximately 1,409 words on this basis, outside the hard range, and merged on an explicit ruling under the remedy procedure rather than on a trim or a routing fix. The full record is in the description of PR #42. Do not trim this page to the range without a fresh ruling.
+- **Stay Registered and Compliant** (`content/process/stay-registered-and-compliant/index.mdx`) stands at approximately 1,311 words on this basis, outside the hard range, and merged on an explicit ruling under the remedy procedure rather than on a trim or a routing fix. The full record is in the description of PR #42. Do not trim this page to the range without a fresh ruling.
 - **Marketing and Growth** (`content/domains/marketing-and-growth/index.mdx`) stands at approximately 1,758 words on this basis, over the soft ceiling, and is accepted rather than trimmed or split. Marketing carries more regulated surface than any other practice area; the overage is subject breadth, not density or scope leakage. Six H3 subsections is the modal count for an area page, so the page is not structurally two pages sharing a file. The phone read-through found it sound. Do not trim or split this page to the ceiling without a fresh ruling.
 
 ## Page templates
