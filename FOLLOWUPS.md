@@ -660,3 +660,324 @@ plain-language sentences then repointed at the anchor. Not done here — every f
 come from a fetched primary source, which makes this a figures-page pass rather than a content edit.
 
 **Belongs to:** the next figures-page pass, with items 2, 16 and 17.
+
+## 22. The three worksheets are barely reachable from the steps they support — PARTLY DONE
+
+**Status: the orphan is fixed, the thin links are not.** On the owner's ruling that an orphaned page
+is a defect and a thin link is a judgement call,
+[content/process/stay-registered-and-compliant/index.mdx](content/process/stay-registered-and-compliant/index.mdx)
+now links the running calendar worksheet from its closing line, by linking words already on the page:
+"What you leave holding instead is [a running calendar](/tools/building-your-running-calendar) of
+amendments, renewals, deliveries, and retained records." Linking existing text rather than adding a
+sentence keeps the page at 1,311 counted words, so its recorded exception under "Word count basis" is
+undisturbed. Steps 1 and 5 were deliberately not touched; the rest of this entry stands as written.
+
+### Original entry
+
+A reader working the sidebar in order meets `/tools` after the twelve steps and the nine areas have
+already gone by, so the only way a worksheet reaches them at the moment it is useful is a link from
+its own step. Those links are thin or missing:
+
+- [content/tools/building-your-running-calendar/index.mdx](content/tools/building-your-running-calendar/index.mdx)
+  has no inbound link anywhere in `content/` except the tools landing page.
+  [content/process/stay-registered-and-compliant/index.mdx](content/process/stay-registered-and-compliant/index.mdx)
+  closes on "a running calendar of amendments, renewals, deliveries, and retained records" and its
+  practitioner Callout tells the reader to put three things "on the same calendar" — and never links
+  the worksheet that builds it.
+- [content/process/decide-if-independence-fits/index.mdx](content/process/decide-if-independence-fits/index.mdx)
+  links [Reaching Your Written Decision](/tools/reaching-your-written-decision) once, inside the
+  practitioner Callout, under the link text "your runway estimate". The H3 that actually produces the
+  written decision, "Write down where you land," does not link it.
+- [content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx)
+  links the RAUM worksheet once, inside the practitioner Callout, under the link text "worksheet".
+  The H3 that walks the calculation, "Establish your regulatory assets under management," sends the
+  reader to the SEC's Form ADV General Instructions PDF instead — off-site, to a PDF, on a phone,
+  when the site's own worksheet is what the reader wants there.
+
+The tools landing page states the relationship in the other direction for all three ("It supports
+[step]"), so the intent is already written down; it is the return link that is missing or mislabelled.
+
+**What it needs:** a decision on where a worksheet link belongs on a step page — in the body H3 that
+produces the artifact, in the practitioner Callout, in a "Next step" neighbour, or more than one —
+and then the edits. The link text is part of the same decision: "your runway estimate" and
+"worksheet" both name the thing the worksheet computes rather than the page the reader lands on. Not
+answered here.
+
+**Belongs to:** a step-page pass. Item 20's figures-page anchor sweep touches the same sentences on
+several of these pages, so the two are worth doing together.
+
+## 23. Four glossary terms are defined but nothing links to them
+
+Every page that names one of these concepts describes it in plain words and does not link the
+definition that already exists:
+
+- **Mid-sized adviser band** — [content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx)
+  calls it "a band in between where the answer depends on the home state" and then "The middle band",
+  both unlinked, while linking [buffer on either side of the SEC line](/glossary#buffer-on-either-side-of-the-sec-line)
+  in the same paragraph. The figures page carries a row named "Mid-sized adviser band".
+- **Brochure supplement** — [content/process/write-the-disclosure-documents/index.mdx](content/process/write-the-disclosure-documents/index.mdx)
+  introduces it as "a second and much shorter document describes the individual" and calls it "the
+  supplement" thereafter, all unlinked, while linking [firm brochure](/glossary#firm-brochure) in the
+  H3 above it.
+- **Standardized account transfer** — [content/process/leave-and-transition-clients/index.mdx](content/process/leave-and-transition-clients/index.mdx)
+  calls it "a standardized transfer process that most custodians and broker-dealers participate in",
+  unlinked.
+- **Hypothetical performance** — [content/domains/marketing-and-growth/index.mdx](content/domains/marketing-and-growth/index.mdx)
+  says "an illustration or a projection is not a track record and cannot be dressed as one",
+  unlinked. The figures page carries a row named "Treatment required for hypothetical performance".
+
+This also makes CLAUDE.md's own definition of the Glossary running list inaccurate: it describes the
+list as "Every term that any page links to /glossary," and four of the sixty entries are not linked
+from anywhere.
+
+**What it needs:** a link on first mention in each of the four places, checked against the one-callout
+and first-mention conventions the surrounding pages already follow — or, if a term is genuinely not
+worth linking from prose, a decision about what its presence in the running list then means. Not
+answered here.
+
+**Belongs to:** the consistency pass (build order item 5).
+
+## 24. "Form ADV" links to the glossary on three pages and to an SEC PDF on a fourth
+
+`[Form ADV](/glossary#form-adv)` appears on
+[content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx),
+[content/process/file-and-get-approved/index.mdx](content/process/file-and-get-approved/index.mdx),
+and [content/domains/compliance-and-supervision/index.mdx](content/domains/compliance-and-supervision/index.mdx).
+On [content/process/write-the-disclosure-documents/index.mdx](content/process/write-the-disclosure-documents/index.mdx)
+the same two words link to `https://www.sec.gov/about/forms/formadv-part2.pdf` instead.
+
+A reader who has learned by step 5 that a blue "Form ADV" is a glossary definition taps it on step 7
+and gets a PDF download. On a phone that is a full context switch out of the site, and it happens at
+the one point in the guide where the reader most needs the glossary's short version of what the form
+is and what its parts are.
+
+The same URL is also described two different ways where it is cited properly, as a "Go deeper" entry:
+"SEC: Form ADV Part 2 General Instructions" on
+[content/domains/client-education/index.mdx](content/domains/client-education/index.mdx) and "SEC:
+Form ADV Part 2 Instructions" on
+[content/domains/service-and-pricing-models/index.mdx](content/domains/service-and-pricing-models/index.mdx).
+
+**What it needs:** step 7's sentence repointed at `/glossary#form-adv` with the SEC instructions cited
+some other way if they are needed there at all, and one spelling settled for the document's name
+across the two area pages. Not done here — the sentence has to be reworded, not just relinked, so it
+is not a one-line fix.
+
+**Belongs to:** the consistency pass (build order item 5).
+
+## 25. "Which practice areas apply" bullets start capitalised on steps 1–7 and lowercase on steps 8–12
+
+Every bullet under that heading opens with a capital letter on
+`decide-if-independence-fits`, `design-the-firm`, `set-your-advice-approach`, `form-the-business`,
+`choose-your-regulator`, `qualify-as-an-adviser`, and `write-the-disclosure-documents`
+("The runway estimate and revenue analysis in this step…"), and with a lowercase letter on
+`write-the-policies`, `file-and-get-approved`, `set-up-custody-and-technology`,
+`leave-and-transition-clients`, and `stay-registered-and-compliant`
+("the privacy policy and the security and continuity procedures written here…").
+
+The split is clean at step 8 and matches the order the pages were built, so nothing is wrong on any
+one page — it only shows when the steps are read in sequence, which is how the sidebar presents them.
+Seventeen bullets across five files are on the lowercase side.
+
+**What it needs:** a ruling on which form is the house style, then the sweep. The capitalised form is
+on more pages and reads as the earlier decision, but that is not a reason on its own. Not decided
+here, and no bullet was touched.
+
+**Belongs to:** a step-page voice pass, with items 18 and 19.
+
+## 26. Steps 10 and 11 give opposite instructions about whether they overlap
+
+[content/process/set-up-custody-and-technology/index.mdx](content/process/set-up-custody-and-technology/index.mdx)
+is step 10. [content/process/leave-and-transition-clients/index.mdx](content/process/leave-and-transition-clients/index.mdx)
+is step 11, and its Common mistakes list closes with:
+
+> Starting client conversations before the custody and technology work from the previous step is
+> actually finished, leaving nowhere for a transferring account to land.
+
+Its practitioner Callout, the next thing on the page, opens:
+
+> In practice, this step rarely waits for the previous one to finish. Client conversations and
+> account-transfer paperwork often start while the custodial relationship and operational systems from
+> the previous step are still being tested… Treat the two steps as running in parallel, even though
+> this guide presents them in sequence.
+
+Both are defensible on their own — the mistake is about collecting authorizations you cannot execute,
+the Callout is about not idling the calendar — but they are three lines apart, they use the same
+words for the same two activities, and on a phone they land on the same screen. A reader cannot tell
+from the page which one is the guidance.
+
+**What it needs:** one of the two reworded so the distinction it turns on is visible: the Callout's
+"far enough along" test is the real rule, and the bullet reads as an absolute. Rewording the bullet is
+the likelier fix. Not written here.
+
+**Belongs to:** a step-page voice pass, with items 18, 19 and 25.
+
+## 27. The SEC-path callout on step 9 is the densest block on the site
+
+There are twenty-three SEC-path callouts across `content/`, running from 44 to 115 words with a
+median around 67. The longest by a wide margin is the one under "Know when the registration is
+effective" on
+[content/process/file-and-get-approved/index.mdx](content/process/file-and-get-approved/index.mdx),
+at 115 words in three sentences.
+
+Length alone would not matter. What makes it hard on a narrow screen is that all three sentences are
+qualifications of each other — the statute gives a deadline to act "rather than a date on which your
+own registration takes effect by itself", then a second deadline applies to proceedings and can be
+extended, so "a filing that draws them resolves well after the deadline to act has passed", then a
+state's review is on a different clock again. The reader is on the state-registered path, so the
+whole block is telling them about a timetable that does not apply to them, in a warning-coloured box
+roughly a phone screen tall, at the point in the page where they wanted to know when they can start
+working.
+
+It is within the callout rule's one-to-three-sentence limit as written; the limit counts sentences,
+not clauses.
+
+**What it needs:** a trim, or a split of the second sentence's content out of the callout, or a
+ruling that the divergence genuinely needs all of it. The two figures behind it already have their own
+rows under `#file-and-get-approved` on the figures page, so some of the detail may not need to be in
+the callout at all. Not attempted here.
+
+**Belongs to:** a step-page voice pass, with items 18, 19, 25 and 26.
+
+## 28. The running calendar worksheet's "the number" heading asks a question the page has refused — PARTLY DONE
+
+**Status: the false sentence is fixed, the heading is not.** The opening line of
+[content/tools/building-your-running-calendar/index.mdx](content/tools/building-your-running-calendar/index.mdx)
+now reads "The other worksheets in this section produce an answer you write down," replacing "Every
+page in this guide before this one produces something that finishes," which the nine practice-area
+pages directly contradicted. The replacement is true of both other worksheets, makes no claim about
+pages outside `/tools`, and is the same length, so the page stays at 778 counted words.
+
+The heading was deliberately left alone. It is not a page defect: it is the cost of the owner's
+standing ruling that a worksheet keeps the template's headings verbatim rather than renaming them per
+page. Reversing that inside a correction PR would have been a silent reversal of a deliberate
+decision, so it is recorded here as a request to revisit the ruling rather than as a fix to apply.
+Read the second half of the original entry below as that request.
+
+### Original entry
+
+Two things on
+[content/tools/building-your-running-calendar/index.mdx](content/tools/building-your-running-calendar/index.mdx),
+both of which only bite in sidebar order.
+
+The first line of the page is "Every page in this guide before this one produces something that
+finishes." The reader has just come through the nine practice-area pages, whose landing page
+([content/domains/index.mdx](content/domains/index.mdx)) says "a Practice Area never finishes — it is
+a subject you keep working in for as long as the firm operates," and each of which repeats the point
+in its own opening paragraph. The sentence is reaching for a real contrast — everything else hands you
+a finished artifact, this hands you an instrument you reopen — but as written it is contradicted by
+the nine pages immediately before it.
+
+The second is that the page's "What this measures" section answers "Not a quantity," and four
+headings later the fixed worksheet heading reads "What the number does and does not tell you." The
+section under it recovers well ("The count tells you how much the firm is tracking"), but the heading
+asserts a number the page has already said it does not produce.
+
+**What it needs:** the opening sentence rewritten to contrast artifacts rather than pages, which does
+not require touching anything else. The heading is a template question, not a page question — CLAUDE.md's
+worksheet skeleton fixes that wording for all worksheets, so changing it here means changing the
+template or granting this page an exception. Neither was done here.
+
+**Belongs to:** the first one is a single-page edit and can go in any worksheet pass; the second is a
+CLAUDE.md decision and should be settled before a fourth worksheet is written.
+
+## 29. /about is the only page that ends without a Related list, and the only one with no description
+
+[content/about/index.mdx](content/about/index.mdx) fails both checks, and it is the sole page in
+`content/` that fails either:
+
+- It has no `## Related` list. Every other page outside `content/process/` and `content/domains/` has
+  one, and those two folders substitute their own cross-link sections. CLAUDE.md's writing style
+  requires the list for exactly this set of pages.
+- Its frontmatter has `title` but no `description`. All thirty other pages carry one.
+
+About is the last entry in the sidebar, so a reader who has gone through the whole guide in order ends
+on the one page with nowhere to go next. The page's final line is the CC BY attribution string, which
+makes the stop feel like the end of a licence file rather than the end of a guide.
+
+**What it needs:** a Related list of two to four links and a one-sentence description. Both are
+authoring rather than mechanical, and the Related list's targets are a small judgement call —
+[Introduction](/introduction) is already linked inline in the body, so the list should probably not
+lead with it. Not written here.
+
+**Belongs to:** the consistency pass (build order item 5).
+
+## 30. Figures-page sweep additions from the phone read-through: two unestablished Values, and a table only the figures page is exempt from
+
+Three findings from the cold read that belong to the figures-page pass with items 2, 16, 17 and 21.
+They were first filed as a subsection of item 17 and moved here, because none of them is about the
+Source-form question item 17 asks. The anchor finding that came out of the same read is **not** here —
+it is item 31, because it is a constraint on item 20 rather than work on this page.
+
+**Two rows read `NEEDS-VALUE` where the pages sending readers to them promise a number.** The filing
+system fee under `#file-and-get-approved` and the yearly registration renewal window under
+`#stay-registered-and-compliant` are both unestablished. The page's preamble explains what
+`NEEDS-VALUE` means, so the page is honest — but
+[content/process/file-and-get-approved/index.mdx](content/process/file-and-get-approved/index.mdx)
+says "This year's figures holds each one with its source" and
+[content/process/stay-registered-and-compliant/index.mdx](content/process/stay-registered-and-compliant/index.mdx)
+says "Both the window and the fee are on This year's figures." Both are flat promises of a number the
+reader does not get. Both values sit on operator-published pages that a fetch could settle
+(`iard.com/fee_schedule` and `iard.com/renewal-program`), which is why this is the defect of the three
+rather than a judgement call.
+
+**The page is the only five-column table on the site, and the most linked-to page in the guide.**
+Eighty-nine links in `content/` arrive at a Concept | What it governs | Value | Year | Source table
+whose middle and right cells routinely run past forty words; the "Amount of a required surety bond"
+row's What-it-governs cell is four sentences and 93 words. The three worksheet pages all hold to three
+columns because CLAUDE.md's worksheet template caps them there so they "render on a phone without
+horizontal scrolling." The figures page is not covered by that rule and does not meet it. Reading one
+row on a narrow screen means scrolling sideways past two long prose cells to reach the Value, with
+Year and Source off-screen from the start.
+
+**Step 10 promises a pointer the Step 10 rows do not carry.**
+[content/process/set-up-custody-and-technology/index.mdx](content/process/set-up-custody-and-technology/index.mdx)
+says "see This year's figures for the model most states built on **and where to check your own
+regulator's adaptation of it**." The three Step 10 rows name the NASAA custody model rule and say each
+state adapts it, but unlike most other "Varies by state" rows they carry no pointer to a state
+securities regulator, so the second half of that promise is not delivered. This one overlaps item 17
+directly: it is a question about what a "Varies by state" Source cell has to carry.
+
+**What it needs:** the two Values fetched from the operator's pages, per the rule that no Value is
+ever filled from memory; a decision on the table shape — fewer columns, "What it governs" moved out of
+the table, or an accepted exception recorded against the worksheet three-column rule; and either a
+regulator pointer added to the Step 10 rows or step 10's sentence narrowed to what the rows say.
+Nothing on the page was changed.
+
+**Belongs to:** the next figures-page pass, with items 2, 16, 17 and 21.
+
+## 31. Three pages defer to figures filed under a different step's anchor, which will mislead item 20's sweep
+
+This was reported in the read-through as the figures page misfiling four rows. That was wrong, and the
+correction matters for how it gets fixed. The four assets-under-management lines — small adviser
+ceiling, large adviser threshold, mid-sized band, and the buffer — are filed under
+`#decide-if-independence-fits` on [content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx)
+because [FIGURES-INVENTORY.md](FIGURES-INVENTORY.md) groups them under Step 1, and CLAUDE.md requires
+the page's sections to follow the inventory's grouping. The page is correct. The inventory row even
+records the consequence in its own note: "Introduction and Step 1 defer only 'the threshold'; Step 5
+defers the full set."
+
+The problem is on the linking side. Three pages defer to those figures —
+[content/introduction/index.mdx](content/introduction/index.mdx),
+[content/process/decide-if-independence-fits/index.mdx](content/process/decide-if-independence-fits/index.mdx),
+and [content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx)
+— and all three link the figures page bare. Two of the three are not Step 1. Step 5 is the trap: the
+figures page has a section called `#choose-your-regulator`, it is the obvious anchor for a link from
+step 5, and it holds only the multi-state exception count. A reader sent there for the lines that
+decide their regulator would land on a section that does not contain them.
+
+Item 20 proposes converting the 42 bare figures-page links that have a matching section into anchored
+links. Run as a mechanical sweep, it converts step 5's links to `#choose-your-regulator` and bakes the
+error into the guide's most-travelled path. The correct anchor for step 5 and for the introduction is
+`#decide-if-independence-fits`, which is what
+[content/tools/calculating-your-regulatory-assets-under-management/index.mdx](content/tools/calculating-your-regulatory-assets-under-management/index.mdx)
+already uses: "All four are on [This year's figures](/tools/this-years-figures#decide-if-independence-fits)."
+
+**What it needs:** item 20's sweep has to check each bare link against the figure it actually defers
+to, using FIGURES-INVENTORY.md's grouping rather than the name of the page the link sits on. The
+inventory's "Pages that defer to it" column already holds the mapping for every figure, so the check
+is available rather than something to reconstruct. The three links above are the known case; the sweep
+should assume there are others rather than assume there are not.
+
+**Belongs to:** item 20, as a precondition. This does not need its own pass — it needs to be read
+before item 20's sweep is written, and it is filed separately so it cannot be deferred with the
+formatting work in item 30.
