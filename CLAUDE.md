@@ -122,6 +122,7 @@ Tools, page title → sidebar label:
 - This year's figures → This year's figures
 - Calculating Your Regulatory Assets Under Management → Regulatory AUM
 - Building Your Running Calendar → Running Calendar
+- Reaching Your Written Decision → Go or No-Go
 
 ## Stack
 - Nextra 4, nextra-theme-docs, Next.js App Router, MDX in content/
