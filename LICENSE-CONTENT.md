@@ -8,7 +8,9 @@ The canonical license text is at https://creativecommons.org/licenses/by/4.0/.
 You may share and adapt this writing, including commercially, as long as you
 credit the project. To credit it, copy this line:
 
-The Independent Path — https://solo-ria-guide.vercel.app — CC BY 4.0
+`The Independent Path — https://solo-ria-guide.vercel.app — CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/`
+
+If you adapt or modify the writing, say so where you credit it.
 
 The code that builds the site is not covered here. It is licensed separately
 under MIT; see `LICENSE`.

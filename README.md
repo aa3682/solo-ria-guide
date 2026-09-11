@@ -49,4 +49,6 @@ The prose in `content/` is licensed under [CC BY 4.0](https://creativecommons.or
 
 To credit the prose, copy this line:
 
-The Independent Path — https://solo-ria-guide.vercel.app — CC BY 4.0
+`The Independent Path — https://solo-ria-guide.vercel.app — CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/`
+
+If you adapt or modify the writing, say so where you credit it.
