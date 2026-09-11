@@ -47,8 +47,9 @@ It appears in a Callout on the four section landing pages — introduction, proc
 
 ## Attribution and license
 - The guide is published under the project name The Independent Path, not a personal name. No personal name, employer, credential, or license appears anywhere in the repo, on pages or in metadata.
-- Prose in `content/` is licensed under CC BY 4.0; code is licensed under MIT. This is stated in README.md and, once that page is written, on /about.
-- Writing the About page's authorship description is out of scope until a prompt asks for it; when it is written, it describes the author without a personal name, employer, credential, or license.
+- Prose in `content/` is licensed under CC BY 4.0; code is licensed under MIT. The split is stated in README.md, in LICENSE-CONTENT.md, and on /about. LICENSE stays a stock MIT file so GitHub keeps detecting the repo as MIT; its copyright line reads "The Independent Path".
+- The attribution string reusers copy is "The Independent Path — https://solo-ria-guide.vercel.app — CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/". It is defined here and reproduced verbatim in three files: README.md, LICENSE-CONTENT.md, and the "License and reuse" section of /about, where each copy sits in a backticked code span so it renders as literal copyable text rather than a link. Changing the string means changing four places — this definition and those three files — and all four must match byte for byte. One sentence of prose travels with it, in the same three files and outside the code span: "If you adapt or modify the writing, say so where you credit it." CC BY asks a reuser to indicate whether they changed the material, which a fixed string cannot carry, so the clause is defined here too and moves on the same terms as the string. A change that updates the files and leaves either definition stale has not been made.
+- /about carries the authorship description, under the "How this guide is grounded" heading. It describes the author without a personal name, employer, credential, or license, and it is the project-facing counterpart to "Where this comes from" on /introduction rather than a restatement of it.
 
 ## Structure
 Top-level sections, in this sidebar order:
@@ -244,7 +245,7 @@ Every page under `content/process/<slug>/index.mdx` follows this exact skeleton,
 2. H1 matching the frontmatter title.
 3. Opening paragraph, no heading: what this step is, in plain words.
 4. H2 "Why it matters"
-5. H2 "What actually happens" — three to six H3 substeps. The final H3 states what the reader leaves the step holding.
+5. H2 "What actually happens" — 3–6 H3 substeps. The final H3 states what the reader leaves the step holding.
 6. H2 "Questions to ask yourself" — four to six questions.
 7. H2 "Common mistakes" — a bulleted list, one mistake per bullet, each one or two sentences.
 8. H2 "Which practice areas apply" — a list linking the relevant `/domains/` routes, one sentence each on why it applies at this step.
