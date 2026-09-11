@@ -80,15 +80,15 @@ export default {
 
 ## 2. Every link in `content/` pointing at `/tools` or a page beneath it
 
-68 links across 22 files. The full source-by-source table, with the surrounding
+69 links across 22 files (68 lines — one line carries two). The full source-by-source table, with the surrounding
 sentence for each, is posted as a comment on the PR rather than in the description,
 per `CLAUDE.md`'s rule about URL lists in PR descriptions.
 
-### Shape of the 68
+### Shape of the 69
 
 | Target | Count |
 | --- | --- |
-| `/tools/this-years-figures` (no anchor) | 41 |
+| `/tools/this-years-figures` (no anchor) | 42 |
 | `/tools/this-years-figures#<anchor>` | 24 |
 | `/tools` (the section landing page) | 3 |
 
@@ -132,7 +132,7 @@ and no area page links a figures-page anchor; they all link the page bare.
 | `content/process/index.mdx` | 1 |
 | `content/domains/compliance-and-supervision/index.mdx` | 1 |
 | `content/domains/records-and-documentation/index.mdx` | 1 |
-| `content/domains/risk-and-insurance/index.mdx` | 1 |
+| `content/domains/risk-and-insurance/index.mdx` | 2 |
 | `content/domains/technology-and-client-experience/index.mdx` | 1 |
 | `content/introduction/index.mdx` | 2 |
 | `content/about/index.mdx` | 1 |
@@ -754,7 +754,7 @@ which side of the line they landed on without sending them off-page.
 uses one.** "Name the concept and link the matching section of /tools/this-years-figures."
 All 24 anchored links in the repo come from the glossary. Every step and area page links
 the page bare. A worksheet set built to the rule would be the first non-glossary content
-to link by anchor — a visible inconsistency with the 41 bare links already in place,
+to link by anchor — a visible inconsistency with the 42 bare links already in place,
 resolvable either way but not currently ruled on.
 
 **5. `content/domains/index.mdx` does not link `/tools`.** `/introduction` and `/process`
