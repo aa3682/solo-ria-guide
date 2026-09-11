@@ -45,4 +45,8 @@ pnpm start
 
 ## License
 
-The prose in `content/` is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The code is licensed under MIT (see `LICENSE`).
+The prose in `content/` is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see `LICENSE-CONTENT.md`. The code is licensed under MIT; see `LICENSE`.
+
+To credit the prose, copy this line:
+
+The Independent Path — https://solo-ria-guide.vercel.app — CC BY 4.0
