@@ -127,12 +127,12 @@ and no area page links a figures-page anchor; they all link the page bare.
 | `content/process/write-the-policies/index.mdx` | 2 |
 | `content/domains/firm-economics/index.mdx` | 2 |
 | `content/domains/marketing-and-growth/index.mdx` | 2 |
+| `content/domains/risk-and-insurance/index.mdx` | 2 |
 | `content/process/form-the-business/index.mdx` | 1 |
 | `content/process/set-up-custody-and-technology/index.mdx` | 1 |
 | `content/process/index.mdx` | 1 |
 | `content/domains/compliance-and-supervision/index.mdx` | 1 |
 | `content/domains/records-and-documentation/index.mdx` | 1 |
-| `content/domains/risk-and-insurance/index.mdx` | 2 |
 | `content/domains/technology-and-client-experience/index.mdx` | 1 |
 | `content/introduction/index.mdx` | 2 |
 | `content/about/index.mdx` | 1 |
