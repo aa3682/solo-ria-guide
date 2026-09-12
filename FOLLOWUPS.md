@@ -616,7 +616,53 @@ otherwise have been caught.
 **Belongs to:** the same step-page voice pass as item 18 — both are step 6 closing-section items and
 should be read together.
 
-## 20. Most links to the figures page are bare where an anchored link exists, and the worksheet template requires anchors
+## 20. Most links to the figures page are bare where an anchored link exists, and the worksheet template requires anchors — DONE
+
+**Status: done.** Swept in this PR. The decision this entry asked for was made, the sweep followed it,
+and the rule now lives in CLAUDE.md rather than only here.
+
+**Both of this entry's counts were stale.** It is **46** bare links to `/tools/this-years-figures` in
+`content/`, not forty-two. The four it misses are the three worksheet pages, which shipped after PR #48
+built the inventory. And "all twenty-four anchored links in the repo come from the glossary" was true
+when written and is not now: the glossary still has exactly 24, and the three worksheets have added 19
+more — so the inconsistency this entry predicted would arrive with the first worksheet had already
+arrived before the sweep ran. Total inbound links to the figures page from `content/` is 89, which
+matches the count item 32 derived independently.
+
+**The classification.** Of the 46 bare links, 8 are references — a Related-list entry, a landing-page
+card, or a general pointer naming no figure — and stay bare. The other 38 are deferrals: 35 resolve to
+a single figures section, and 3 span two or more sections.
+
+**What shipped.** 35 links anchored across 17 files in one commit, with prose byte-identical: only the
+URLs changed. Anchored links across `content/` went from 43 to 78, and bare from 46 to 11. Those 11 are
+the 8 references plus the 3 spanning deferrals, and every one is enumerable by path and line. That is
+the invariant the spanning rule exists to protect — after this pass, every remaining bare link is
+deliberate, and a later reader can check it.
+
+**Nine of the 35 would have been mis-anchored by a mechanical page-name sweep**, which is 26% and is
+exactly what item 31 was filed to prevent. Item 31 named three at-risk pages and caught two of them;
+step 1 turned out safe, and six traps it did not name were found, including a step page deferring to a
+practice-area section rather than a step one.
+
+**The rulings, recorded so they are not re-derived.** Anchors are assigned per figure, not per page: one
+page may carry several different anchors, and the same-name anchor is never the default. A deferral
+spanning two or more figures sections stays bare, permanently and on purpose, so the reader lands at the
+top and can scan the whole table instead of being sent to one of several sections arbitrarily.
+Splitting such a sentence into one deferral per figure was considered and rejected: it is prose surgery
+on four pages in service of an anchoring item, and two of those pages carry recorded word-count
+exceptions.
+
+**Where the rule landed.** CLAUDE.md hard rule 5 — the only unscoped, repo-wide statement that a figure
+belongs on the figures page and the page links instead. Stating it there binds every page type once
+rather than three times. The worksheet block and the glossary section already said "anchored" and were
+left alone. The area-page convention required no anchor and presumed a single destination per page, so
+it was brought into line in the same PR and now defers to hard rule 5 rather than restating it.
+
+**Belongs to (supersedes the line in the original entry below):** nothing — this is done. The original
+entry's closing line routes this to the consistency pass, or to the first worksheet PR if one came
+first. It shipped as its own pass instead, so neither is where a reader should look for it.
+
+### Original entry
 
 Forty-two of the sixty-nine links to `/tools/this-years-figures` in `content/` point at the page with
 no anchor, even where the figures page carries a section whose id matches the linking page exactly.
@@ -661,10 +707,11 @@ come from a fetched primary source, which makes this a figures-page pass rather 
 
 **Belongs to:** the next figures-page pass, with items 2, 16 and 17.
 
-## 22. The three worksheets are barely reachable from the steps they support — PARTLY DONE
+## 22. The three worksheets are barely reachable from the steps they support — DONE
 
-**Status: the orphan is fixed, the thin links are not — and a precedent has appeared that this entry
-could not have known about.** Two rounds, below.
+**Status: done, by reversal — this entry's placement premise is retired rather than answered.** Three
+rounds, below. The superseded status line read: "the orphan is fixed, the thin links are not — and a
+precedent has appeared that this entry could not have known about."
 
 **Round 1 — PR #55, Sep 11.** On the owner's ruling that an orphaned page is a defect and a thin link
 is a judgement call,
@@ -697,6 +744,27 @@ anything: Round 1 was linking existing words to clear an orphan, and the placeme
 those words happened to sit. Whoever answers this entry's question is answering it for the second
 time, and should decide whether to ratify the default or overturn it rather than inheriting it as
 settled.
+
+**Round 3 — this PR, Sep 12. Closed by reversal.** The question was framed as placement, and placement
+turns out not to be the variable. Moving the running-calendar link into step 12's practitioner Callout
+was trialled and measured: it costs nothing. CLAUDE.md's word-count basis excludes link URLs and counts
+the practitioner Callout, so body prose and that Callout are the same weight, and a link can never cost
+words moving between them on any page. With cost removed, the only argument left for the Callout was
+consistency — and it would have bought that by moving the link onto "the same calendar", a
+back-reference that does not tell a reader it goes anywhere, away from "a running calendar", which names
+its destination. Consistency purchased by degrading the one link that reads best is not worth having.
+
+So the convention is about link text, not placement: **a worksheet link sits on the words that name the
+page the reader lands on, wherever in the page those words already are.** Placement is a consequence of
+that, not a rule of its own. Recorded in CLAUDE.md's Writing style section. Round 1's unrecorded default
+is neither ratified nor overturned, because it was never the question.
+
+The two thin links stay as they are. "Your runway estimate" on step 1 and "worksheet" on step 5 both
+name what the worksheet computes rather than the page, so neither follows the convention — and both read
+naturally where they sit, where forcing a page title into the sentence would read worse than a slightly
+vague link. The convention governs a new link and is explicitly not a retrofit trigger. The accepted
+cost: it ships with two of its three existing instances not following it, which a later reader may
+mistake for drift rather than a decision.
 
 **Belongs to (supersedes the line in the original entry below):** item 20's step-page pass, unchanged.
 Item 25's capitalisation sweep now rides the same pass.
@@ -838,11 +906,22 @@ is not a one-line fix.
 
 **Belongs to:** the consistency pass (build order item 5).
 
-## 25. "Which practice areas apply" bullets start capitalised on steps 1–7 and lowercase on steps 8–12
+## 25. "Which practice areas apply" bullets start capitalised on steps 1–7 and lowercase on steps 8–12 — DONE
 
-**Status: RULED, and half recorded. The ruling is capitalise; the sweep remains.** The ruling was made
-in the verification pass on Sep 12 and CLAUDE.md's step-page template item 8 now records the whole
-bullet shape. What remains is the sweep of 20 first letters across five files.
+**Status: done.** Swept in this PR, riding item 20's step-page pass as planned. The superseded status
+line read: "RULED, and half recorded. The ruling is capitalise; the sweep remains." The ruling was made
+in the verification pass on Sep 12, and CLAUDE.md's step-page template item 8 records the whole bullet
+shape.
+
+**The sweep, re-derived rather than taken from this entry.** All 46 bullets under "Which practice areas
+apply" across the twelve step pages were tested against template item 8 on four axes: bullet shape,
+capital after the colon, terminal period, and one sentence. Exactly one axis failed anywhere — 20
+bullets lowercase after the colon, on `file-and-get-approved` (3), `leave-and-transition-clients` (5),
+`set-up-custody-and-technology` (3), `stay-registered-and-compliant` (5), and `write-the-policies` (4).
+Zero shape violations, zero missing periods, zero multi-sentence bullets in 46. Nothing non-mechanical
+was found — no fragment, no missing sentence, nothing that needed rewording to take a capital — so all
+20 were fixed and none was left behind. This entry's corrected count of 20 across those five files held
+exactly, unlike item 20's.
 
 **This entry's own numbers were wrong.** It is **twenty** bullets on the lowercase side, not
 seventeen — 4 on `write-the-policies`, 3 on `file-and-get-approved`, 3 on
@@ -1249,3 +1328,35 @@ the table, or an accepted exception. Not answered here.
 **Belongs to:** a precondition for the **table-shape decision only**. It does **not** block item 30a:
 fetching two unestablished Values is independent of how many columns the table has, and parking a
 fetchable defect behind an unresolved CLAUDE.md question is the opposite of why this was split out.
+
+
+## 33. FIGURES-INVENTORY.md is behind the repo, in both directions
+
+Item 20's sweep used [FIGURES-INVENTORY.md](FIGURES-INVENTORY.md) as its source of truth for which
+figure each deferral resolves to, and found that the file no longer describes `content/`.
+
+**Deferrals missing from the "Pages that defer to it" column.** More than one sentence in `content/`
+defers a figure to `/tools/this-years-figures` without the deferring page appearing in that figure's
+row. One is a step page deferring a figure filed under a practice area. Another defers a class of fees
+spanning several sections rather than a single figure, which may be why it was never filed — that one is
+also a link the anchor rule now keeps deliberately bare. The column is sound in the other direction: no
+figure it lists is unreachable from a page it lists.
+
+**The headline counts are stale.** The preamble states counts of distinct figures, deferral sites, and
+pages that defer at least once. All three predate the three worksheet pages, which defer repeatedly and
+do not appear in the file at all. Nothing on the site is wrong because of this — the worksheets are
+already anchored — but the inventory has stopped being a description of the repo.
+
+**What it needs:** the counts re-derived from `content/` rather than adjusted, and the column rebuilt
+from that derivation. **No count is stated in this entry, on purpose.** Item 20 carried its own counts
+from PR #48; they went stale before it was executed and were quoted forward through two threads before
+anyone re-derived them, and re-deriving them was most of that pass's value. An item whose numbers the
+next pass has to re-derive anyway gains nothing by carrying them, and misleads if the file moves again.
+Whoever works this derives every number first and treats the prose above as a description of what is
+wrong, not as data.
+
+That is also why the missing deferrals were not patched inside item 20's PR. Adding rows to a file whose
+headline figures are wrong makes it look checked when it is not.
+
+**Belongs to:** its own pass. It is a precondition for nothing currently queued — item 20, the only item
+that depended on the inventory, is done.
