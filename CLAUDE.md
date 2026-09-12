@@ -255,7 +255,7 @@ Every page under `content/process/<slug>/index.mdx` follows this exact skeleton,
 5. H2 "What actually happens" — 3–6 H3 substeps. The final H3 states what the reader leaves the step holding.
 6. H2 "Questions to ask yourself" — four to six questions.
 7. H2 "Common mistakes" — a bulleted list, one mistake per bullet, each one or two sentences.
-8. H2 "Which practice areas apply" — a list linking the relevant `/domains/` routes, one sentence each on why it applies at this step.
+8. H2 "Which practice areas apply" — a list linking the relevant `/domains/` routes, one sentence each on why it applies at this step. Each bullet is the area link, a colon, then that sentence, which begins with a capital and ends with a period.
 9. A `<Callout type="info">` for practitioners, placed after the practice areas list, with no heading of its own.
 10. H2 "Next step" — a single sentence linking the next `/process/` route. The last step's Next step links to the Practice Areas index at `/domains` instead, since the practice areas are standing material that never finishes.
 
