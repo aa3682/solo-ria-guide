@@ -17,9 +17,14 @@ deferring sentence identifies the row's figure — by naming it, or by a descrip
 that row satisfies. The test runs on each item a sentence enumerates rather than on the
 sentence as a whole: an item covering two figures the sentence has already distinguished
 names both, while a single item fitting several rows the sentence never separates is
-imprecise, and the page is listed on every row it fits. The glossary is not listed in this
-column. Its definitions defer widely enough that an entry would narrow nothing, so check a
-figure change against the glossary whatever a row names.
+imprecise, and the page is listed on every row it fits. Entries in a cell run in site
+order — introduction, then process pages in step order, then practice areas in area order,
+then tools pages in tools order. One cell departs from it: on the row for record retention
+under Step 8, the section's own step page sits first. No other row pulls its section's page
+forward, so the convention does not cover this and it is recorded as a departure rather
+than a rule. The glossary is not listed in this column. Its definitions defer widely enough
+that an entry would narrow nothing, so check a figure change against the glossary whatever
+a row names.
 
 **On grouping.** Each figure is filed under the earliest section in canonical order that
 defers to it; every deferring page is listed in the last column regardless of section. The
