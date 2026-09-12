@@ -658,6 +658,10 @@ rather than three times. The worksheet block and the glossary section already sa
 left alone. The area-page convention required no anchor and presumed a single destination per page, so
 it was brought into line in the same PR and now defers to hard rule 5 rather than restating it.
 
+**Belongs to (supersedes the line in the original entry below):** nothing — this is done. The original
+entry's closing line routes this to the consistency pass, or to the first worksheet PR if one came
+first. It shipped as its own pass instead, so neither is where a reader should look for it.
+
 ### Original entry
 
 Forty-two of the sixty-nine links to `/tools/this-years-figures` in `content/` point at the page with
