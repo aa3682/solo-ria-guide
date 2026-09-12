@@ -4,8 +4,7 @@ What `/tools/this-years-figures` has to hold, derived by reading every place in 
 that defers a figure to it. This is a list of requirements, not a draft of the page: it
 carries no values, no years, and no URLs.
 
-**Counts:** 41 distinct figures, 37 deferral sites, 17 pages that defer at least once.
-There are more figures than deferral sites because several sentences defer two or three
+There are more figures than deferral sites because several sentences defer multiple
 figures at once.
 
 **How to read the table.** "What sets it" records only what the deferring page itself says
