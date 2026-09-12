@@ -639,10 +639,16 @@ the 8 references plus the 3 spanning deferrals, and every one is enumerable by p
 the invariant the spanning rule exists to protect — after this pass, every remaining bare link is
 deliberate, and a later reader can check it.
 
-**Nine of the 35 would have been mis-anchored by a mechanical page-name sweep**, which is 26% and is
-exactly what item 31 was filed to prevent. Item 31 named three at-risk pages and caught two of them;
-step 1 turned out safe, and six traps it did not name were found, including a step page deferring to a
-practice-area section rather than a step one.
+**A mechanical page-name sweep would have got nine of the 35 wrong — 26%**, which is exactly what
+item 31 was filed to prevent. Eight would have been sent to a same-name section that does not hold
+the figure, and one would have been left bare for want of one; the sharpest case is a step page
+deferring to a practice-area section rather than a step one. That is item 31's figure, scored on the
+counterfactual item 31's own entry now states — see item 31 for that definition, the page list, and
+what this entry got wrong about it. The superseded text read: "Nine of the 35 would have been
+mis-anchored by a mechanical page-name sweep, which is 26% and is exactly what item 31 was filed to
+prevent. Item 31 named three at-risk pages and caught two of them; step 1 turned out safe, and six
+traps it did not name were found, including a step page deferring to a practice-area section rather
+than a step one."
 
 **The rulings, recorded so they are not re-derived.** Anchors are assigned per figure, not per page: one
 page may carry several different anchors, and the same-name anchor is never the default. A deferral
