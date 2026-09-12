@@ -663,14 +663,43 @@ come from a fetched primary source, which makes this a figures-page pass rather 
 
 ## 22. The three worksheets are barely reachable from the steps they support — PARTLY DONE
 
-**Status: the orphan is fixed, the thin links are not.** On the owner's ruling that an orphaned page
-is a defect and a thin link is a judgement call,
+**Status: the orphan is fixed, the thin links are not — and a precedent has appeared that this entry
+could not have known about.** Two rounds, below.
+
+**Round 1 — PR #55, Sep 11.** On the owner's ruling that an orphaned page is a defect and a thin link
+is a judgement call,
 [content/process/stay-registered-and-compliant/index.mdx](content/process/stay-registered-and-compliant/index.mdx)
 now links the running calendar worksheet from its closing line, by linking words already on the page:
 "What you leave holding instead is [a running calendar](/tools/building-your-running-calendar) of
 amendments, renewals, deliveries, and retained records." Linking existing text rather than adding a
 sentence keeps the page at 1,311 counted words, so its recorded exception under "Word count basis" is
 undisturbed. Steps 1 and 5 were deliberately not touched; the rest of this entry stands as written.
+
+**Round 2 — verification pass, Sep 12.** Both thin links are exactly as the original entry describes.
+Step 1's only link to the written-decision worksheet is at
+[content/process/decide-if-independence-fits/index.mdx](content/process/decide-if-independence-fits/index.mdx)
+line 64, inside the practitioner Callout, under the link text "your runway estimate"; the H3 that
+produces the artifact, `### Write down where you land` at line 38, contains no link to it. Step 5's
+only link to the RAUM worksheet is at
+[content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx)
+line 76, inside the practitioner Callout, under the link text "worksheet"; the calculation H3,
+`### Establish your regulatory assets under management` at line 20, instead links the SEC Form ADV
+General Instructions PDF at line 22. The tools landing page does state the relationship for all three
+worksheets, in the same "It supports [step]" form.
+
+**The new fact, which PR #55 itself created.** Round 1 placed the running-calendar link in **body
+prose** (step 12, line 46), while the other two worksheet links sit in practitioner Callouts. This
+entry's open question — where a worksheet link belongs on a step page — therefore already has a
+precedent set, in the direction of body prose.
+
+Record it as an **unrecorded default, not a ruling.** It was set by a fix that was not deciding
+anything: Round 1 was linking existing words to clear an orphan, and the placement fell out of where
+those words happened to sit. Whoever answers this entry's question is answering it for the second
+time, and should decide whether to ratify the default or overturn it rather than inheriting it as
+settled.
+
+**Belongs to (supersedes the line in the original entry below):** item 20's step-page pass, unchanged.
+Item 25's capitalisation sweep now rides the same pass.
 
 ### Original entry
 
@@ -708,6 +737,20 @@ several of these pages, so the two are worth doing together.
 
 ## 23. Four glossary terms are defined but nothing links to them
 
+**Verified Sep 12: every number holds exactly; the closing CLAUDE.md paragraph does not.**
+
+The glossary has 60 entries, CLAUDE.md's running list has 60, the two sets match with zero drift in
+either direction, and exactly the four terms named below have no inbound `/glossary#` link from any
+page in `content/`. Each of the four has an entry carrying the id this entry implies:
+`mid-sized-adviser-band`, `brochure-supplement`, `standardized-account-transfer`,
+`hypothetical-performance`. The finding stands as written.
+
+What does not hold is the closing paragraph claiming CLAUDE.md's running-list definition is
+inaccurate. That definition is a maintenance instruction — "Add a term here when a new page links
+it" — not an invariant the file asserts about itself, so four unlinked terms make the list stale
+rather than the sentence false. That paragraph should not pull a CLAUDE.md edit into the consistency
+pass; nothing in CLAUDE.md needs changing for this item.
+
 Every page that names one of these concepts describes it in plain words and does not link the
 definition that already exists:
 
@@ -739,6 +782,37 @@ answered here.
 
 ## 24. "Form ADV" links to the glossary on three pages and to an SEC PDF on a fourth
 
+**Status (verification pass, Sep 12): counts exact, argument refuted, remedy smaller than stated.**
+
+**The counts hold exactly.** Exactly four pages link the bare text `[Form ADV]`, split as claimed —
+`choose-your-regulator` line 56, `file-and-get-approved` line 28 and `compliance-and-supervision`
+line 20 to `/glossary#form-adv`; `write-the-disclosure-documents` line 22 to the SEC Part 2 PDF. No
+fifth page links those two words. The two "Go deeper" spellings are verbatim as quoted.
+
+**The reader-experience argument does not hold.** In sidebar order the encounters are step 5
+(glossary), step 7 (PDF), step 9 (glossary), practice area 6 (glossary) — one prior exposure, not a
+learned pattern. And on step 5 itself, `choose-your-regulator` line 22 links "Form ADV General
+Instructions" to a PDF, and line 22 precedes line 56, so the reader's first Form-ADV link on that page
+already goes off-site to a PDF. The convention step 7 supposedly breaks is not established on the page
+said to establish it. This is an inconsistency finding, not the context-switch betrayal argued below.
+
+**The remedy is smaller than this entry states.** The sentence at `write-the-disclosure-documents`
+line 22 already glosses the term in prose — "The uniform registration form for advisers,
+[Form ADV](...), sets the topics it must cover and their order; the brochure is its Part 2A." — so it
+stands verbatim with the href swapped to `/glossary#form-adv`. The claim below that "the sentence has
+to be reworded, not just relinked, so it is not a one-line fix" is wrong.
+
+**One residual this entry did not see.** Dropping the PDF leaves the Part 2A claim uncited on a page
+with no "Go deeper" section to hold it, and step pages do carry inline primary-source citations
+(`choose-your-regulator` line 22 is one). So the shrunk item is a relink plus one decision about
+whether the instructions citation stays on the page under a different anchor — one line, but a
+judgement rather than a mechanical swap. The two area-page spellings still need settling either way.
+
+**Belongs to (supersedes the line in the original entry below):** the consistency pass (build order
+item 5), unchanged.
+
+### Original entry
+
 `[Form ADV](/glossary#form-adv)` appears on
 [content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx),
 [content/process/file-and-get-approved/index.mdx](content/process/file-and-get-approved/index.mdx),
@@ -766,6 +840,38 @@ is not a one-line fix.
 
 ## 25. "Which practice areas apply" bullets start capitalised on steps 1–7 and lowercase on steps 8–12
 
+**Status: RULED, and half recorded. The ruling is capitalise; the sweep remains.** The ruling was made
+in the verification pass on Sep 12 and CLAUDE.md's step-page template item 8 now records the whole
+bullet shape. What remains is the sweep of 20 first letters across five files.
+
+**This entry's own numbers were wrong.** It is **twenty** bullets on the lowercase side, not
+seventeen — 4 on `write-the-policies`, 3 on `file-and-get-approved`, 3 on
+`set-up-custody-and-technology`, 5 on `leave-and-transition-clients`, 5 on
+`stay-registered-and-compliant`. And **no bullet starts lowercase**: all 46 bullets across all twelve
+step pages begin with a capitalised area name. The variance is post-colon, three characters into the
+bullet.
+
+**What verification established.** All 46 bullets share one shape —
+`- [Area Title](/domains/slug): gloss.` — link at the head, colon after it, terminal period, and a
+full independent sentence with a finite verb, on both sides of the split. Zero anomalies in 46. The
+only measurable difference besides the capital is modest length drift: the lowercase side averages
+22.7 gloss words against the capitalised side's 19.0, which is build-order drift rather than a
+difference in form. CLAUDE.md carried no rule on capitalisation at any level, and template item 8's
+"one sentence each" did not imply one, because both sides are exactly one sentence.
+
+**The argument for capitalising, recorded so it is not re-derived.** The lowercase bullets already end
+with a terminal period, so lowercase-start-with-period is the internally inconsistent option rather
+than a coherent alternative style. Capitalising resolves each bullet against its own punctuation. That
+26 of 46 bullets already capitalise is build order, not a reason.
+
+**This is not a voice item.** Nothing about voice differs between the two sides.
+
+**Belongs to (supersedes the line in the original entry below):** ruling done; the sweep rides the next
+step-page pass that opens those five files — item 20's anchor sweep, paired with item 22. Not to be
+scheduled on its own.
+
+### Original entry
+
 Every bullet under that heading opens with a capital letter on
 `decide-if-independence-fits`, `design-the-firm`, `set-your-advice-approach`, `form-the-business`,
 `choose-your-regulator`, `qualify-as-an-adviser`, and `write-the-disclosure-documents`
@@ -785,6 +891,29 @@ here, and no bullet was touched.
 **Belongs to:** a step-page voice pass, with items 18 and 19.
 
 ## 26. Steps 10 and 11 give opposite instructions about whether they overlap
+
+**Status (verification pass, Sep 12): the structural claim fails; a smaller finding survives.**
+
+**Not three lines apart, and not adjacent.** The bullet is line 62 and the Callout opens at line 72.
+Between them sits an entire H2 section — `## Which practice areas apply` plus five bullets, 144 words.
+So "three lines apart" is wrong, "the next thing on the page" is wrong, and on a phone the two
+passages cannot land on the same screen.
+
+**The quotation truncates in the place that matters.** The actual Callout is 83 words and ends
+"...and confirm the operational side is far enough along before collecting transfer authorizations you
+cannot yet execute." The ellipsis below drops the Callout's stated reason, and the quote stops one
+clause before the reconciling test — which this entry then names in its own "What it needs" while
+quoting a version of the Callout that does not contain it.
+
+**What survives is a breadth mismatch, not a contradiction.** The bullet's object is client
+conversations at a "finished" threshold; the Callout's object is transfer authorizations at a "far
+enough along" threshold. Different acts at different thresholds. The bullet is simply broader than the
+page's own rule, and narrowing the bullet is the fix.
+
+**Belongs to (supersedes the line in the original entry below):** any step-page voice pass that opens
+the file, done in passing. It no longer shapes that pass, and nothing should be built around it.
+
+### Original entry
 
 [content/process/set-up-custody-and-technology/index.mdx](content/process/set-up-custody-and-technology/index.mdx)
 is step 10. [content/process/leave-and-transition-clients/index.mdx](content/process/leave-and-transition-clients/index.mdx)
@@ -813,6 +942,29 @@ the likelier fix. Not written here.
 
 ## 27. The SEC-path callout on step 9 is the densest block on the site
 
+**Status (verification pass, Sep 12): every measurement exact, and the entry under-states its own
+finding by quoting half the rule it cites.**
+
+**The measurements hold exactly.** 23 SEC-path callouts across `content/`; range 44 to 115 words;
+median exactly 67, mean 69.2; the longest by 25 words, on `file-and-get-approved` under "Know when the
+registration is effective", at 115 words in three sentences.
+
+**It quotes half its own rule.** CLAUDE.md's SEC-path bullet has a second sentence this entry never
+cites: "It does not explain the SEC path in full." A 115-word block walking the deadline to act, then
+proceedings, then their extension, then their interaction with the deadline, then a state's separate
+clock, is the closest thing on the site to explaining the SEC path in full. Under the whole rule the
+callout is arguably non-compliant, not compliant-but-unpleasant as this entry concedes below. The
+concession should not be carried forward as settled.
+
+**One more thing the entry does not note.** The callout's third sentence is figures-deferral
+boilerplate, so roughly 90 words do the dense work — top of the range rather than 25 words clear of
+it.
+
+**Belongs to (supersedes the line in the original entry below):** the step-page voice pass, unchanged.
+That pass is now items 18, 19 and 27 only: items 25 and 26 have moved off it.
+
+### Original entry
+
 There are twenty-three SEC-path callouts across `content/`, running from 44 to 115 words with a
 median around 67. The longest by a wide margin is the one under "Know when the registration is
 effective" on
@@ -840,18 +992,39 @@ the callout at all. Not attempted here.
 
 ## 28. The running calendar worksheet's "the number" heading asks a question the page has refused — PARTLY DONE
 
-**Status: the false sentence is fixed, the heading is not.** The opening line of
+**Status: the heading finding pointed the wrong way. The request to revisit the standing ruling is
+WITHDRAWN — nothing in this entry asks the owner to reconsider anything.** Two rounds, below.
+
+**Round 1 — PR #55, Sep 11.** The opening line of
 [content/tools/building-your-running-calendar/index.mdx](content/tools/building-your-running-calendar/index.mdx)
 now reads "The other worksheets in this section produce an answer you write down," replacing "Every
 page in this guide before this one produces something that finishes," which the nine practice-area
 pages directly contradicted. The replacement is true of both other worksheets, makes no claim about
-pages outside `/tools`, and is the same length, so the page stays at 778 counted words.
+pages outside `/tools`, and is the same length, so the page stays at 778 counted words. Round 1 left the heading alone and filed a
+request to revisit the owner's standing ruling that a worksheet keeps the template's headings
+verbatim. Round 2 withdraws that request.
 
-The heading was deliberately left alone. It is not a page defect: it is the cost of the owner's
-standing ruling that a worksheet keeps the template's headings verbatim rather than renaming them per
-page. Reversing that inside a correction PR would have been a silent reversal of a deliberate
-decision, so it is recorded here as a request to revisit the ruling rather than as a fix to apply.
-Read the second half of the original entry below as that request.
+**Round 2 — verification pass, Sep 12. The page does produce a number.** Its "The result" section
+ends "Count the entries and write the total at the top with the date you built it," and the four
+sentences under the disputed heading are all about that count — "The count tells you how much the firm
+is tracking… Nor does the count prove the calendar is complete… any count weighted by dates
+understates exactly the half that goes wrong most often." So "What the number does and does not tell
+you" is the correct heading for this page, not a template heading awkwardly imposed on it.
+
+**Consequences.** The owner's standing ruling holds, untouched and unexamined. There is no CLAUDE.md
+change and no per-page exception. This item no longer blocks a fourth worksheet, and it no longer
+carries a decision for anyone to make.
+
+**What is actually wrong is the page's own prose, in two places.** `## What this measures` opens "Not
+a quantity." — and the page then instructs a total and analyses it for a whole section. And line 10,
+the sentence Round 1 wrote ("The other worksheets in this section produce an answer you write down.
+This one produces an instrument you reopen on a schedule."), is false in the same direction: this one
+produces both. Round 1 replaced a sentence contradicted by nine pages with a milder version of the
+same error, this time contradicted by the page's own "The result".
+
+**Belongs to (supersedes the line in the original entry below):** any worksheet pass. A single-page
+prose edit with no CLAUDE.md implication. Read the second half of the original entry below as a record
+of a finding that was wrong, not as a request.
 
 ### Original entry
 
@@ -882,6 +1055,23 @@ CLAUDE.md decision and should be settled before a fourth worksheet is written.
 
 ## 29. /about is the only page that ends without a Related list, and the only one with no description
 
+**Verified Sep 12: both counts are exact; one supporting detail is wrong and would mislead a fixer.**
+
+`content/about/index.mdx` carries `title` and `asIndexPage` and no `description`, and it is the only
+page of 31 without one. Twenty-two pages lack a `## Related` list; 21 of those are the step and area
+content pages CLAUDE.md exempts, so among pages where the rule applies /about is uniquely missing it.
+Both halves of the finding stand.
+
+The detail that is wrong: the page's final line is **not** the CC BY attribution string. The string is
+followed by the mandated sentence "If you adapt or modify the writing, say so where you credit it.",
+which CLAUDE.md fixes and which travels with the string on the same terms. A fixer acting on this
+entry as written would be moving a governed string.
+
+Also worth knowing before the fix: `content/process/index.mdx` and `content/domains/index.mdx` sit
+inside those two folders and carry Related lists anyway, as landing pages. This entry's framing —
+that those two folders substitute their own cross-link sections — would lead a fixer not to expect
+that.
+
 [content/about/index.mdx](content/about/index.mdx) fails both checks, and it is the sole page in
 `content/` that fails either:
 
@@ -901,7 +1091,45 @@ lead with it. Not written here.
 
 **Belongs to:** the consistency pass (build order item 5).
 
-## 30. Figures-page sweep additions from the phone read-through: two unestablished Values, and a table only the figures page is exempt from
+## 30. Figures-page sweep additions from the phone read-through: two unestablished Values, and step 10's undelivered pointer
+
+**Status (verification pass, Sep 12): one of the three findings has moved to item 32; of the two that
+remain, one is over-stated and one is under-stated.**
+
+This entry's heading previously read "Figures-page sweep additions from the phone read-through: two
+unestablished Values, and a table only the figures page is exempt from." The table-shape finding was
+extracted to **item 32**, on item 31's precedent, because it turns on a CLAUDE.md scope question that
+is a precondition for a decision rather than work on this page. The original text of that finding is
+preserved below, under "### Original entry", exactly where it was filed.
+
+**30a — the two NEEDS-VALUE rows.** There are exactly two `NEEDS-VALUE` rows on the page, and they are
+the two named. But "both are flat promises of a number" is right for step 9 and wrong for step 12.
+Step 9 (`file-and-get-approved` line 34) names "amounts" and says the figures page "holds each one
+with its source" — a promise of values, and the filing system fee has none. Step 12
+(`stay-registered-and-compliant` line 32) says "Both the window and the fee are on This year's
+figures" — a promise of **presence**, not of a number, and both rows do exist, so it is literally
+satisfied.
+
+**Step 12 is nevertheless worse than this entry says, and it flags one of two problems.** Of the two
+things promised, the window reads `NEEDS-VALUE`, and the yearly registration renewal fee reads "Varies
+by state" with **no link at all** — its Source cell is plain text stating that no uniform model rule
+and no federal locator page exists for this fee. That row is correct under CLAUDE.md's rules, but it
+means a step-12 reader sent for "the window and the fee" gets no number for either and no link for
+one. Two rows to answer here, not one.
+
+**30c — step 10's undelivered pointer. Verified exact.** Step 10's sentence
+(`set-up-custody-and-technology` line 30) promises the model "and where to check your own regulator's
+adaptation of it", and all three Step 10 rows carry an identical Source cell naming NASAA Model Rule
+102(e)(1)-1 with its adoption and amendment dates and the statement that each state adapts it — with
+no regulator pointer of any kind. The cells deliver the first half of the promise and assert the
+second without giving anywhere to check it.
+
+**Belongs to (supersedes the line in the original entry below):** 30a goes with the figures-page pass,
+alongside items 2, 16, 17 and 21. 30c travels with **item 17 specifically**, not with figures-page
+work generally — it is a question about what a "Varies by state" Source cell must carry, which is item
+17's question.
+
+### Original entry
 
 Three findings from the cold read that belong to the figures-page pass with items 2, 16, 17 and 21.
 They were first filed as a subsection of item 17 and moved here, because none of them is about the
@@ -981,3 +1209,43 @@ should assume there are others rather than assume there are not.
 **Belongs to:** item 20, as a precondition. This does not need its own pass — it needs to be read
 before item 20's sweep is written, and it is filed separately so it cannot be deferred with the
 formatting work in item 30.
+
+## 32. Which /tools pages does CLAUDE.md's worksheet block govern?
+
+This was filed inside item 30 as a table-shape finding and is extracted here on item 31's precedent,
+because it is a precondition for a decision rather than work on a page. Item 30's original text of the
+finding is preserved in place, under that item's "### Original entry".
+
+**The verified facts.** The figures page
+([content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx)) is the only
+five-column table on the site: Concept | What it governs | Value | Year | Source. It takes 89 inbound
+links from `content/`, exactly as item 30 counted. Its "Amount of a required surety bond" row's
+What-it-governs cell is 4 sentences and 93 words, exactly as counted. The three worksheet pages do
+hold to three columns.
+
+**Two claims in the original text do not survive.** "The most linked-to page in the guide" is false —
+`/glossary` takes 122 inbound links against the figures page's 89, so the figures page is second. The
+argument does not need the superlative, and the superlative is what makes the page read as the site's
+worst offender. And "the only five-column table on the site" is true but nearly vacuous: the site has
+exactly four tables in total, the figures page and the three worksheets, and no step or area page has
+a table at all. The contrast is with three pages, not with a site-wide norm.
+
+**The rule, verbatim at CLAUDE.md line 242:** "- Tables have three columns at most so they render on a
+phone without horizontal scrolling." It sits inside the `Worksheet page (tools):` block, whose Path
+line reads `content/tools/<slug>/index.mdx` — which the figures page matches. CLAUDE.md never says
+which `/tools` pages are worksheets.
+
+**So item 30's original proposal is the wrong instrument.** Recording "an accepted exception against
+the worksheet three-column rule" would record an exception to a rule that may not bind the page,
+writing the ambiguity into the file rather than resolving it. The right instrument is clarifying which
+`/tools` pages the worksheet block governs. That answer determines whether the figures table's shape
+is a defect to fix or a free choice to leave alone.
+
+**What it needs:** a ruling on the scope of the `Worksheet page (tools):` block — all
+`content/tools/<slug>/index.mdx` pages, or only the three worksheets — recorded in CLAUDE.md. Then,
+and only then, a decision on the figures table's shape: fewer columns, "What it governs" moved out of
+the table, or an accepted exception. Not answered here.
+
+**Belongs to:** a precondition for the **table-shape decision only**. It does **not** block item 30a:
+fetching two unestablished Values is independent of how many columns the table has, and parking a
+fetchable defect behind an unresolved CLAUDE.md question is the opposite of why this was split out.
