@@ -371,3 +371,7 @@ Every term that any page links to /glossary. Add a term here when a new page lin
 
 ## Working notes on editing this file
 When editing a numbered list in this file, scope the edit to the list block itself, never to a line range or "every line after line N". A line-scoped renumbering in the step 7 branch silently incremented the first numbered line in five unrelated lists (Structure, the 12 steps, the 9 areas, the area page skeleton, and the step page template) before it was caught and reverted.
+
+Hard rule 5 is cross-referenced by number from the area-page conventions — "link to /tools/this-years-figures in the link form hard rule 5 sets" — so renumbering the hard rules means updating that pointer in the same edit. Neither the file nor the build catches a stale pointer; it would simply send a reader to the wrong rule.
+
+Two rules share the phrase "name the concept in plain language" verbatim: hard rule 5 and the area-page figures convention. A literal-match edit on that phrase alone hits both, so include surrounding words unique to the one you mean.
