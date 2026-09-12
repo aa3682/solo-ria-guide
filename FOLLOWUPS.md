@@ -639,10 +639,16 @@ the 8 references plus the 3 spanning deferrals, and every one is enumerable by p
 the invariant the spanning rule exists to protect — after this pass, every remaining bare link is
 deliberate, and a later reader can check it.
 
-**Nine of the 35 would have been mis-anchored by a mechanical page-name sweep**, which is 26% and is
-exactly what item 31 was filed to prevent. Item 31 named three at-risk pages and caught two of them;
-step 1 turned out safe, and six traps it did not name were found, including a step page deferring to a
-practice-area section rather than a step one.
+**A mechanical page-name sweep would have got nine of the 35 wrong — 26%**, which is exactly what
+item 31 was filed to prevent. Eight would have been sent to a same-name section that does not hold
+the figure, and one would have been left bare for want of one; the sharpest case is a step page
+deferring to a practice-area section rather than a step one. That is item 31's figure, scored on the
+counterfactual item 31's own entry now states — see item 31 for that definition, the page list, and
+what this entry got wrong about it. The superseded text read: "Nine of the 35 would have been
+mis-anchored by a mechanical page-name sweep, which is 26% and is exactly what item 31 was filed to
+prevent. Item 31 named three at-risk pages and caught two of them; step 1 turned out safe, and six
+traps it did not name were found, including a step page deferring to a practice-area section rather
+than a step one."
 
 **The rulings, recorded so they are not re-derived.** Anchors are assigned per figure, not per page: one
 page may carry several different anchors, and the same-name anchor is never the default. A deferral
@@ -1252,7 +1258,56 @@ Nothing on the page was changed.
 
 **Belongs to:** the next figures-page pass, with items 2, 16, 17 and 21.
 
-## 31. Three pages defer to figures filed under a different step's anchor, which will mislead item 20's sweep
+## 31. Three pages defer to figures filed under a different step's anchor, which will mislead item 20's sweep — DONE
+
+**Status: done.** Spent as item 20's precondition. The sweep in PR #57 was written to check each
+bare link against the figure it actually defers to, using FIGURES-INVENTORY.md's grouping rather
+than the name of the page the link sits on, which is what this entry asked for.
+
+**The counterfactual, stated before any number.** Every count below scores what a mechanical
+page-name sweep would have gotten wrong. Such a sweep anchors each bare deferral to the figures-page
+section whose id matches the containing page's own slug, and leaves the link bare where no such
+section exists. Both outcomes are wrong, and the distinction changes the count: scored only on
+misdirection it is eight, scored on everything the sweep gets wrong it is nine. The difference is
+[content/introduction/index.mdx](content/introduction/index.mdx) line 19, which defers to the
+assets-under-management lines and has no `#introduction` section to be sent to, so a page-name sweep
+would have left it bare rather than misdirecting it. Nine is the number used here.
+
+**The scorecard, re-derived from the anchors commit and the figures page rather than from item 20's
+block.** Of the 35 links anchored in PR #57's anchors commit (`5cbcdf7`), nine across seven pages
+would have been wrong. Three are on
+[content/process/stay-registered-and-compliant/index.mdx](content/process/stay-registered-and-compliant/index.mdx),
+lines 22, 35 and 44. The rest are one each:
+[content/introduction/index.mdx](content/introduction/index.mdx) line 19,
+[content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx) line 28,
+[content/process/write-the-disclosure-documents/index.mdx](content/process/write-the-disclosure-documents/index.mdx) line 54,
+[content/process/write-the-policies/index.mdx](content/process/write-the-policies/index.mdx) line 83,
+[content/domains/firm-economics/index.mdx](content/domains/firm-economics/index.mdx) line 25, and
+[content/domains/records-and-documentation/index.mdx](content/domains/records-and-documentation/index.mdx) line 24.
+
+**This entry named three pages and caught two.** The introduction and choose-your-regulator are both
+in the set. Step 1 was safe: its one converted link, line 12, resolves to its own section and
+shipped that way. The residue this entry did not name is seven links across five pages —
+firm-economics, records-and-documentation, stay-registered-and-compliant,
+write-the-disclosure-documents and write-the-policies. The worst of them is write-the-policies line
+83, a step page deferring to `#compliance-and-supervision`, a practice-area section that no
+page-name sweep would ever have reached for.
+
+**Where item 20's block stated this differently.** As filed, its paragraph on this entry put the
+residue at six traps. Six matches no unit: it is seven links or five pages. Its other two figures —
+nine wrong, two of three named pages caught — were right, but only under the counterfactual stated
+above; under the narrower reading neither lands. Two figures agreeing under one definition and
+neither under the other is what identified which definition the sweep used, and is why it is written
+out here rather than left to be inferred. That paragraph is corrected in this PR as its own commit:
+it quotes what it replaced, keeps its own 26% marked as this entry's figure, and defers the
+definition, the page list and the scorecard here. Item 20's heading stays at `— DONE`: the sweep it
+records shipped correctly, and only its description of this entry was wrong.
+
+**Belongs to (supersedes the line in the original entry below):** nothing — this is done. The
+original entry routes this to item 20 as a precondition, to be read before the sweep was written.
+That sweep has run.
+
+### Original entry
 
 This was reported in the read-through as the figures page misfiling four rows. That was wrong, and the
 correction matters for how it gets fixed. The four assets-under-management lines — small adviser
