@@ -1385,7 +1385,29 @@ fetching two unestablished Values is independent of how many columns the table h
 fetchable defect behind an unresolved CLAUDE.md question is the opposite of why this was split out.
 
 
-## 33. FIGURES-INVENTORY.md is behind the repo, in both directions
+## 33. FIGURES-INVENTORY.md is behind the repo, in both directions — DONE
+
+**Status: done, by removal — the counts this entry asked to have re-derived are retired rather than
+restated.** The preamble no longer carries them. The ruling was that the file enumerates figures,
+deferral sites and deferring pages already, so a reader who wants a count reads the table; removing
+them ends the staleness this entry describes instead of resetting it for one more cycle.
+
+**The column was rebuilt from a fresh derivation.** Every attribution was derived against `content/`,
+and the prior derivation was treated as a claim to check rather than a source to carry forward. Both
+deferrals this entry names in prose are now filed: the step page deferring a figure filed under a
+practice area is listed on that figure's row, and the multi-section cost deferral is listed on every
+row its sentence reaches, recorded as an imprecise link under the attribution rule the preamble now
+states.
+
+**A direction this entry did not check was added.** Its sentence below — no figure it lists is
+unreachable from a page it lists — was tested and holds, and nothing in it was falsified. What the
+pass added is the converse question, whether every page the column lists actually defers to the row
+it sits on. One did not, and that entry was removed. This entry was right about what it checked; it
+did not check this.
+
+**The glossary is excluded from the column by ruling,** and named once in the preamble instead, so a
+figure change is checked against it whatever a row lists. That is a documented exclusion, not
+outstanding work.
 
 Item 20's sweep used [FIGURES-INVENTORY.md](FIGURES-INVENTORY.md) as its source of truth for which
 figure each deferral resolves to, and found that the file no longer describes `content/`.
@@ -1415,3 +1437,32 @@ headline figures are wrong makes it look checked when it is not.
 
 **Belongs to:** its own pass. It is a precondition for nothing currently queued — item 20, the only item
 that depended on the inventory, is done.
+
+## 34. Two figures the written-decision worksheet defers to have no row anywhere
+
+[content/tools/reaching-your-written-decision/index.mdx](content/tools/reaching-your-written-decision/index.mdx)
+sends the reader to `/tools/this-years-figures` for two figures the page does not carry. Neither is a
+row with a missing Value or a wrong Source; there is no row to hold either one.
+
+- **What the qualifying examination itself costs**, deferred at line 23. The same sentence sends the
+  reader for fingerprint and representative fees as well, and both of those have rows; the
+  examination's own cost does not. It would sit under the `qualify-as-an-adviser` section with them.
+- **What an SEC-registered firm pays the SEC**, deferred at line 53 — and whether this is a gap at
+  all depends on how one sentence is read. "Both are under File and Get Approved" may mean the notice
+  filing fee and the level of business that triggers it, in which case both rows exist and nothing is
+  missing; or it may mean the SEC's own charge alongside the notice filing fee, in which case that
+  charge has no row and would sit under `file-and-get-approved`. The sentence supports both readings
+  and this entry does not pick one.
+
+**What it needs:** the examination-cost row added under `#qualify-as-an-adviser`, with its Value taken
+from a fetched copy of the sponsor's current fee schedule rather than from memory, and the worksheet's
+sentence then repointed at the anchor. For line 53, read the sentence against the fetched SEC fee
+schedule first: if the SEC's own charge is what it promises, that row is added under
+`#file-and-get-approved` and the sentence repointed; if it is not, the sentence already resolves and
+nothing is added. Either way, settling it needs a source the figures-page pass fetches anyway.
+
+**Why this is its own entry rather than a third bullet on item 21:** different deferring page,
+different governing source, and target sections that differ both from each other's and from item 21's,
+which files its two under `#decide-if-independence-fits`.
+
+**Belongs to:** the next figures-page pass, alongside items 2, 16, 17, 21 and 30a.
