@@ -121,7 +121,7 @@ the word count.
 
 **Belongs to:** build order item 5.
 
-## 7. NASAA amended four model rules on May 4, 2026 — pre-amendment PDFs are still hosted
+## 7. NASAA amended four model rules on May 4, 2026 — pre-amendment PDFs are still hosted — PARTLY DONE
 
 As part of its investment adviser advertising modernization, NASAA amended four model
 rules on May 4, 2026: Unethical Business Practices 102(a)(4)-1, Prohibited Conduct
