@@ -7,19 +7,24 @@ carries no values, no years, and no URLs.
 A sentence in `content/` can defer several figures at once, and a single figure can be
 deferred to from several pages.
 
-**How to read the table.** "What sets it" records only what the deferring page itself says
-or plainly implies — nothing was researched, and no citation is supplied that a page does
-not already point at. "Path" is how the page treats the figure: **State** for the guide's
-default state-registered scenario, **Federal** for a figure that appears only inside an
-SEC-path callout, **Both** where the page says the obligation exists on either path even if
-the governing rule differs. "Pages that defer to it" names a page where that page's
-deferring sentence identifies the row's figure — by naming it, or by a description only
-that row satisfies. The test runs on each item a sentence enumerates rather than on the
-sentence as a whole: an item covering two figures the sentence has already distinguished
-names both, while a single item fitting several rows the sentence never separates is
-imprecise, and the page is listed on every row it fits. The glossary is not listed in this
-column. Its definitions defer widely enough that an entry would narrow nothing, so check a
-figure change against the glossary whatever a row names.
+**How to read the table.** "What sets it" records only what the deferring page itself
+says or plainly implies — nothing was researched, and no citation is supplied that a
+page does not already point at. "Path" is how the page treats the figure: **State** for
+the guide's default state-registered scenario, **Federal** for a figure that appears only
+inside an SEC-path callout, **Both** where the page says the obligation exists on either
+path even if the governing rule differs. "Pages that defer to it" names a page where that
+page's deferring sentence identifies the row's figure — by naming it, or by a
+description only that row satisfies. The test runs on each item a sentence enumerates
+rather than on the sentence as a whole: an item covering two figures the sentence has
+already distinguished names both, while a single item fitting several rows the sentence
+never separates is imprecise, and the page is listed on every row it fits. Entries in a
+cell run in site order — introduction, then process pages in step order, then practice
+areas in area order, then tools pages in tools order. The row on record-retention periods
+departs from it: the policies page that produced the row leads ahead of the disclosure
+page that site order would otherwise put before it. That departure sits in the file
+uncovered by the convention, recorded rather than sanctioned. The glossary is not listed
+in this column. Its definitions defer widely enough that an entry would narrow nothing,
+so check a figure change against the glossary whatever a row names.
 
 **On grouping.** Each figure is filed under the earliest section in canonical order that
 defers to it; every deferring page is listed in the last column regardless of section. The
