@@ -1385,7 +1385,29 @@ fetching two unestablished Values is independent of how many columns the table h
 fetchable defect behind an unresolved CLAUDE.md question is the opposite of why this was split out.
 
 
-## 33. FIGURES-INVENTORY.md is behind the repo, in both directions
+## 33. FIGURES-INVENTORY.md is behind the repo, in both directions — DONE
+
+**Status: done, by removal — the counts this entry asked to have re-derived are retired rather than
+restated.** The preamble no longer carries them. The ruling was that the file enumerates figures,
+deferral sites and deferring pages already, so a reader who wants a count reads the table; removing
+them ends the staleness this entry describes instead of resetting it for one more cycle.
+
+**The column was rebuilt from a fresh derivation.** Every attribution was derived against `content/`,
+and the prior derivation was treated as a claim to check rather than a source to carry forward. Both
+deferrals this entry names in prose are now filed: the step page deferring a figure filed under a
+practice area is listed on that figure's row, and the multi-section cost deferral is listed on every
+row its sentence reaches, recorded as an imprecise link under the attribution rule the preamble now
+states.
+
+**A direction this entry did not check was added.** Its sentence below — no figure it lists is
+unreachable from a page it lists — was tested and holds, and nothing in it was falsified. What the
+pass added is the converse question, whether every page the column lists actually defers to the row
+it sits on. One did not, and that entry was removed. This entry was right about what it checked; it
+did not check this.
+
+**The glossary is excluded from the column by ruling,** and named once in the preamble instead, so a
+figure change is checked against it whatever a row lists. That is a documented exclusion, not
+outstanding work.
 
 Item 20's sweep used [FIGURES-INVENTORY.md](FIGURES-INVENTORY.md) as its source of truth for which
 figure each deferral resolves to, and found that the file no longer describes `content/`.
@@ -1415,3 +1437,38 @@ headline figures are wrong makes it look checked when it is not.
 
 **Belongs to:** its own pass. It is a precondition for nothing currently queued — item 20, the only item
 that depended on the inventory, is done.
+
+## 34. The written-decision worksheet's examination-cost figure has no row
+
+[content/tools/reaching-your-written-decision/index.mdx](content/tools/reaching-your-written-decision/index.mdx)
+sends the reader to `/tools/this-years-figures` for a figure the page does not carry. It is not a
+row with a missing Value or a wrong Source; there is no row to hold it.
+
+**What the qualifying examination itself costs**, deferred at line 23. The same sentence sends the
+reader for fingerprint and representative fees as well, and both of those have rows; the
+examination's own cost does not. It would sit under the `qualify-as-an-adviser` section with them.
+
+**The second figure this entry originally opened on is resolved, not missing — the title above no
+longer names it.** Line 53's SEC-path callout reads "It pays the SEC, plus a notice filing fee in
+every state where it does enough business to require one... Both are under File and Get Approved."
+Grammatically, "Both" pairs the SEC payment with the notice filing fee, not the notice filing fee
+with the business-level threshold that only modifies it. Substantively, what an SEC-registered firm
+pays the SEC is the IARD system processing fee — the same figure FIGURES-INVENTORY.md already
+carries as "The system fee charged for the filing itself by the electronic system advisers file
+through," tagged **Both** because the mechanism applies on either path even though it is currently
+waived for state-registered advisers and charged, tiered by assets under management, on the SEC
+path. SEC.gov's own IARD filing-fees page
+(`https://www.sec.gov/investment/electronic-filing-for-investment-advisers-on-iard-iard-filing-fees`)
+and the operator's published fee schedule (`https://iard.com/fee_schedule`) both describe one such
+fee, not a separate SEC-specific charge on top of it. That row already lists this page as a
+deferring page, and so does the notice-filing-fee row. Nothing is added for line 53.
+
+**What it needs:** the examination-cost row added under `#qualify-as-an-adviser`, with its Value
+taken from a fetched primary source rather than from memory — the exam sponsor's fee schedule is
+the likely source, to be confirmed — and the worksheet's sentence then repointed at the anchor.
+
+**Why this is its own entry rather than a third bullet on item 21:** different deferring page,
+different governing source, and a target section that differs from item 21's, which files its two
+under `#decide-if-independence-fits`.
+
+**Belongs to:** the next figures-page pass, alongside items 2, 16, 17, 21 and 30a.
