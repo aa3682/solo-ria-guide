@@ -1454,12 +1454,13 @@ row with a missing Value or a wrong Source; there is no row to hold either one.
   charge has no row and would sit under `file-and-get-approved`. The sentence supports both readings
   and this entry does not pick one.
 
-**What it needs:** the examination-cost row added under `#qualify-as-an-adviser`, with its Value taken
-from a fetched copy of the sponsor's current fee schedule rather than from memory, and the worksheet's
-sentence then repointed at the anchor. For line 53, read the sentence against the fetched SEC fee
-schedule first: if the SEC's own charge is what it promises, that row is added under
-`#file-and-get-approved` and the sentence repointed; if it is not, the sentence already resolves and
-nothing is added. Either way, settling it needs a source the figures-page pass fetches anyway.
+**What it needs:** the examination-cost row added under `#qualify-as-an-adviser`, with its Value
+taken from a fetched primary source rather than from memory — the exam sponsor's fee schedule is
+the likely source, to be confirmed — and the worksheet's sentence then repointed at the anchor.
+For line 53, read the sentence against the fetched SEC fee schedule first: if the SEC's own charge
+is what it promises, that row is added under `#file-and-get-approved` and the sentence repointed;
+if it is not, the sentence already resolves and nothing is added. Either way, settling it needs a
+source the figures-page pass fetches anyway.
 
 **Why this is its own entry rather than a third bullet on item 21:** different deferring page,
 different governing source, and target sections that differ both from each other's and from item 21's,
