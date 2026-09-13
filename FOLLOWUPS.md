@@ -809,7 +809,20 @@ answered here.
 **Belongs to:** a step-page pass. Item 20's figures-page anchor sweep touches the same sentences on
 several of these pages, so the two are worth doing together.
 
-## 23. Four glossary terms are defined but nothing links to them
+## 23. Four glossary terms are defined but nothing links to them — DONE
+
+**Status: done.** All four terms are now linked, one link per term per page on first prose
+appearance: [mid-sized adviser band](/glossary#mid-sized-adviser-band) on
+`content/process/choose-your-regulator/index.mdx`,
+[brochure supplement](/glossary#brochure-supplement) on
+`content/process/write-the-disclosure-documents/index.mdx`,
+[standardized account transfer](/glossary#standardized-account-transfer) on
+`content/process/leave-and-transition-clients/index.mdx`, and
+[hypothetical performance](/glossary#hypothetical-performance) on
+`content/domains/marketing-and-growth/index.mdx`. Re-derived fresh before touching anything: the
+glossary still has 60 entries, CLAUDE.md's running list still has 60, zero drift either way, and the
+same four ids were still the only ones with zero inbound links — the Sep 12 count held exactly a day
+later.
 
 **Verified Sep 12: every number holds exactly; the closing CLAUDE.md paragraph does not.**
 
@@ -854,7 +867,16 @@ answered here.
 
 **Belongs to:** the consistency pass (build order item 5).
 
-## 24. "Form ADV" links to the glossary on three pages and to an SEC PDF on a fourth
+## 24. "Form ADV" links to the glossary on three pages and to an SEC PDF on a fourth — PARTLY DONE
+
+**Status: partly done.** The link-target inconsistency is resolved: `content/process/write-the-disclosure-documents/index.mdx`
+line 22's `[Form ADV]` now points to `/glossary#form-adv`, matching `choose-your-regulator`,
+`file-and-get-approved`, and `compliance-and-supervision`, which already did. The second
+inconsistency this item names — the two different "Go deeper" spellings of the Form ADV Part 2
+General Instructions citation, "SEC: Form ADV Part 2 General Instructions" on
+`content/domains/client-education/index.mdx` versus "SEC: Form ADV Part 2 Instructions" on
+`content/domains/service-and-pricing-models/index.mdx` — was not touched and remains open. This item
+is not fully closed.
 
 **Status (verification pass, Sep 12): counts exact, argument refuted, remedy smaller than stated.**
 
@@ -1138,7 +1160,13 @@ template or granting this page an exception. Neither was done here.
 **Belongs to:** the first one is a single-page edit and can go in any worksheet pass; the second is a
 CLAUDE.md decision and should be settled before a fourth worksheet is written.
 
-## 29. /about is the only page that ends without a Related list, and the only one with no description
+## 29. /about is the only page that ends without a Related list, and the only one with no description — DONE
+
+**Status: done.** `content/about/index.mdx` now has a frontmatter `description` and a closing
+`## Related` list, linking `/process`, `/domains`, and `/introduction` — Introduction placed last
+rather than first, per this item's own note that it's already linked inline in the body. The CC BY
+attribution string and its trailing mandated sentence ("If you adapt or modify the writing, say so
+where you credit it.") were left untouched; the Related list follows them.
 
 **Verified Sep 12: both counts are exact; one supporting detail is wrong and would mislead a fixer.**
 
