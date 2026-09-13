@@ -1438,32 +1438,37 @@ headline figures are wrong makes it look checked when it is not.
 **Belongs to:** its own pass. It is a precondition for nothing currently queued — item 20, the only item
 that depended on the inventory, is done.
 
-## 34. Two figures the written-decision worksheet defers to have no row anywhere
+## 34. The written-decision worksheet's examination-cost figure has no row
 
 [content/tools/reaching-your-written-decision/index.mdx](content/tools/reaching-your-written-decision/index.mdx)
-sends the reader to `/tools/this-years-figures` for two figures the page does not carry. Neither is a
-row with a missing Value or a wrong Source; there is no row to hold either one.
+sends the reader to `/tools/this-years-figures` for a figure the page does not carry. It is not a
+row with a missing Value or a wrong Source; there is no row to hold it.
 
-- **What the qualifying examination itself costs**, deferred at line 23. The same sentence sends the
-  reader for fingerprint and representative fees as well, and both of those have rows; the
-  examination's own cost does not. It would sit under the `qualify-as-an-adviser` section with them.
-- **What an SEC-registered firm pays the SEC**, deferred at line 53 — and whether this is a gap at
-  all depends on how one sentence is read. "Both are under File and Get Approved" may mean the notice
-  filing fee and the level of business that triggers it, in which case both rows exist and nothing is
-  missing; or it may mean the SEC's own charge alongside the notice filing fee, in which case that
-  charge has no row and would sit under `file-and-get-approved`. The sentence supports both readings
-  and this entry does not pick one.
+**What the qualifying examination itself costs**, deferred at line 23. The same sentence sends the
+reader for fingerprint and representative fees as well, and both of those have rows; the
+examination's own cost does not. It would sit under the `qualify-as-an-adviser` section with them.
+
+**The second figure this entry originally opened on is resolved, not missing — the title above no
+longer names it.** Line 53's SEC-path callout reads "It pays the SEC, plus a notice filing fee in
+every state where it does enough business to require one... Both are under File and Get Approved."
+Grammatically, "Both" pairs the SEC payment with the notice filing fee, not the notice filing fee
+with the business-level threshold that only modifies it. Substantively, what an SEC-registered firm
+pays the SEC is the IARD system processing fee — the same figure FIGURES-INVENTORY.md already
+carries as "The system fee charged for the filing itself by the electronic system advisers file
+through," tagged **Both** because the mechanism applies on either path even though it is currently
+waived for state-registered advisers and charged, tiered by assets under management, on the SEC
+path. SEC.gov's own IARD filing-fees page
+(`https://www.sec.gov/investment/electronic-filing-for-investment-advisers-on-iard-iard-filing-fees`)
+and the operator's published fee schedule (`https://iard.com/fee_schedule`) both describe one such
+fee, not a separate SEC-specific charge on top of it. That row already lists this page as a
+deferring page, and so does the notice-filing-fee row. Nothing is added for line 53.
 
 **What it needs:** the examination-cost row added under `#qualify-as-an-adviser`, with its Value
 taken from a fetched primary source rather than from memory — the exam sponsor's fee schedule is
 the likely source, to be confirmed — and the worksheet's sentence then repointed at the anchor.
-For line 53, read the sentence against the fetched SEC fee schedule first: if the SEC's own charge
-is what it promises, that row is added under `#file-and-get-approved` and the sentence repointed;
-if it is not, the sentence already resolves and nothing is added. Either way, settling it needs a
-source the figures-page pass fetches anyway.
 
 **Why this is its own entry rather than a third bullet on item 21:** different deferring page,
-different governing source, and target sections that differ both from each other's and from item 21's,
-which files its two under `#decide-if-independence-fits`.
+different governing source, and a target section that differs from item 21's, which files its two
+under `#decide-if-independence-fits`.
 
 **Belongs to:** the next figures-page pass, alongside items 2, 16, 17, 21 and 30a.
