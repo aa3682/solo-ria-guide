@@ -572,7 +572,18 @@ touched in this pass.
 **Belongs to:** the consistency pass (build order item 5), or the next figures-page pass if one comes
 first.
 
-## 18. "Confirm with your home state and write it down" is the final H3 on two step pages
+## 18. "Confirm with your home state and write it down" is the final H3 on two step pages — DONE
+
+**Status: done.** [content/process/qualify-as-an-adviser/index.mdx](content/process/qualify-as-an-adviser/index.mdx)'s
+final H3 is now "Confirm your qualification and write it down" — the step 6 side named as the
+likelier candidate below, reworded to stay inside the page's own vocabulary (its first H3 is
+"Establish that you meet the exam requirement," so "qualification" is already this page's word for
+what the section confirms). [content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx)'s
+heading, "Confirm with your home state and write it down," was deliberately left untouched: step 5's
+subject is the regulator determination itself, which is what that phrase names. Nothing else in
+either file changed. The original entry is kept below for the record.
+
+### Original entry
 
 The last H3 under "What actually happens" is the same sentence, word for word, on
 [content/process/choose-your-regulator/index.mdx](content/process/choose-your-regulator/index.mdx)
@@ -594,7 +605,18 @@ touched in the merge pass that produced this entry.
 **Belongs to:** a step-page voice pass across the twelve, not a single-page fix — the value is in
 seeing all twelve closing headings together before moving one.
 
-## 19. qualify-as-an-adviser's final H3 opens directly on the adviser illustration
+## 19. qualify-as-an-adviser's final H3 opens directly on the adviser illustration — DONE
+
+**Status: done.** Added two sentences of lead-in before the illustration, on
+[content/process/qualify-as-an-adviser/index.mdx](content/process/qualify-as-an-adviser/index.mdx):
+"Everything above is a reading you have taken from a form, a record, or a rule you looked up
+yourself. Before you rely on any of it, take the same questions to your home state's registration
+staff and get their confirmation directly, then write down what they told you." The final H3 now
+states something of its own before "For illustration, the adviser" begins, matching the other eleven
+pages' arrangement. The page's word count moved from 1,242 to 1,291, still inside the 900–1,300 hard
+range. The original entry is kept below for the record.
+
+### Original entry
 
 On [content/process/qualify-as-an-adviser/index.mdx](content/process/qualify-as-an-adviser/index.mdx),
 the final H3 begins on the words "For illustration, the adviser" with no lead-in prose of its own.
@@ -1047,7 +1069,25 @@ the likelier fix. Not written here.
 
 **Belongs to:** a step-page voice pass, with items 18, 19 and 25.
 
-## 27. The SEC-path callout on step 9 is the densest block on the site
+## 27. The SEC-path callout on step 9 is the densest block on the site — DONE
+
+**Status: done — left as is.** Compared side by side against
+[content/process/set-up-custody-and-technology/index.mdx](content/process/set-up-custody-and-technology/index.mdx)'s
+SEC-path callout, the one other callout in the corpus that lands exactly on the 67-word median. That
+callout states a single divergence once and stops: the federal custody rule governs instead of the
+state's version, roughly what differs about it, confirm which applies. Step 9's 115 words are not the
+same kind of block padded longer — its three sentences are causally chained, each depending on the one
+before it: the statutory deadline to act is not the same date as the effective date; that same deadline
+can itself move once proceedings are instituted; and the state's own review runs on a separate clock
+from both federal deadlines. Splitting the second sentence out, as the original entry below proposed,
+would break the chain, since it reads correctly only given the first. Trimming would mean dropping one
+of the three timelines, which is the content itself, not padding around it. The verification pass below
+raised whether the callout is non-compliant with the rule's "does not explain the SEC path in full"
+clause; read against the comparison case, the callout is not attempting a full explanation of the SEC
+path — it states three chained facts bearing on one determination (when registration becomes effective),
+which is what a divergence callout exists to do. The disposition is the original entry's third named
+option: a ruling that the divergence genuinely needs all of it. No change made to the callout. The
+verification pass and the original entry are kept below for the record.
 
 **Status (verification pass, Sep 12): every measurement exact, and the entry under-states its own
 finding by quoting half the rule it cites.**
