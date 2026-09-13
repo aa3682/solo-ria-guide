@@ -998,6 +998,12 @@ page's own rule, and narrowing the bullet is the fix.
 **Belongs to (supersedes the line in the original entry below):** any step-page voice pass that opens
 the file, done in passing. It no longer shapes that pass, and nothing should be built around it.
 
+**Ruling (Route pass, Sep 13): excluded from the voice pass.** Item 27 states as fact that "items 25
+and 26 have moved off" the step-page voice pass and that the pass "is now items 18, 19 and 27 only" —
+a more specific claim than this item's own hedged "Belongs to" line above. Recorded here so the
+exclusion doesn't need re-deriving from the two items' independently worded routing lines a second
+time.
+
 ### Original entry
 
 [content/process/set-up-custody-and-technology/index.mdx](content/process/set-up-custody-and-technology/index.mdx)
@@ -1472,3 +1478,28 @@ different governing source, and a target section that differs from item 21's, wh
 under `#decide-if-independence-fits`.
 
 **Belongs to:** the next figures-page pass, alongside items 2, 16, 17, 21 and 30a.
+
+## 35. CONSISTENCY-PILE.md's phase-1 inventory predates items 18 through 34
+
+[CONSISTENCY-PILE.md](CONSISTENCY-PILE.md) opens by naming itself "Build order step 5, phase 1 of 4:
+inventory only," built against `main` at base commit `4629070`. Its own FOLLOWUPS triage (its section
+B10) covers exactly the 17 items that existed in this file at that commit, and it explicitly defines
+"the source-currency sweep" as items 3, 5, 8, 11, and 14 — a named sub-component of build order step 5
+rather than a separate pass sharing its number by accident. Seventeen more items have been added to
+this file since — 18 through 34 — including the entire step-page voice-pass cluster, all three
+worksheet items, the Form ADV and glossary items, the /about item, and the whole figures-adjacent
+cluster. None of them appears anywhere in CONSISTENCY-PILE.md.
+
+This is not a defect in that file. Nothing it states about the 17 items it does cover has been found
+wrong, and its sub-boundary between the source-currency sweep and the rest of build order step 5 holds
+up. The gap is scope, not accuracy: anyone who next opens CONSISTENCY-PILE.md expecting it to be
+routing authority for items 18–34 will find silence, and could mistake that silence for those items
+having already been ruled out of build order step 5 rather than simply never having been inventoried.
+
+**What it needs:** when the next phase of build order step 5 is scoped, items 18–34 need their own
+inventory pass, or CONSISTENCY-PILE.md needs an explicit note that its coverage stops at item 17. Not
+urgent — nothing currently in flight relies on CONSISTENCY-PILE.md to cover items past 17 — so this can
+ride the next batch of file edits rather than needing a pass of its own.
+
+**Belongs to:** build order step 5 — the same pass CONSISTENCY-PILE.md is itself phase 1 of — whenever
+its next phase is scoped.
