@@ -156,6 +156,10 @@ themselves among the links never fetched (items 11 and 3).
 
 ## 8. "Go deeper" links on the two newest area pages were not fetched — session egress blocked
 
+**Status: still open. A fourth session hit the identical block and independently re-corroborated
+these six by search rather than by fetch — see item 14's status note, which now covers all thirteen
+outstanding links across items 8, 11 and 14 in one place rather than three separate ones.**
+
 The Technology and Client Experience and Risk and Insurance pages were built in a session
 whose network egress proxy blocked every domain their citations point at: ecfr.gov,
 uscode.house.gov, nasaa.org, and content.naic.org (also sec.gov and investor.gov, which
@@ -228,6 +232,10 @@ that noticed it.
 **Belongs to:** best done in one pass once all nine area pages exist, alongside item 1.
 
 ## 11. "Go deeper" links on Advice and Planning Process and Firm Economics were not fetched — session egress blocked again
+
+**Status: still open. A fourth session hit the identical block and independently re-corroborated the
+four remaining links by search rather than by fetch — see item 14's status note, which now covers all
+thirteen outstanding links across items 8, 11 and 14 in one place rather than three separate ones.**
 
 Same failure mode as item 8, in a later session and on a different set of links. The session that
 built [content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx)
@@ -455,6 +463,51 @@ whether either reads slightly clipped at the end.
 the ratchet-versus-depth question).
 
 ## 14. "Go deeper" links on Marketing and Growth were not fetched — session egress blocked a third time
+
+**Status: still open after a fourth consecutive session, which independently re-corroborated all
+thirteen outstanding links across items 8, 11 and 14 by search rather than by fetch.** This session
+tested nasaa.org, ecfr.gov, sec.gov, uscode.house.gov, content.naic.org, iard.com, irs.gov, and
+finra.org directly and every one returned the same policy-level denial the proxy's own status
+endpoint reports as non-retryable — matching the "policy denial, not a transient failure" finding
+below exactly, on a fourth try. `WebSearch` worked and was used the way prior sessions used it: to
+corroborate title, issuing authority, rule number, and — for dated NASAA documents — the
+adoption-and-amendment history, against independent search results rather than against the document
+itself.
+
+**What this session's search corroboration found, for all thirteen:**
+
+- **Item 8's six** (Technology and CX, Risk and Insurance) — the NASAA IA P&P Model Rule PDF, eCFR 17
+  CFR Part 248, NASAA 202(d)-1, NASAA 202(e)-1, 15 U.S.C. §80b-18a (Advisers Act §222), and the NAIC
+  state insurance departments directory. All six resolve at the cited paths per search results; eCFR's
+  own listing reports Title 17 current as of September 8, 2026. Nothing suggests any is superseded or
+  withdrawn.
+- **Item 11's four** — SEC IA-5248 (still the operative 2019 interpretation; no reissue found), IARD
+  Fees and Accounting (live, and the page itself now reflects a 2026 fee schedule), and the two IRS
+  pages (both resolve, under the same paths IRS's own site still uses).
+- **Item 14's three** — NASAA 502(b) and NASAA 411(c)-1 both confirm the amendment history item 7
+  requires: adopted September 17, 2008, most recently amended May 4, 2026, matching the pattern already
+  verified for 102(a)(4)-1 and 203(a)-2. eCFR 275.206(4)-1 resolves and search corroborates it as the
+  current Marketing Rule text.
+
+**What this does and does not settle.** None of this is the fetch the Source currency rule actually
+asks for — a search engine's summary is not the primary document and cannot check a clearance stamp or
+a footer date the way opening the file would (item 5's Form ADV Part 2 finding — an expired OMB
+clearance line on a page that otherwise resolves fine — is exactly the kind of thing no search summary
+would catch). So none of the thirteen moves to confirmed-live status and this entry is not marked
+done. What this pass adds is that all thirteen, not just the three this item originally listed, have
+now had the likeliest failure — a dead link or an obviously superseded document — ruled out by an
+independent check, which the first three sessions established only for their own subset.
+
+**What it needs:** unchanged in substance — an actual fetch of all thirteen from a session with egress
+to nasaa.org, ecfr.gov, sec.gov, uscode.house.gov, content.naic.org, iard.com, irs.gov, and finra.org,
+confirming each live and checked against its own printed date rather than a search summary of it.
+Four sessions in a row hitting the identical wall is worth raising with the owner directly rather than
+assuming a fifth session gets through.
+
+**Belongs to:** build order item 5 (source-currency sweep), or sooner if a session with egress to
+those domains comes up.
+
+### Original entry
 
 Same failure mode as items 8 and 11, in a third consecutive session and on a fresh set of links. The
 session that built [content/domains/marketing-and-growth/index.mdx](content/domains/marketing-and-growth/index.mdx)
