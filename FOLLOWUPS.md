@@ -202,7 +202,35 @@ listed in the PR description for the branch that added the two pages.
 **Belongs to:** build order item 5 (source-currency sweep) — or sooner, if a session with
 network access to those domains comes up first.
 
-## 9. Superseded NASAA model rules are still hosted on nasaa.org and resolve normally
+## 9. Superseded NASAA model rules are still hosted on nasaa.org and resolve normally — DONE
+
+**Status: done — the sweep this entry asked for has now been run.** Every `nasaa.org` citation in
+`content/` was extracted and checked by URL against all three known superseded PDFs named below, not
+just the two pages this entry had already confirmed clean. There are **eleven unique NASAA PDF URLs**
+cited across the repo, at upload paths from 2011, 2020, 2024, and 2026 only — none from 2015, 2019,
+2022, or 2023, which rules out all three superseded PDFs by path alone (their upload years don't even
+appear anywhere else in the repo's NASAA citations):
+
+- `2011/07/`: the custody model rule, the bonding rule, the minimum financial requirements rule, and
+  the brochure rule — none of these four has a recorded successor anywhere in this file.
+- `2020/07/`: the 2020 consolidated Written Policies and Procedures rule, cited on
+  `write-the-policies` and `technology-and-client-experience` exactly as this entry already found.
+- `2020/10/`: the continuing-education model rule — adopted and never amended, per CLAUDE.md's own
+  standing example.
+- `2024/12/`: the examination-requirements model rule.
+- `2026/05/`: all four of item 7's May 4, 2026 amended rules (102(a)(4)-1, 502(b), 203(a)-2, and
+  411(c)-1), each only at its post-amendment path — the pre-amendment 2022 and 2005 texts for
+  102(a)(4)-1 that this entry flags below do not appear anywhere.
+
+Nothing in the current repo cites either the 2015 Business Continuity and Succession Planning PDF, the
+2019 Information Security and Privacy Rule PDF, or either superseded text of 102(a)(4)-1. The finding
+below stands confirmed rather than superseded: nothing was wrong before this sweep, and the sweep is
+what turns "nothing is wrong today" from a two-page spot check into a repo-wide one.
+
+**Belongs to:** nothing further on the current repo. The general lesson below — never infer currency
+from a NASAA upload-path date — still applies to every future page that cites one.
+
+### Original entry
 
 NASAA's 2020 Model Rule for Investment Adviser Written Policies and Procedures consolidated
 and superseded two earlier model rules: Business Continuity and Succession Planning
