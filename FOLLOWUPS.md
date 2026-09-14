@@ -112,7 +112,29 @@ This one applies even to pages that were already source-currency-aware, since th
 was reused from an earlier PR without re-checking the document's own clearance date, not
 copied blind onto a page built before the rule existed.
 
-## 6. Client Education's fifth Key idea was added to clear a word floor that no longer exists
+## 6. Client Education's fifth Key idea was added to clear a word floor that no longer exists — DONE
+
+**Status: done — re-evaluated on its own merits, and kept, unchanged.** Read the section against the
+other four with the word count set aside entirely: the page sits at 849 words either way, comfortably
+inside the 700–1,300 soft range with or without it, so nothing about keeping or cutting it was forced
+by a number.
+
+**What it says that the others don't.** The fifth idea's subject is delivery *format* — written versus
+a live conversation — and its instruction is concrete: pair a written explanation of anything material
+with an actual conversation, and use that conversation to confirm the explanation landed rather than
+assuming the document did the work alone. That is a different axis from each of the other four: idea 1
+is about the disclosure floor versus actual understanding, idea 2 is about calibrating depth to the
+client, idea 3 is about timing (education doesn't stop at onboarding), and idea 4 is about purpose
+(educating versus marketing). Format — which medium, and whether to pair two of them — is not
+restated by any of those, even though idea 1 and idea 5 share the general worry that something can be
+technically delivered and not actually land.
+
+**Disposition: kept.** It earns its place as a distinct, actionable concept rather than surviving on
+inertia from the word floor that originally motivated it. No edit made to the page.
+
+**Belongs to:** nothing further.
+
+### Original entry
 
 The fifth Key idea on the Client Education page
 ([content/domains/client-education/index.mdx](content/domains/client-education/index.mdx)),
