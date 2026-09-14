@@ -1017,9 +1017,19 @@ answered here.
 
 **Belongs to:** the consistency pass (build order item 5).
 
-## 24. "Form ADV" links to the glossary on three pages and to an SEC PDF on a fourth — PARTLY DONE
+## 24. "Form ADV" links to the glossary on three pages and to an SEC PDF on a fourth — DONE
 
-**Status: partly done.** The link-target inconsistency is resolved: `content/process/write-the-disclosure-documents/index.mdx`
+**Status: done.** The one thread the verification pass left open — the two different "Go deeper"
+spellings of the Form ADV Part 2 General Instructions citation — is now closed too.
+`content/domains/service-and-pricing-models/index.mdx` line 54 reads "SEC: Form ADV Part 2 General
+Instructions", matching `content/domains/client-education/index.mdx` exactly; both cite the same
+`formadv-part2.pdf` URL under the same name now. No content or Value changed, just the citation's
+own label, so this needed no fetch. The residual the verification pass flagged separately — whether
+`write-the-disclosure-documents` needed its own citation for the Part 2A claim after dropping the PDF
+link — was already resolved when the link-target fix shipped: the sentence stands on the glossary
+link alone, with no separate SEC citation added, and nothing here reopens that.
+
+**Status (partly done, superseded above):** The link-target inconsistency is resolved: `content/process/write-the-disclosure-documents/index.mdx`
 line 22's `[Form ADV]` now points to `/glossary#form-adv`, matching `choose-your-regulator`,
 `file-and-get-approved`, and `compliance-and-supervision`, which already did. The second
 inconsistency this item names — the two different "Go deeper" spellings of the Form ADV Part 2
@@ -1147,7 +1157,18 @@ here, and no bullet was touched.
 
 **Belongs to:** a step-page voice pass, with items 18 and 19.
 
-## 26. Steps 10 and 11 give opposite instructions about whether they overlap
+## 26. Steps 10 and 11 give opposite instructions about whether they overlap — DONE
+
+**Status: done.** The bullet is reworded to the verification pass's own fix: narrowed rather than
+widening or touching the Callout. `content/process/leave-and-transition-clients/index.mdx`'s Common
+mistakes list now reads "Collecting transfer authorizations before the custodial relationship and
+operational systems from the previous step are far enough along to execute them, leaving nowhere for
+a transferring account to land" — the Callout's own object ("transfer authorizations") and threshold
+("far enough along") rather than the bullet's former, broader "client conversations... actually
+finished," which the Callout itself contradicts by design (it says client conversations normally
+start early). The page moves from 1,409 to about 1,414 counted words, still matching the "approximately
+1,409" the CLAUDE.md recorded exception already allows for. Nothing else on the page changed, and the
+Callout was left exactly as it stood.
 
 **Status (verification pass, Sep 12): the structural claim fails; a smaller finding survives.**
 
