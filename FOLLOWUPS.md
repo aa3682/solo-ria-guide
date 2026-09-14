@@ -692,6 +692,34 @@ pages back in range before the figures page is built.
 
 ## 16. Whether the clearing corporation has republished the account transfer windows since the shortened settlement cycle
 
+**This year's check (Sep 2026): the specific windows are unchanged; a related but distinct process
+change happened and is flagged rather than acted on.** `WebFetch` to dtcc.com, federalregister.gov,
+sec.gov, and finra.org was blocked by the same egress policy as items 8, 11, and 14, so this is
+`WebSearch` corroboration, not a fetch of the primary source — the same caveat those three items
+carry, and this entry stays open rather than closing on it.
+
+Multiple independent search results agree that FINRA Rule 11870's own stated windows — one business
+day to validate or take exception, three business days after validation to complete — have not
+changed since 2007, when they were set to align with ACATS. What did change: NSCC's Rule 50 removed
+the "Settle Prep Day" stage from the ACATS process, effective October 17, 2025, shortening a full
+transfer's end-to-end time from roughly five to six business days down to three to four. That stage
+sits downstream of the two windows FINRA Rule 11870 states and the page's row quotes — it shortens the
+overall cycle without touching the specific one-day and three-day figures themselves. So the row's
+Value, as far as this search-corroborated check can tell, remains current, and no edit was made to the
+page.
+
+**What a fetch-confirmed pass would still need to do:** open FINRA's current Rule 11870 text directly
+and confirm the one-day and three-day figures verbatim, rather than trusting search summaries of it.
+If the guide ever describes ACATS timing in more than the rule's own two windows — the request/review
+stages, or an end-to-end estimate — the Settle Prep Day removal (SR-NSCC-2025-011, effective
+10/17/2025) is worth citing then, sourced from the actual rule filing rather than search results.
+
+**Belongs to:** the yearly figures-page update, unchanged — this remains an annual check, not
+something this pass closes permanently. Recorded here so next year's check starts from what this one
+found rather than from nothing.
+
+### Original entry
+
 The Step 11 row for the standardized account transfer window on
 [content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx) carries the
 one-business-day validation window and the three-business-day completion window as the rule states
