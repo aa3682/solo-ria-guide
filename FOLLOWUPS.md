@@ -112,7 +112,29 @@ This one applies even to pages that were already source-currency-aware, since th
 was reused from an earlier PR without re-checking the document's own clearance date, not
 copied blind onto a page built before the rule existed.
 
-## 6. Client Education's fifth Key idea was added to clear a word floor that no longer exists
+## 6. Client Education's fifth Key idea was added to clear a word floor that no longer exists — DONE
+
+**Status: done — re-evaluated on its own merits, and kept, unchanged.** Read the section against the
+other four with the word count set aside entirely: the page sits at 849 words either way, comfortably
+inside the 700–1,300 soft range with or without it, so nothing about keeping or cutting it was forced
+by a number.
+
+**What it says that the others don't.** The fifth idea's subject is delivery *format* — written versus
+a live conversation — and its instruction is concrete: pair a written explanation of anything material
+with an actual conversation, and use that conversation to confirm the explanation landed rather than
+assuming the document did the work alone. That is a different axis from each of the other four: idea 1
+is about the disclosure floor versus actual understanding, idea 2 is about calibrating depth to the
+client, idea 3 is about timing (education doesn't stop at onboarding), and idea 4 is about purpose
+(educating versus marketing). Format — which medium, and whether to pair two of them — is not
+restated by any of those, even though idea 1 and idea 5 share the general worry that something can be
+technically delivered and not actually land.
+
+**Disposition: kept.** It earns its place as a distinct, actionable concept rather than surviving on
+inertia from the word floor that originally motivated it. No edit made to the page.
+
+**Belongs to:** nothing further.
+
+### Original entry
 
 The fifth Key idea on the Client Education page
 ([content/domains/client-education/index.mdx](content/domains/client-education/index.mdx)),
@@ -180,7 +202,35 @@ listed in the PR description for the branch that added the two pages.
 **Belongs to:** build order item 5 (source-currency sweep) — or sooner, if a session with
 network access to those domains comes up first.
 
-## 9. Superseded NASAA model rules are still hosted on nasaa.org and resolve normally
+## 9. Superseded NASAA model rules are still hosted on nasaa.org and resolve normally — DONE
+
+**Status: done — the sweep this entry asked for has now been run.** Every `nasaa.org` citation in
+`content/` was extracted and checked by URL against all three known superseded PDFs named below, not
+just the two pages this entry had already confirmed clean. There are **eleven unique NASAA PDF URLs**
+cited across the repo, at upload paths from 2011, 2020, 2024, and 2026 only — none from 2015, 2019,
+2022, or 2023, which rules out all three superseded PDFs by path alone (their upload years don't even
+appear anywhere else in the repo's NASAA citations):
+
+- `2011/07/`: the custody model rule, the bonding rule, the minimum financial requirements rule, and
+  the brochure rule — none of these four has a recorded successor anywhere in this file.
+- `2020/07/`: the 2020 consolidated Written Policies and Procedures rule, cited on
+  `write-the-policies` and `technology-and-client-experience` exactly as this entry already found.
+- `2020/10/`: the continuing-education model rule — adopted and never amended, per CLAUDE.md's own
+  standing example.
+- `2024/12/`: the examination-requirements model rule.
+- `2026/05/`: all four of item 7's May 4, 2026 amended rules (102(a)(4)-1, 502(b), 203(a)-2, and
+  411(c)-1), each only at its post-amendment path — the pre-amendment 2022 and 2005 texts for
+  102(a)(4)-1 that this entry flags below do not appear anywhere.
+
+Nothing in the current repo cites either the 2015 Business Continuity and Succession Planning PDF, the
+2019 Information Security and Privacy Rule PDF, or either superseded text of 102(a)(4)-1. The finding
+below stands confirmed rather than superseded: nothing was wrong before this sweep, and the sweep is
+what turns "nothing is wrong today" from a two-page spot check into a repo-wide one.
+
+**Belongs to:** nothing further on the current repo. The general lesson below — never infer currency
+from a NASAA upload-path date — still applies to every future page that cites one.
+
+### Original entry
 
 NASAA's 2020 Model Rule for Investment Adviser Written Policies and Procedures consolidated
 and superseded two earlier model rules: Business Continuity and Succession Planning
@@ -1017,9 +1067,19 @@ answered here.
 
 **Belongs to:** the consistency pass (build order item 5).
 
-## 24. "Form ADV" links to the glossary on three pages and to an SEC PDF on a fourth — PARTLY DONE
+## 24. "Form ADV" links to the glossary on three pages and to an SEC PDF on a fourth — DONE
 
-**Status: partly done.** The link-target inconsistency is resolved: `content/process/write-the-disclosure-documents/index.mdx`
+**Status: done.** The one thread the verification pass left open — the two different "Go deeper"
+spellings of the Form ADV Part 2 General Instructions citation — is now closed too.
+`content/domains/service-and-pricing-models/index.mdx` line 54 reads "SEC: Form ADV Part 2 General
+Instructions", matching `content/domains/client-education/index.mdx` exactly; both cite the same
+`formadv-part2.pdf` URL under the same name now. No content or Value changed, just the citation's
+own label, so this needed no fetch. The residual the verification pass flagged separately — whether
+`write-the-disclosure-documents` needed its own citation for the Part 2A claim after dropping the PDF
+link — was already resolved when the link-target fix shipped: the sentence stands on the glossary
+link alone, with no separate SEC citation added, and nothing here reopens that.
+
+**Status (partly done, superseded above):** The link-target inconsistency is resolved: `content/process/write-the-disclosure-documents/index.mdx`
 line 22's `[Form ADV]` now points to `/glossary#form-adv`, matching `choose-your-regulator`,
 `file-and-get-approved`, and `compliance-and-supervision`, which already did. The second
 inconsistency this item names — the two different "Go deeper" spellings of the Form ADV Part 2
@@ -1147,7 +1207,18 @@ here, and no bullet was touched.
 
 **Belongs to:** a step-page voice pass, with items 18 and 19.
 
-## 26. Steps 10 and 11 give opposite instructions about whether they overlap
+## 26. Steps 10 and 11 give opposite instructions about whether they overlap — DONE
+
+**Status: done.** The bullet is reworded to the verification pass's own fix: narrowed rather than
+widening or touching the Callout. `content/process/leave-and-transition-clients/index.mdx`'s Common
+mistakes list now reads "Collecting transfer authorizations before the custodial relationship and
+operational systems from the previous step are far enough along to execute them, leaving nowhere for
+a transferring account to land" — the Callout's own object ("transfer authorizations") and threshold
+("far enough along") rather than the bullet's former, broader "client conversations... actually
+finished," which the Callout itself contradicts by design (it says client conversations normally
+start early). The page moves from 1,409 to about 1,414 counted words, still matching the "approximately
+1,409" the CLAUDE.md recorded exception already allows for. Nothing else on the page changed, and the
+Callout was left exactly as it stood.
 
 **Status (verification pass, Sep 12): the structural claim fails; a smaller finding survives.**
 
