@@ -43,20 +43,25 @@ just because the area it names happens to have merged; wait for all 9.
 
 ## 2. Performance-based fees / Rule 205-3 qualified client thresholds
 
+**Ruled: the row waits for the page.** The owner decided the sequencing question below directly:
+the figures-page row is not added ahead of coverage. Whoever writes the page that covers
+performance-based fees adds the row as part of that same PR, sourced from a fetched primary
+document rather than from memory. Until then this stays deliberately absent on both
+`/tools/this-years-figures` and `content/domains/service-and-pricing-models/index.mdx`, and that
+absence is not a gap to flag elsewhere in the repo.
+
 The Service and Pricing Models page ([content/domains/service-and-pricing-models/index.mdx](content/domains/service-and-pricing-models/index.mdx))
 deliberately omits performance-based fees and the qualified-client thresholds that
 gate them under Advisers Act Rule 205-3 and its state analogs.
 
-**What it needs:** a row (or rows) on `/tools/this-years-figures` for the qualified-client
-net-worth and assets-under-management thresholds, and — wherever the topic is
-eventually covered — an SEC-path callout, since the federal and state versions of the
-performance-fee exemption diverge.
+**What it needs:** whenever a page takes up performance-based fees, a row (or rows) on
+`/tools/this-years-figures` for the qualified-client net-worth and assets-under-management
+thresholds, and — wherever the topic is covered — an SEC-path callout, since the federal and
+state versions of the performance-fee exemption diverge.
 
-**What blocks it:** a decision on whether the figures-page row is added on its own,
-ahead of any page actually covering the topic, or whether the topic gets covered on a
-page first and the row follows from that.
-
-**Belongs to:** build order item 4 (the figures page). Decide there.
+**Belongs to:** whichever future page first covers performance-based fees. Not the next
+figures-page pass on its own — the ruling above means there is nothing to add there until a page
+exists to link it.
 
 ## 3. Repo-wide source-currency sweep
 
@@ -156,6 +161,10 @@ themselves among the links never fetched (items 11 and 3).
 
 ## 8. "Go deeper" links on the two newest area pages were not fetched — session egress blocked
 
+**Status: still open. A fourth session hit the identical block and independently re-corroborated
+these six by search rather than by fetch — see item 14's status note, which now covers all thirteen
+outstanding links across items 8, 11 and 14 in one place rather than three separate ones.**
+
 The Technology and Client Experience and Risk and Insurance pages were built in a session
 whose network egress proxy blocked every domain their citations point at: ecfr.gov,
 uscode.house.gov, nasaa.org, and content.naic.org (also sec.gov and investor.gov, which
@@ -229,6 +238,10 @@ that noticed it.
 
 ## 11. "Go deeper" links on Advice and Planning Process and Firm Economics were not fetched — session egress blocked again
 
+**Status: still open. A fourth session hit the identical block and independently re-corroborated the
+four remaining links by search rather than by fetch — see item 14's status note, which now covers all
+thirteen outstanding links across items 8, 11 and 14 in one place rather than three separate ones.**
+
 Same failure mode as item 8, in a later session and on a different set of links. The session that
 built [content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx)
 and [content/domains/firm-economics/index.mdx](content/domains/firm-economics/index.mdx) had every
@@ -294,7 +307,31 @@ The owner should confirm the wording; the fix itself is uncontroversial.
 **Belongs to:** the Marketing and Growth build, as a one-line correction folded into that prompt.
 Do not wait for the all-step-pages pass in item 1.
 
-## 13. Both PR #22 pages landed within nine words of the ceiling — a test, and what it can and cannot show
+## 13. Both PR #22 pages landed within nine words of the ceiling — a test, and what it can and cannot show — PARTLY DONE
+
+**Status: (a) and (b) of the closing "open judgment" are answered, by a ruling recorded in CLAUDE.md
+rather than in this file; (c) is not, and is lower value now.** Marketing and Growth is measured at
+1,758 words in the current repo, not the 1,823 this entry records below — it was trimmed at some point
+after this entry was filed. CLAUDE.md's Word count basis "Recorded exceptions" now carries it at
+"approximately 1,758 words, over the soft ceiling, and is accepted rather than trimmed or split,"
+citing subject breadth and a sound phone read-through, with "Do not trim or split this page to the
+ceiling without a fresh ruling." That is question (a) decided: cut somewhat, then accepted over the
+line rather than forced under it. It also answers (b) in the way these things get answered in practice:
+the 1,300 area-page ceiling was not abandoned, but this instance no longer needs it to hold — the
+mechanism is a per-page recorded exception, the same one `leave-and-transition-clients` and
+`stay-registered-and-compliant` already use for the same reason.
+
+Question (c), ratchet-versus-depth, was never decided and this repo audit did not attempt it. It
+mattered most while the page's length was still an open question; with the instance closed by
+exception, it is now a research question about the drafting process rather than something blocking a
+page. Left open below, along with the "re-read and judge whether either reads slightly clipped"
+instruction, which this pass also did not act on.
+
+This entry's own body — the test design, the 1,823-word result, and the finding that it shipped
+"unedited" — is a historical record of the test as it ran and should be read that way; the page it
+describes is not in that state now.
+
+### Original entry
 
 Item added at the owner's direction during PR #22 review, and extended after a measurement that
 overturned part of its own premise. Read the whole entry before drawing anything from the result.
@@ -432,6 +469,51 @@ the ratchet-versus-depth question).
 
 ## 14. "Go deeper" links on Marketing and Growth were not fetched — session egress blocked a third time
 
+**Status: still open after a fourth consecutive session, which independently re-corroborated all
+thirteen outstanding links across items 8, 11 and 14 by search rather than by fetch.** This session
+tested nasaa.org, ecfr.gov, sec.gov, uscode.house.gov, content.naic.org, iard.com, irs.gov, and
+finra.org directly and every one returned the same policy-level denial the proxy's own status
+endpoint reports as non-retryable — matching the "policy denial, not a transient failure" finding
+below exactly, on a fourth try. `WebSearch` worked and was used the way prior sessions used it: to
+corroborate title, issuing authority, rule number, and — for dated NASAA documents — the
+adoption-and-amendment history, against independent search results rather than against the document
+itself.
+
+**What this session's search corroboration found, for all thirteen:**
+
+- **Item 8's six** (Technology and CX, Risk and Insurance) — the NASAA IA P&P Model Rule PDF, eCFR 17
+  CFR Part 248, NASAA 202(d)-1, NASAA 202(e)-1, 15 U.S.C. §80b-18a (Advisers Act §222), and the NAIC
+  state insurance departments directory. All six resolve at the cited paths per search results; eCFR's
+  own listing reports Title 17 current as of September 8, 2026. Nothing suggests any is superseded or
+  withdrawn.
+- **Item 11's four** — SEC IA-5248 (still the operative 2019 interpretation; no reissue found), IARD
+  Fees and Accounting (live, and the page itself now reflects a 2026 fee schedule), and the two IRS
+  pages (both resolve, under the same paths IRS's own site still uses).
+- **Item 14's three** — NASAA 502(b) and NASAA 411(c)-1 both confirm the amendment history item 7
+  requires: adopted September 17, 2008, most recently amended May 4, 2026, matching the pattern already
+  verified for 102(a)(4)-1 and 203(a)-2. eCFR 275.206(4)-1 resolves and search corroborates it as the
+  current Marketing Rule text.
+
+**What this does and does not settle.** None of this is the fetch the Source currency rule actually
+asks for — a search engine's summary is not the primary document and cannot check a clearance stamp or
+a footer date the way opening the file would (item 5's Form ADV Part 2 finding — an expired OMB
+clearance line on a page that otherwise resolves fine — is exactly the kind of thing no search summary
+would catch). So none of the thirteen moves to confirmed-live status and this entry is not marked
+done. What this pass adds is that all thirteen, not just the three this item originally listed, have
+now had the likeliest failure — a dead link or an obviously superseded document — ruled out by an
+independent check, which the first three sessions established only for their own subset.
+
+**What it needs:** unchanged in substance — an actual fetch of all thirteen from a session with egress
+to nasaa.org, ecfr.gov, sec.gov, uscode.house.gov, content.naic.org, iard.com, irs.gov, and finra.org,
+confirming each live and checked against its own printed date rather than a search summary of it.
+Four sessions in a row hitting the identical wall is worth raising with the owner directly rather than
+assuming a fifth session gets through.
+
+**Belongs to:** build order item 5 (source-currency sweep), or sooner if a session with egress to
+those domains comes up.
+
+### Original entry
+
 Same failure mode as items 8 and 11, in a third consecutive session and on a fresh set of links. The
 session that built [content/domains/marketing-and-growth/index.mdx](content/domains/marketing-and-growth/index.mdx)
 had nasaa.org, ecfr.gov, sec.gov, and uscode.house.gov all answered 403 at CONNECT by the egress
@@ -495,7 +577,36 @@ language on `stay-registered-and-compliant` with no route from that page to the 
 window's new link sits in the same passage, so one sentence carries both. Recorded because it was a
 judgment call rather than something the prompt required.
 
-### Left open: two step pages now exceed the hard 900–1,300 word range
+### Left open: two step pages now exceed the hard 900–1,300 word range — DONE
+
+**Status: done, by later edits elsewhere rather than by a trim pass run against this entry.** Measured
+fresh against the current repo, all six pages in the table below are back at or under their ceiling:
+
+| Page | Table below | Current | Ceiling |
+| --- | --- | --- | --- |
+| `content/process/stay-registered-and-compliant/index.mdx` | 1,325 | 1,311 | 1,300, hard |
+| `content/process/file-and-get-approved/index.mdx` | 1,316 | 1,267 | 1,300, hard |
+| `content/domains/firm-economics/index.mdx` | 1,312 | 1,222 | 1,300, soft |
+| `content/domains/risk-and-insurance/index.mdx` | 1,307 | 1,253 | 1,300, soft |
+| `content/domains/compliance-and-supervision/index.mdx` | 1,150 | 1,068 | 1,300, soft |
+| `content/process/write-the-disclosure-documents/index.mdx` | 1,297 | 1,255 | 1,300, hard |
+
+`stay-registered-and-compliant` is the one page still numerically over the hard range at 1,311, and it
+is exactly the figure CLAUDE.md's Word count basis "Recorded exceptions" now lists it at, merged on an
+explicit ruling rather than a trim — so it is not an open overrun, it is a decided one. The other five
+are inside their ranges outright and need no ruling at all. Nothing in this repo audit found the trim
+pass or the edits that moved these numbers; they are recorded here as a state to verify, not a change
+being claimed.
+
+**What it needs:** nothing further on the two step pages. The subsection's other open question —
+whether the soft-ceiling rule should name a required-deferral-near-the-line as a third valid cause —
+was never decided and is not resolved by the numbers moving; it stands only as a documentation
+question, not a page in violation.
+
+**Belongs to:** nothing currently — closed by the numbers. The named documentation question, if
+anyone wants it, belongs with the consistency pass.
+
+### Original entry
 
 The repairs add words and remove none, and four of the six pages were already within a few words of
 1,300 before this pass:
@@ -546,7 +657,24 @@ cycle took effect, and update the row's Value if one has been published. Not ans
 
 **Belongs to:** the yearly figures-page update — this is an annual check, not a one-time fix.
 
-## 17. The figures page preamble names three Source forms for "Varies by state" rows; CLAUDE.md permits four
+## 17. The figures page preamble names three Source forms for "Varies by state" rows; CLAUDE.md permits four — DONE
+
+**Status: done — the preamble moved, CLAUDE.md did not.** The "How to read this page" sentence on
+[content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx) now reads
+"the Source column instead points at what you consult to find your own state's figure — a federal
+locator page where one exists, and otherwise your state securities regulator, the model rule the
+states drew on, or the state office that charges the fee," matching CLAUDE.md's own priority order
+verbatim (locator page first, state office "otherwise"). This is the lower-judgment of the two options
+this entry named: it brings the preamble in line with a rule that already exists rather than deciding
+whether CLAUDE.md should drop a first-choice form no row has used, which stays an open question if
+anyone wants to raise it, just not one this fix needed to answer. Re-verified before touching anything:
+all 26 "Varies by state" rows still take one of the three forms already in use, so nothing on the page
+itself needed to change.
+
+**Belongs to:** nothing further, unless someone wants to reopen whether CLAUDE.md's first-choice form
+is worth keeping — that question is independent of this fix and was not decided.
+
+### Original entry
 
 The "How to read this page" preamble on
 [content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx) tells the
@@ -1137,10 +1265,30 @@ the callout at all. Not attempted here.
 
 **Belongs to:** a step-page voice pass, with items 18, 19, 25 and 26.
 
-## 28. The running calendar worksheet's "the number" heading asks a question the page has refused — PARTLY DONE
+## 28. The running calendar worksheet's "the number" heading asks a question the page has refused — DONE
 
-**Status: the heading finding pointed the wrong way. The request to revisit the standing ruling is
-WITHDRAWN — nothing in this entry asks the owner to reconsider anything.** Two rounds, below.
+**Status: done.** Round 3, below, fixes the two prose spots Round 2 found and this entry now closes.
+Three rounds in total.
+
+**Round 3 — this pass.** Both sentences Round 2 flagged are rewritten, on the page only, no CLAUDE.md
+change:
+
+- Line 10 now reads "The other worksheets in this section end in a single answer you write down and
+  act on. This one ends in an instrument you keep and reopen on a schedule for as long as the firm
+  operates" — replacing "produce an answer you write down" / "produce an instrument you reopen," which
+  Round 2 found false in the direction that this worksheet also produces a count. The new sentence
+  contrasts what you *do* with the output (act on one answer, versus keep and reopen an instrument)
+  rather than claiming this page has no number at all, so it no longer conflicts with "The result."
+- `## What this measures` now opens "Not a quantity to solve for," replacing the flat "Not a
+  quantity." — true of the worksheet's purpose (it is not a dollar figure or a go/no-go the way the
+  other two worksheets are) without denying the count the page goes on to instruct and analyze.
+
+Word count moved from 778 to 789, still well inside the worksheet template's 1,000-word soft ceiling.
+Nothing else on the page changed.
+
+**Status carried forward from Round 2: the heading finding pointed the wrong way. The request to
+revisit the standing ruling is WITHDRAWN — nothing in this entry asks the owner to reconsider
+anything.** Two earlier rounds, below.
 
 **Round 1 — PR #55, Sep 11.** The opening line of
 [content/tools/building-your-running-calendar/index.mdx](content/tools/building-your-running-calendar/index.mdx)
@@ -1447,6 +1595,17 @@ is a defect to fix or a free choice to leave alone.
 `content/tools/<slug>/index.mdx` pages, or only the three worksheets — recorded in CLAUDE.md. Then,
 and only then, a decision on the figures table's shape: fewer columns, "What it governs" moved out of
 the table, or an accepted exception. Not answered here.
+
+**Status: put to the owner directly; still unresolved, "not sure."** The lean offered — only the
+three worksheets, since CLAUDE.md already carries a separate row schema specifically for
+`/tools/this-years-figures` (Concept | What it governs | Value | Year | Source, under "Row schema on
+/tools/this-years-figures" in the area page conventions) — is a fifth fact worth weighing alongside
+the four above: the page already has its own documented shape elsewhere in the file, which is hard to
+square with it also being silently subject to the worksheet block's three-column rule. That reading
+would leave the figures table exactly as built, with no fix needed, and the only edit would be a
+one-line scope clarification on the `Worksheet page (tools):` heading naming the three slugs it
+covers. Recorded here as a lean, not a ruling — the owner did not adopt it, and this pass changed
+nothing on the figures page or in CLAUDE.md.
 
 **Belongs to:** a precondition for the **table-shape decision only**. It does **not** block item 30a:
 fetching two unestablished Values is independent of how many columns the table has, and parking a
