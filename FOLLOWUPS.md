@@ -294,7 +294,31 @@ The owner should confirm the wording; the fix itself is uncontroversial.
 **Belongs to:** the Marketing and Growth build, as a one-line correction folded into that prompt.
 Do not wait for the all-step-pages pass in item 1.
 
-## 13. Both PR #22 pages landed within nine words of the ceiling — a test, and what it can and cannot show
+## 13. Both PR #22 pages landed within nine words of the ceiling — a test, and what it can and cannot show — PARTLY DONE
+
+**Status: (a) and (b) of the closing "open judgment" are answered, by a ruling recorded in CLAUDE.md
+rather than in this file; (c) is not, and is lower value now.** Marketing and Growth is measured at
+1,758 words in the current repo, not the 1,823 this entry records below — it was trimmed at some point
+after this entry was filed. CLAUDE.md's Word count basis "Recorded exceptions" now carries it at
+"approximately 1,758 words, over the soft ceiling, and is accepted rather than trimmed or split,"
+citing subject breadth and a sound phone read-through, with "Do not trim or split this page to the
+ceiling without a fresh ruling." That is question (a) decided: cut somewhat, then accepted over the
+line rather than forced under it. It also answers (b) in the way these things get answered in practice:
+the 1,300 area-page ceiling was not abandoned, but this instance no longer needs it to hold — the
+mechanism is a per-page recorded exception, the same one `leave-and-transition-clients` and
+`stay-registered-and-compliant` already use for the same reason.
+
+Question (c), ratchet-versus-depth, was never decided and this repo audit did not attempt it. It
+mattered most while the page's length was still an open question; with the instance closed by
+exception, it is now a research question about the drafting process rather than something blocking a
+page. Left open below, along with the "re-read and judge whether either reads slightly clipped"
+instruction, which this pass also did not act on.
+
+This entry's own body — the test design, the 1,823-word result, and the finding that it shipped
+"unedited" — is a historical record of the test as it ran and should be read that way; the page it
+describes is not in that state now.
+
+### Original entry
 
 Item added at the owner's direction during PR #22 review, and extended after a measurement that
 overturned part of its own premise. Read the whole entry before drawing anything from the result.
@@ -495,7 +519,36 @@ language on `stay-registered-and-compliant` with no route from that page to the 
 window's new link sits in the same passage, so one sentence carries both. Recorded because it was a
 judgment call rather than something the prompt required.
 
-### Left open: two step pages now exceed the hard 900–1,300 word range
+### Left open: two step pages now exceed the hard 900–1,300 word range — DONE
+
+**Status: done, by later edits elsewhere rather than by a trim pass run against this entry.** Measured
+fresh against the current repo, all six pages in the table below are back at or under their ceiling:
+
+| Page | Table below | Current | Ceiling |
+| --- | --- | --- | --- |
+| `content/process/stay-registered-and-compliant/index.mdx` | 1,325 | 1,311 | 1,300, hard |
+| `content/process/file-and-get-approved/index.mdx` | 1,316 | 1,267 | 1,300, hard |
+| `content/domains/firm-economics/index.mdx` | 1,312 | 1,222 | 1,300, soft |
+| `content/domains/risk-and-insurance/index.mdx` | 1,307 | 1,253 | 1,300, soft |
+| `content/domains/compliance-and-supervision/index.mdx` | 1,150 | 1,068 | 1,300, soft |
+| `content/process/write-the-disclosure-documents/index.mdx` | 1,297 | 1,255 | 1,300, hard |
+
+`stay-registered-and-compliant` is the one page still numerically over the hard range at 1,311, and it
+is exactly the figure CLAUDE.md's Word count basis "Recorded exceptions" now lists it at, merged on an
+explicit ruling rather than a trim — so it is not an open overrun, it is a decided one. The other five
+are inside their ranges outright and need no ruling at all. Nothing in this repo audit found the trim
+pass or the edits that moved these numbers; they are recorded here as a state to verify, not a change
+being claimed.
+
+**What it needs:** nothing further on the two step pages. The subsection's other open question —
+whether the soft-ceiling rule should name a required-deferral-near-the-line as a third valid cause —
+was never decided and is not resolved by the numbers moving; it stands only as a documentation
+question, not a page in violation.
+
+**Belongs to:** nothing currently — closed by the numbers. The named documentation question, if
+anyone wants it, belongs with the consistency pass.
+
+### Original entry
 
 The repairs add words and remove none, and four of the six pages were already within a few words of
 1,300 before this pass:
