@@ -43,20 +43,25 @@ just because the area it names happens to have merged; wait for all 9.
 
 ## 2. Performance-based fees / Rule 205-3 qualified client thresholds
 
+**Ruled: the row waits for the page.** The owner decided the sequencing question below directly:
+the figures-page row is not added ahead of coverage. Whoever writes the page that covers
+performance-based fees adds the row as part of that same PR, sourced from a fetched primary
+document rather than from memory. Until then this stays deliberately absent on both
+`/tools/this-years-figures` and `content/domains/service-and-pricing-models/index.mdx`, and that
+absence is not a gap to flag elsewhere in the repo.
+
 The Service and Pricing Models page ([content/domains/service-and-pricing-models/index.mdx](content/domains/service-and-pricing-models/index.mdx))
 deliberately omits performance-based fees and the qualified-client thresholds that
 gate them under Advisers Act Rule 205-3 and its state analogs.
 
-**What it needs:** a row (or rows) on `/tools/this-years-figures` for the qualified-client
-net-worth and assets-under-management thresholds, and — wherever the topic is
-eventually covered — an SEC-path callout, since the federal and state versions of the
-performance-fee exemption diverge.
+**What it needs:** whenever a page takes up performance-based fees, a row (or rows) on
+`/tools/this-years-figures` for the qualified-client net-worth and assets-under-management
+thresholds, and — wherever the topic is covered — an SEC-path callout, since the federal and
+state versions of the performance-fee exemption diverge.
 
-**What blocks it:** a decision on whether the figures-page row is added on its own,
-ahead of any page actually covering the topic, or whether the topic gets covered on a
-page first and the row follows from that.
-
-**Belongs to:** build order item 4 (the figures page). Decide there.
+**Belongs to:** whichever future page first covers performance-based fees. Not the next
+figures-page pass on its own — the ruling above means there is nothing to add there until a page
+exists to link it.
 
 ## 3. Repo-wide source-currency sweep
 
@@ -1590,6 +1595,17 @@ is a defect to fix or a free choice to leave alone.
 `content/tools/<slug>/index.mdx` pages, or only the three worksheets — recorded in CLAUDE.md. Then,
 and only then, a decision on the figures table's shape: fewer columns, "What it governs" moved out of
 the table, or an accepted exception. Not answered here.
+
+**Status: put to the owner directly; still unresolved, "not sure."** The lean offered — only the
+three worksheets, since CLAUDE.md already carries a separate row schema specifically for
+`/tools/this-years-figures` (Concept | What it governs | Value | Year | Source, under "Row schema on
+/tools/this-years-figures" in the area page conventions) — is a fifth fact worth weighing alongside
+the four above: the page already has its own documented shape elsewhere in the file, which is hard to
+square with it also being silently subject to the worksheet block's three-column rule. That reading
+would leave the figures table exactly as built, with no fix needed, and the only edit would be a
+one-line scope clarification on the `Worksheet page (tools):` heading naming the three slugs it
+covers. Recorded here as a lean, not a ruling — the owner did not adopt it, and this pass changed
+nothing on the figures page or in CLAUDE.md.
 
 **Belongs to:** a precondition for the **table-shape decision only**. It does **not** block item 30a:
 fetching two unestablished Values is independent of how many columns the table has, and parking a
