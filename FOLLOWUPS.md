@@ -181,11 +181,13 @@ themselves among the links never fetched (items 11 and 3).
 
 **Belongs to:** the Marketing and Growth build (done), and the source-currency sweep (item 3).
 
-## 8. "Go deeper" links on the two newest area pages were not fetched — session egress blocked
+## 8. "Go deeper" links on the two newest area pages were not fetched — session egress blocked — DONE
 
-**Status: still open. A fourth session hit the identical block and independently re-corroborated
-these six by search rather than by fetch — see item 14's status note, which now covers all thirteen
-outstanding links across items 8, 11 and 14 in one place rather than three separate ones.**
+**Status: done.** The owner opened all six links directly and confirmed each live, current, and
+pointing at the right document — see item 14's status note, which now records the owner's
+confirmation for all thirteen outstanding links across items 8, 11 and 14 in one place. No page
+content changed; this closes the confirmation gap the egress block had left open across four
+sessions.
 
 The Technology and Client Experience and Risk and Insurance pages were built in a session
 whose network egress proxy blocked every domain their citations point at: ecfr.gov,
@@ -286,11 +288,11 @@ that noticed it.
 
 **Belongs to:** best done in one pass once all nine area pages exist, alongside item 1.
 
-## 11. "Go deeper" links on Advice and Planning Process and Firm Economics were not fetched — session egress blocked again
+## 11. "Go deeper" links on Advice and Planning Process and Firm Economics were not fetched — session egress blocked again — DONE
 
-**Status: still open. A fourth session hit the identical block and independently re-corroborated the
-four remaining links by search rather than by fetch — see item 14's status note, which now covers all
-thirteen outstanding links across items 8, 11 and 14 in one place rather than three separate ones.**
+**Status: done.** The owner opened all four remaining links directly and confirmed each live and
+current — see item 14's status note, which now records the owner's confirmation for all thirteen
+outstanding links across items 8, 11 and 14 in one place. No page content changed.
 
 Same failure mode as item 8, in a later session and on a different set of links. The session that
 built [content/domains/advice-and-planning-process/index.mdx](content/domains/advice-and-planning-process/index.mdx)
@@ -517,10 +519,30 @@ whether either reads slightly clipped at the end.
 **Belongs to:** the Marketing and Growth build (the test), and build order item 5 (the re-read and
 the ratchet-versus-depth question).
 
-## 14. "Go deeper" links on Marketing and Growth were not fetched — session egress blocked a third time
+## 14. "Go deeper" links on Marketing and Growth were not fetched — session egress blocked a third time — DONE
 
-**Status: still open after a fourth consecutive session, which independently re-corroborated all
-thirteen outstanding links across items 8, 11 and 14 by search rather than by fetch.** This session
+**Status: done — the owner opened all thirteen directly and confirmed every one live, current, and
+correctly pathed.** Four sessions in a row had hit the same non-retryable egress block and could only
+get as far as `WebSearch` corroboration (below), which the Source currency rule doesn't treat as
+equivalent to a fetch. The owner's own confirmation closes that gap for all thirteen at once, across
+items 8, 11 and 14:
+
+- **Item 8's six** — eCFR 17 CFR Part 248, 15 U.S.C. §80b-18a, and the NAIC state insurance departments
+  directory confirmed as standard, active paths; the NASAA IA P&P Model Rule (2020) and both 2011
+  NASAA model rules (202(d)-1 and 202(e)-1) confirmed still up and pathing correctly.
+- **Item 11's four** — SEC IA-5248, IARD Fees and Accounting, and the two IRS pages confirmed as
+  standard, active paths.
+- **Item 14's three** — eCFR 275.206(4)-1 confirmed as a standard, active path; NASAA 502(b) and NASAA
+  411(c)-1 specifically confirmed as pointing at the correct May 4, 2026 amended versions, matching the
+  pattern item 7 requires.
+
+Nothing on any of the six pages these thirteen citations sit on needed to change — the citations were
+already correct, only unconfirmed. This closes items 8, 11 and 14 outright rather than waiting for a
+session with egress to these domains.
+
+**Status (superseded): still open after a fourth consecutive session, which independently
+re-corroborated all thirteen outstanding links across items 8, 11 and 14 by search rather than by
+fetch.** This session
 tested nasaa.org, ecfr.gov, sec.gov, uscode.house.gov, content.naic.org, iard.com, irs.gov, and
 finra.org directly and every one returned the same policy-level denial the proxy's own status
 endpoint reports as non-retryable — matching the "policy denial, not a transient failure" finding
@@ -1516,16 +1538,18 @@ lead with it. Not written here.
 
 **Belongs to:** the consistency pass (build order item 5).
 
-## 30. Figures-page sweep additions from the phone read-through: two unestablished Values, and step 10's undelivered pointer — 30a HALF DONE
+## 30. Figures-page sweep additions from the phone read-through: two unestablished Values, and step 10's undelivered pointer — 30a DONE
 
-**Status: 30a's filing-system-fee half is done; its renewal-window half is not, and 30c is unchanged.**
-The Filing system fee row under `#file-and-get-approved` now carries a Value — the tiered IARD schedule
-the owner provided directly (state-registered and state exempt reporting advisers: $0, currently
-waived; SEC-registered advisers: $40 under $25,000,000, $150 from $25,000,000 up to $100,000,000, $225
-over $100,000,000; SEC exempt reporting advisers: $150), Year 2026, same Source link as before. The
-Yearly registration renewal window under `#stay-registered-and-compliant` is untouched and still reads
-`NEEDS-VALUE` — no window dates were provided, so nothing was invented for it. Step 12's other named
-problem, the renewal fee's no-link "Varies by state" Source cell, is correct under CLAUDE.md's rules as
+**Status: 30a is now fully done; 30c is unchanged.** The Filing system fee row under
+`#file-and-get-approved` carries a Value — the tiered IARD schedule the owner provided directly
+(state-registered and state exempt reporting advisers: $0, currently waived; SEC-registered advisers:
+$40 under $25,000,000, $150 from $25,000,000 up to $100,000,000, $225 over $100,000,000; SEC exempt
+reporting advisers: $150), Year 2026, same Source link as before. The Yearly registration renewal
+window under `#stay-registered-and-compliant`, previously `NEEDS-VALUE`, now reads "Mid-November to
+mid-December: preliminary renewal statements become available in early November, and payment is due
+in early December," Year 2026, also from the owner directly. Both 30a Values now trace to owner-provided
+primary-source text rather than to memory. Step 12's other named problem, the renewal fee's no-link
+"Varies by state" Source cell, is correct under CLAUDE.md's rules as
 this entry's own next paragraph already concludes, and is not something 30a asks to change.
 
 **Status (verification pass, Sep 12): one of the three findings has moved to item 32; of the two that
@@ -1559,8 +1583,8 @@ adaptation of it", and all three Step 10 rows carry an identical Source cell nam
 no regulator pointer of any kind. The cells deliver the first half of the promise and assert the
 second without giving anywhere to check it.
 
-**Belongs to (supersedes the line in the original entry below):** 30a goes with the figures-page pass,
-alongside items 2, 16, 17 and 21. 30c travels with **item 17 specifically**, not with figures-page
+**Belongs to (supersedes the line in the original entry below):** 30a is done, nothing further. 30c
+travels with **item 17 specifically**, not with figures-page
 work generally — it is a question about what a "Varies by state" Source cell must carry, which is item
 17's question.
 
