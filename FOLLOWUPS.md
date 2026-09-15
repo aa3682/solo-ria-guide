@@ -1718,7 +1718,24 @@ should assume there are others rather than assume there are not.
 before item 20's sweep is written, and it is filed separately so it cannot be deferred with the
 formatting work in item 30.
 
-## 32. Which /tools pages does CLAUDE.md's worksheet block govern?
+## 32. Which /tools pages does CLAUDE.md's worksheet block govern? — DONE
+
+**Status: ruled.** The owner adopted the lean below: the `Worksheet page (tools):` block governs only
+the three worksheets, never `/tools/this-years-figures`. CLAUDE.md's heading for that block now reads
+"Worksheet page (tools) — governs the three worksheets only, never `/tools/this-years-figures`, which
+has its own row schema," and its Path line names the three current worksheets by slug
+(`calculating-your-regulatory-assets-under-management`, `reaching-your-written-decision`,
+`building-your-running-calendar`), with a note that a future fourth worksheet joins the list in the
+same PR that adds it.
+
+**Consequence for the table-shape question this item was blocking:** there isn't one. The figures
+page's 5-column table and long cells were never a defect under the rule that actually governs it — the
+separate row schema at CLAUDE.md's "Row schema on /tools/this-years-figures" line, unchanged by this
+ruling. No edit was made to `content/tools/this-years-figures/index.mdx`.
+
+**Belongs to:** nothing further.
+
+### Original entry
 
 This was filed inside item 30 as a table-shape finding and is extracted here on item 31's precedent,
 because it is a precondition for a decision rather than work on a page. Item 30's original text of the
