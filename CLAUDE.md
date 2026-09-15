@@ -233,8 +233,8 @@ Four rules specific to area pages, on top of the area skeleton and conventions a
 
 With rule 3 applied, an area page's running order is: frontmatter, H1, opening paragraph, "Where this starts in the process," "Key ideas," "Common misconceptions," "For practitioners," "Go deeper."
 
-Worksheet page (tools):
-- Path: `content/tools/<slug>/index.mdx`, one folder per page.
+Worksheet page (tools) — governs the three worksheets only, never `/tools/this-years-figures`, which has its own row schema (see "Row schema on /tools/this-years-figures" above):
+- Path: `content/tools/<slug>/index.mdx`, one folder per page. The three current worksheets are `calculating-your-regulatory-assets-under-management`, `reaching-your-written-decision`, and `building-your-running-calendar`; a future fourth worksheet joins this list in the same PR that adds it.
 - A soft ceiling of 1,000 words, and no floor. A worksheet that has said what it has to say ends there; nothing is added to reach a length. A page over the ceiling runs the routing check and then follows "When a page is outside its bounds" above. Padding to clear a floor is still not a remedy anywhere in this file; a worksheet page simply has no floor to clear. What counts toward the number is set by "Word count basis" above; measure with `pnpm wordcount <path>`.
 - Second person, plain English.
 - H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "For practitioners" (Callout), then Related.
