@@ -63,7 +63,20 @@ state versions of the performance-fee exemption diverge.
 figures-page pass on its own — the ruling above means there is nothing to add there until a page
 exists to link it.
 
-## 3. Repo-wide source-currency sweep
+## 3. Repo-wide source-currency sweep — DONE
+
+**Status: done — closed across its constituent items.** This entry was the umbrella task; the actual
+sweeping happened piecemeal, item by item, as each was reachable: items 8, 9, 11, and 14 each confirmed
+a batch of citations (the NASAA repo-wide sweep, and the thirteen SEC/IRS/IARD/NASAA links the owner
+opened directly), item 7's repo-wide half is now confirmed closed, and item 5 — the last open
+source-currency question in the repo, the Form ADV Part 2 OMB expiration — is resolved. No further
+citation in the repo is known to be flagged. The general lesson items 7 and 9 recorded (never infer
+currency from a NASAA upload-path date, and a stale printed clearance date is not the same thing as a
+superseded rule) still applies to every future page.
+
+**Belongs to:** nothing further on the current repo.
+
+### Original entry
 
 CLAUDE.md's Source currency rule (added in this session) distinguishes a link that
 loads from a link that is still current. Seven pages were built and their "Go deeper"
@@ -92,7 +105,26 @@ above.
 
 **Belongs to:** no further action — reference only.
 
-## 5. SEC Form ADV Part 2 General Instructions PDF is past its stated OMB expiration
+## 5. SEC Form ADV Part 2 General Instructions PDF is past its stated OMB expiration — DONE
+
+**Status: done — confirmed, no repointing needed.** The owner opened `formadv-part2.pdf` directly: it
+still reads "Expires: October 31, 2024" — the SEC has not reprinted it. The owner also checked the
+alternate document a search had surfaced, `formadv-instructions.pdf` (expires July 31, 2027), and found
+it is a different document: the master instructions covering all of Form ADV's parts, filing mechanics,
+and IARD rules, not the brochure-specific Part 2 instructions and item-by-item requirements — including
+Item 5, Fees and Compensation — that the citing pages actually need. `formadv-part2.pdf` is the correct
+citation despite its stale printed OMB date, which is a lapsed clearance stamp on an otherwise-current
+document, not a superseded rule.
+
+**Correction to the original entry below.** It names three citing pages. Only two carry this citation
+now — [content/domains/client-education/index.mdx](content/domains/client-education/index.mdx) and
+[content/domains/service-and-pricing-models/index.mdx](content/domains/service-and-pricing-models/index.mdx).
+[content/process/write-the-disclosure-documents/index.mdx](content/process/write-the-disclosure-documents/index.mdx)
+no longer cites it, as of the site-wide quality pass.
+
+**Belongs to:** nothing further.
+
+### Original entry
 
 The cited PDF ([content/domains/client-education/index.mdx](content/domains/client-education/index.mdx),
 also cited on [content/domains/service-and-pricing-models/index.mdx](content/domains/service-and-pricing-models/index.mdx)
@@ -148,7 +180,17 @@ the word count.
 
 **Belongs to:** build order item 5.
 
-## 7. NASAA amended four model rules on May 4, 2026 — pre-amendment PDFs are still hosted
+## 7. NASAA amended four model rules on May 4, 2026 — pre-amendment PDFs are still hosted — DONE
+
+**Status: done — the repo-wide half is now confirmed closed too.** A fresh grep of every citation of
+102(a)(4)-1, 502(b), 203(a)-2, and 411(c)-1 across `content/` turns up no page beyond Marketing and
+Growth added since the "half done" note below — the figures page's own rows for all four rules
+(`content/tools/this-years-figures/index.mdx`) cite the `/uploads/2026/05/` paths, amended May 4, 2026,
+same as Marketing and Growth. Nothing repoints. This closes the loop the "half done" note left open.
+
+**Belongs to:** nothing further.
+
+### Original entry
 
 As part of its investment adviser advertising modernization, NASAA amended four model
 rules on May 4, 2026: Unethical Business Practices 102(a)(4)-1, Prohibited Conduct
