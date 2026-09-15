@@ -38,6 +38,8 @@ the Introduction is named as a deferring page. Sections with no figures are omit
 | Figure | What sets it | Path | Pages that defer to it |
 | --- | --- | --- | --- |
 | The assets-under-management lines that decide state versus SEC registration: the level below which an adviser registers with its home state, the level at or above which it registers with the SEC, the band in between, and the buffer on either side of the line | Statute and rule — the pages point at Advisers Act section 203A | Both | `content/introduction/index.mdx`, `content/process/decide-if-independence-fits/index.mdx`, `content/process/choose-your-regulator/index.mdx`, `content/tools/calculating-your-regulatory-assets-under-management/index.mdx`, `content/tools/reaching-your-written-decision/index.mdx` |
+| Whether an account counts as a securities portfolio, and whether cash and cash equivalents count toward that test | Rule — the page says the exact share is set in the Form ADV General Instructions | Both | `content/tools/calculating-your-regulatory-assets-under-management/index.mdx` |
+| How recent the valuation date used to calculate regulatory assets under management must be, relative to the filing date | Rule — the page says the instructions set how close the date has to be to filing | Both | `content/tools/calculating-your-regulatory-assets-under-management/index.mdx` |
 
 Note: Introduction and Step 1 defer only "the threshold"; Step 5 defers the full set. Treated
 as one figure here, but it will need three or four rows on the page.
@@ -65,6 +67,7 @@ as one figure here, but it will need three or four rows on the page.
 | The fee a state charges for each investment adviser representative | State (Step 6); Step 9 describes the same charge as a fee tied to the individual filing | State | `content/process/decide-if-independence-fits/index.mdx`, `content/process/qualify-as-an-adviser/index.mdx`, `content/process/file-and-get-approved/index.mdx`, `content/tools/reaching-your-written-decision/index.mdx` |
 | Whether a state requires fingerprints from a representative, and what it charges for them | State rule — the page says it differs by state | State | `content/process/decide-if-independence-fits/index.mdx`, `content/process/qualify-as-an-adviser/index.mdx`, `content/tools/reaching-your-written-decision/index.mdx` |
 | The yearly continuing-education credit counts for a representative, and whether a state has adopted the continuing-education rule | NASAA model rule as each state puts it into effect — the page names the model rule and says states adopt on their own schedules | State | `content/process/qualify-as-an-adviser/index.mdx`, `content/tools/building-your-running-calendar/index.mdx` |
+| What the qualifying examination itself costs | Not attributed on the page beyond deferring to the figures page under "Qualify as an Adviser," alongside fingerprint and representative fees | Both | `content/tools/reaching-your-written-decision/index.mdx` |
 
 ## Step 7 — Write the Disclosure Documents
 
