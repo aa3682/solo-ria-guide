@@ -351,7 +351,7 @@ Every term that any page links to /glossary. Add a term here when a new page lin
 - Professional designation — `professional-designation`
 - Qualified custodian — `qualified-custodian`
 - Qualifying examination — `qualifying-examination`
-- Recordkeeping scheme — `recordkeeping`
+- Recordkeeping scheme — `recordkeeping-scheme`
 - Recruiting protocol — `recruiting-protocol`
 - Registered investment adviser — `registered-investment-adviser`
 - Regulatory assets under management — `regulatory-assets-under-management`
