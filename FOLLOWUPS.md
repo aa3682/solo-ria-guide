@@ -920,7 +920,32 @@ the edit. Not answered here.
 **Belongs to:** the consistency pass (build order item 5), or the first worksheet PR if one comes
 first, since that is the PR that creates the inconsistency.
 
-## 21. Two Form ADV General Instructions figures the RAUM worksheet needs have no row on the figures page
+## 21. Two Form ADV General Instructions figures the RAUM worksheet needs have no row on the figures page — DONE
+
+**Status: done.** Both rows added under `#decide-if-independence-fits` on
+[content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx): "Share of an
+account's value that must be securities" (at least 50% of the account's total value; cash and cash
+equivalents — bank deposits, certificates of deposit, bankers' acceptances, and similar bank
+instruments — may be treated as securities for the test) and "How recent the valuation date must be"
+(within 90 days before the date of filing). Both cite the SEC Form ADV General Instructions and both
+read "Set by rule," matching the page's existing rows sourced from the same document. The Values came
+from the owner pasting the instructions' own text directly rather than from a tool fetch, which this
+pass treated as satisfying the fetched-primary-source requirement — the owner opened the document and
+transcribed it, which is what a fetch is a substitute for, not a shortcut around.
+
+The RAUM worksheet's two plain-language sentences are repointed at the anchor: "The exact share is on
+[This year's figures](/tools/this-years-figures#decide-if-independence-fits)" replaces "set in the Form
+ADV General Instructions," and the one-date bullet now reads "How recent that date has to be relative
+to your filing is on [This year's figures](...)" in place of "The instructions set how close that date
+has to be." The general citation of the same PDF at line 14, which defines the RAUM concept as a whole
+rather than deferring a specific figure, was left untouched, since item 21 never asked for that one to
+move. Word count on the worksheet is unchanged at 848 — the word-count basis counts link text, not
+URLs, and the replacement text ran the same length. `FIGURES-INVENTORY.md`'s Step 1 section gained both
+figures, attributed only to what the worksheet page itself says, per that file's own convention.
+
+**Belongs to:** nothing further.
+
+### Original entry
 
 [content/tools/calculating-your-regulatory-assets-under-management/index.mdx](content/tools/calculating-your-regulatory-assets-under-management/index.mdx)
 names two figures in plain language and sends the reader to the Form ADV General Instructions for
@@ -1491,7 +1516,17 @@ lead with it. Not written here.
 
 **Belongs to:** the consistency pass (build order item 5).
 
-## 30. Figures-page sweep additions from the phone read-through: two unestablished Values, and step 10's undelivered pointer
+## 30. Figures-page sweep additions from the phone read-through: two unestablished Values, and step 10's undelivered pointer — 30a HALF DONE
+
+**Status: 30a's filing-system-fee half is done; its renewal-window half is not, and 30c is unchanged.**
+The Filing system fee row under `#file-and-get-approved` now carries a Value — the tiered IARD schedule
+the owner provided directly (state-registered and state exempt reporting advisers: $0, currently
+waived; SEC-registered advisers: $40 under $25,000,000, $150 from $25,000,000 up to $100,000,000, $225
+over $100,000,000; SEC exempt reporting advisers: $150), Year 2026, same Source link as before. The
+Yearly registration renewal window under `#stay-registered-and-compliant` is untouched and still reads
+`NEEDS-VALUE` — no window dates were provided, so nothing was invented for it. Step 12's other named
+problem, the renewal fee's no-link "Varies by state" Source cell, is correct under CLAUDE.md's rules as
+this entry's own next paragraph already concludes, and is not something 30a asks to change.
 
 **Status (verification pass, Sep 12): one of the three findings has moved to item 32; of the two that
 remain, one is over-stated and one is under-stated.**
@@ -1764,7 +1799,33 @@ headline figures are wrong makes it look checked when it is not.
 **Belongs to:** its own pass. It is a precondition for nothing currently queued — item 20, the only item
 that depended on the inventory, is done.
 
-## 34. The written-decision worksheet's examination-cost figure has no row
+## 34. The written-decision worksheet's examination-cost figure has no row — DONE
+
+**Status: done.** A row is added under `#qualify-as-an-adviser` on
+[content/tools/this-years-figures/index.mdx](content/tools/this-years-figures/index.mdx): "Cost of the
+qualifying examination," Value $187, sourced from FINRA's Series 65 exam page rather than from memory
+— the owner opened the page and provided both the URL and the fee directly, which this pass treated as
+satisfying the fetched-primary-source requirement the same way it did for item 21. The row is scoped to
+the Series 65 exam specifically, since that is the single-exam path most representatives take, and
+notes in its own cell that the combined path (Series 66, Series 7, and the SIE) carries its own
+separate fees not established here — the "exam sponsor's fee schedule... to be confirmed" hedge below
+resolved to FINRA specifically, since FINRA administers and charges for the exam even though NASAA
+sponsors its content. The Year column reads "2026," the first row on the page to carry an actual year
+rather than "Set by rule/statute" or a blank — this is a FINRA-administered fee that can move without a
+rule changing, the same kind of figure as the IARD system fee, not a number fixed in a regulation's
+text.
+
+**On the worksheet's own sentence:** contrary to this entry's "What it needs" below, line 23 of
+[content/tools/reaching-your-written-decision/index.mdx](content/tools/reaching-your-written-decision/index.mdx)
+was already anchored to `#qualify-as-an-adviser` before this pass — "your own exam, fingerprint and
+representative fees under [Qualify as an Adviser]" — presumably fixed by item 20's earlier anchor
+sweep, which this entry predates. No sentence edit was needed; only the row was missing, exactly as the
+entry's opening paragraph says. `FIGURES-INVENTORY.md`'s Step 6 section gained the new figure,
+attributed only to what the worksheet page itself says.
+
+**Belongs to:** nothing further.
+
+### Original entry
 
 [content/tools/reaching-your-written-decision/index.mdx](content/tools/reaching-your-written-decision/index.mdx)
 sends the reader to `/tools/this-years-figures` for a figure the page does not carry. It is not a
