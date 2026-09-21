@@ -128,7 +128,7 @@ Tools, page title → sidebar label:
 - Nextra 4, nextra-theme-docs, Next.js App Router, MDX in content/
 - pnpm only. Never use npm or yarn.
 - Keep the build warning-free.
-- Custom CSS limited to one accent color variable. No custom components unless the owner asks.
+- Custom CSS and custom components follow hard rule 9, including its WCAG 2.2 AA exception.
 
 ## Writing style
 - Plain English, short paragraphs, active voice. Define a term the first time it appears and link it to the glossary.

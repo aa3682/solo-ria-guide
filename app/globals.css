@@ -14,3 +14,15 @@ html:not(.dark) .x\:focus-visible\:nextra-focus:focus-visible {
   --tw-ring-color: var(--x-color-primary-600);
   --tw-ring-offset-color: var(--x-color-primary-600);
 }
+
+/*
+  WCAG 2.2 SC 2.4.11 Focus Appearance (AA). The search input renders no focus
+  indicator at all — the theme sets outline-style:none on .x:nextra-focus and its
+  ring box-shadow resolves to five transparent layers, measuring 1.00:1 (nothing
+  painted). Restores an outline; --x-color-primary-600 resolves per theme, giving
+  4.74:1 in light and 6.95:1 in dark.
+*/
+input.x\:nextra-focus:focus-visible {
+  outline: 2px solid var(--x-color-primary-600);
+  outline-offset: 1px;
+}
