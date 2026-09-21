@@ -36,7 +36,7 @@ A link that loads is not necessarily a link that is current. Liveness checks cat
 6. No personal data, no real client examples. Worked examples use obviously fictional people.
 7. No personal name, employer, or credential anywhere in the repo — not on pages, not in metadata, not in commit messages, not in code comments.
 8. One folder per page: `content/<section>/<slug>/index.mdx`. Slugs are lowercase-kebab-case and match the folder name, no number prefixes.
-9. Stock nextra-theme-docs look. Custom CSS limited to the one accent-color variable in `app/globals.css`. No custom components unless the owner asks.
+9. Stock nextra-theme-docs look. Custom CSS limited to the one accent-color variable in `app/globals.css`. No custom components unless the owner asks. Exception: custom CSS is allowed only to fix a measured WCAG 2.2 AA failure in theme output. Each such override must cite the SC number and measured ratio in a comment, and be kept as small as possible.
 
 ## Disclaimer
 The standard disclaimer, verbatim:

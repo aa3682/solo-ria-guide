@@ -1,3 +1,16 @@
 :root {
   --nextra-primary-hue: 212deg;
 }
+
+/*
+  WCAG 2.2 SC 2.4.11 Focus Appearance (AA). The stock nextra-theme-docs focus
+  ring uses --x-color-primary-200/300, which measured 1.82:1 and 1.40:1 against
+  the light-mode page background rgb(250,250,250) — below the required 3:1.
+  Re-points the light-mode ring to the existing --x-color-primary-600 token.
+  Light mode only: the dark ring measured 6.06:1 and is left untouched.
+*/
+html:not(.dark) .x\:nextra-focus:focus-visible,
+html:not(.dark) .x\:focus-visible\:nextra-focus:focus-visible {
+  --tw-ring-color: var(--x-color-primary-600);
+  --tw-ring-offset-color: var(--x-color-primary-600);
+}
