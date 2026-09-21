@@ -3,7 +3,7 @@
 }
 
 /*
-  WCAG 2.2 SC 2.4.11 Focus Appearance (AA). The stock nextra-theme-docs focus
+  WCAG 2.2 SC 1.4.11 Non-text Contrast (AA). The stock nextra-theme-docs focus
   ring uses --x-color-primary-200/300, which measured 1.82:1 and 1.40:1 against
   the light-mode page background rgb(250,250,250) — below the required 3:1.
   Re-points the light-mode ring to the existing --x-color-primary-600 token.
@@ -16,7 +16,7 @@ html:not(.dark) .x\:focus-visible\:nextra-focus:focus-visible {
 }
 
 /*
-  WCAG 2.2 SC 2.4.11 Focus Appearance (AA). The search input renders no focus
+  WCAG 2.2 SC 1.4.11 Non-text Contrast (AA). The search input renders no focus
   indicator at all — the theme sets outline-style:none on .x:nextra-focus and its
   ring box-shadow resolves to five transparent layers, measuring 1.00:1 (nothing
   painted). Restores an outline; --x-color-primary-600 resolves per theme, giving
