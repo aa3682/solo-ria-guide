@@ -1,7 +1,7 @@
 # The Independent Path — repo instructions
 
 ## What this is
-An open, public reference site on establishing and running an independent registered investment advisory (RIA) firm in the United States, built as a Nextra 4 docs site. Visual reference only: https://www.promptingguide.ai/ — match its look using the stock nextra-theme-docs; never copy its content or components.
+An open, public reference site on establishing and running an independent registered investment advisory (RIA) firm in the United States, built as a Nextra 4 docs site. Visual reference: https://diy-wealth-framework.vercel.app — the slate theme is ported from it; never copy its content.
 
 Audience: primary — someone who already works in the industry, most often at a broker-dealer or a larger advisory firm, and is thinking about going independent. Secondary — anyone broader trying to decide whether the independent model fits them at all, before they take any concrete step. Write for a smart adult with no background in the subject; add practitioner depth in clearly marked subsections rather than separate pages.
 
@@ -36,7 +36,7 @@ A link that loads is not necessarily a link that is current. Liveness checks cat
 6. No personal data, no real client examples. Worked examples use obviously fictional people.
 7. No personal name, employer, or credential anywhere in the repo — not on pages, not in metadata, not in commit messages, not in code comments.
 8. One folder per page: `content/<section>/<slug>/index.mdx`. Slugs are lowercase-kebab-case and match the folder name, no number prefixes.
-9. Stock nextra-theme-docs look. Custom CSS limited to the one accent-color variable in `app/globals.css`. No custom components unless the owner asks. Exception: custom CSS is allowed only to fix a measured WCAG 2.2 AA failure in theme output. Each such override must cite the SC number and measured ratio in a comment, and be kept as small as possible.
+9. Slate theme, dark only. The site uses the slate theme defined in app/globals.css, with its accent, page colour and forced dark mode set through documented Nextra props in app/layout.jsx. There is no light theme and no theme switch. Custom CSS is limited to that theme plus WCAG 2.2 AA fixes; each fix cites its SC number and measured ratio in a comment and is kept as small as possible. No custom components unless the owner asks.
 
 ## Disclaimer
 The standard disclaimer, verbatim:
