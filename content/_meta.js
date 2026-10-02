@@ -4,5 +4,9 @@ export default {
   domains: 'Practice Areas',
   tools: 'Tools',
   glossary: 'Glossary',
-  about: 'About'
+  about: 'About',
+  alignflow: {
+    title: 'Back to AlignFlow',
+    href: 'https://alignflow-hub.vercel.app'
+  }
 }
