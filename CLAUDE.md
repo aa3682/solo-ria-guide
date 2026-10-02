@@ -60,6 +60,8 @@ Top-level sections, in this sidebar order:
 5. glossary
 6. about
 
+After about, `content/_meta.js` ends with one external link, Back to AlignFlow, to the AlignFlow hub at https://alignflow-hub.vercel.app. It is a link, not a section: keep it last, and keep its title and address as they are.
+
 A step is chronological and finishes: it says what must be decided or produced at that point in the sequence, and once it is done you move to the next one. An area is standing subject matter that never finishes: it says how to think about a subject over the life of the firm. Step pages link to the areas that apply at that point rather than restating them.
 
 Slugs are lowercase-kebab-case and match the folder name.
